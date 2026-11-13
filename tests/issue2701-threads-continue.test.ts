@@ -1,7 +1,7 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
 import type { Config, CoreMessage } from "acp-kernel";
-import { createCore, createInitialState } from "acp-kernel";
+import { createCore, createInitialState, defaultConfig, assignRefs } from "acp-kernel";
 import type { Session } from "../src/session.ts";
 import type { LoopCtx } from "../src/loop/core.ts";
 import { runCompressLoop, createAnthropicAdapter } from "../src/loop/index.ts";
@@ -186,6 +186,35 @@ test("threads-continue: re-request continues from round-1 id, delta-only message
     assert.ok(deltas.length > 0, "terminal message_delta present");
     assert.equal(deltas[deltas.length - 1]!.data.id, "msg_r2", "terminal frame carries the latest upstream response id");
 });
+
+for (const continuation of [true, false]) {
+    test(`anthropic protected no-op retains its tool result and permits real work (threads=${continuation})`, async () => {
+        const ctx = makeCtx("noop-thread");
+        ctx.config = defaultConfig(200000);
+        ctx.messages = [{ id: "request", role: "user", contentType: "text", text: "current task ".repeat(1000) }];
+        ctx.session.state.messageRefs = assignRefs(ctx.messages, { existing: ctx.session.state.messageRefs, nextIndex: 1 }).map;
+        const body = clientContinueBody();
+        if (!continuation) delete body.thread;
+        const args = JSON.stringify({ content: [{ startId: "m00001", endId: "m00001", summary: "The current user request remains protected until the next genuine user request arrives." }] });
+        const first = messageStart("msg_noop") + toolUseBlock(0, "toolu_noop", "compress", args) + messageDelta("tool_use") + messageStop;
+        const second = messageStart("msg_work") + toolUseBlock(0, "toolu_work", "Bash", '{"command":"run-tests"}') + messageDelta("tool_use") + messageStop;
+        const requests: Record<string, unknown>[] = [];
+        const output = await drain(first, ctx, body, (async (_input: unknown, init?: RequestInit) => {
+            requests.push(JSON.parse(String(init?.body)) as Record<string, unknown>);
+            return new Response(second, { status: 200 });
+        }) as typeof fetch);
+        assert.equal(requests.length, 1);
+        assert.deepEqual(requests[0]!.tools, body.tools);
+        if (continuation) {
+            assert.deepEqual(requests[0]!.system, body.system);
+            assert.deepEqual(requests[0]!.thread, { type: "continue", previous_message_id: "msg_noop" });
+        }
+        assert.match(JSON.stringify(requests[0]!.messages), /tool_result.*toolu_noop/);
+        assert.match(JSON.stringify(requests[0]!.messages), /Compression no-op/);
+        assert.doesNotMatch(JSON.stringify(requests[0]!.messages), /\[ACP\]/);
+        assert.match(output, /toolu_work/);
+    });
+}
 
 test("threads-continue: truncation BEFORE any response id — blind retry stays legal (byte-identical re-send)", async () => {
     const ctx = makeCtx("t2701-blind-safe");

@@ -94,6 +94,16 @@ test("#389: scope= short-circuit returns the live base report only", () => {
     assert.ok(!out.includes("Nudge:"), "scope= output carries no nudge line");
 });
 
+test("message status exposes protection without hiding eligible older work", () => {
+    const ctx = makeCtx12();
+    ctx.config.preserveRecentTokens = 0;
+    const report = handleAcpStatus({ scope: "uncompressed", view: "messages" }, ctx).text;
+    const lines = report.split("\n");
+    const latestUser = ctx.session.state.messageRefs.byRaw.raw_11!;
+    assert.match(lines.find((line) => line.includes(latestUser))!, /not foldable: protected zone only/);
+    assert.doesNotMatch(lines.find((line) => line.includes(ctx.session.state.messageRefs.byRaw.raw_1!))!, /not foldable/);
+});
+
 function sse(type: string, data: unknown): string {
     return `event: ${type}\ndata: ${JSON.stringify(data)}\n\n`;
 }

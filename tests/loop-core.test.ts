@@ -332,6 +332,58 @@ test("loop #156 guard: failing compress + other proxy call → no early break", 
     }
 });
 
+for (const visibilityMarkers of [true, false]) {
+    test(`protected no-op keeps work running without refreshing the fold (markers=${visibilityMarkers})`, async () => {
+        const messages: CoreMessage[] = [
+            { id: "old", role: "assistant", contentType: "text", text: "old work ".repeat(800) },
+            { id: "current", role: "user", contentType: "text", text: "current task ".repeat(1000) },
+            ...Array.from({ length: 5 }, (_, index): CoreMessage => ({
+                id: `working-${index}`, role: "assistant", contentType: "text", text: "working notes ".repeat(500),
+            })),
+        ];
+        let refreshes = 0;
+        const ctx = {
+            ...makeCtx(messages, "responses"),
+            config: defaultConfig(200000, { preserveRecentTokens: 0, preserveRecentMessages: 3 }),
+            visibilityMarkers,
+            refreshFolded: async (history: CoreMessage[]) => { refreshes++; return history; },
+        };
+        ctx.session.state.messageRefs = assignRefs(messages, { existing: ctx.session.state.messageRefs, nextIndex: 1 }).map;
+        const noopRound = (id: string, summary: string) => fcEvents(0, id, "compress", JSON.stringify({
+            content: [{ startId: "m00002", endId: "m00002", summary }],
+        })) + COMPLETED;
+        const first = noopRound("noop_first", "Current work remains protected while the user request is still being processed.");
+        const second = noopRound("noop_second", "Another summary of exactly the same protected current request, without changing the target range.");
+        const work = fcEvents(0, "continue_work", "read_file", '{"path":"src/task.py"}') + COMPLETED;
+        const requests: Record<string, unknown>[] = [];
+        const originalFetch = globalThis.fetch;
+        globalThis.fetch = (async (_input: string | URL | Request, init?: RequestInit) => {
+            requests.push(JSON.parse(String(init?.body)) as Record<string, unknown>);
+            return new Response(requests.length === 1 ? second : work, { status: 200 });
+        }) as typeof fetch;
+        const tools = [{ type: "function", name: "compress" }, { type: "function", name: "read_file" }];
+        try {
+            const out = await drain(new Response(first).body!, ctx, { model: "test", input: [], tools, stream: true }, { url: "http://mock", headers: {} });
+            assert.equal(requests.length, 2, "repeated no-op must let the model continue to a real tool");
+            assert.match(out, /continue_work/);
+            assert.equal(ctx.session.state.blocks.length, 0);
+            assert.equal(refreshes, 0, "a no-op must not rebuild an unchanged fold");
+            for (const request of requests) assert.deepEqual(request.tools, tools);
+            if (visibilityMarkers) {
+                for (const request of requests) {
+                    assert.doesNotMatch(JSON.stringify(request.input), /noop_first|noop_second|function_call_output/);
+                    assert.match(JSON.stringify(request.input), /Compression no-op/);
+                }
+                assert.deepEqual(requests[1]!.input, requests[0]!.input, "a duplicate marker must not grow or rewrite the prefix within this loop");
+            } else {
+                assert.match(JSON.stringify(requests[0]!.input), /function_call_output/);
+            }
+        } finally {
+            globalThis.fetch = originalFetch;
+        }
+    });
+}
+
 // Regression guard: the server's runCompressLoop caller used to build LoopCtx
 // WITHOUT `protocol`, so recordUsage treated every protocol as Anthropic-style
 // (prompt + cached) and double-counted cached tokens for OpenAI/Responses

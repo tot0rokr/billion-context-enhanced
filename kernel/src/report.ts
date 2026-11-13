@@ -180,7 +180,7 @@ export interface StatusReportOptions {
   limit?: number;
   meta?: StatusReportMeta;
   /** #3236: when both this and `originalMessages` are given, the
-   * uncompressed range rows are screened through the SAME projection
+   * uncompressed rows are screened through the SAME projection
    * applySingleRange executes and doomed rows get a ⚠ flag (diagnostic view —
    * rows are flagged, never dropped). Omit both for legacy output. */
   config?: Config;
@@ -224,18 +224,22 @@ export function buildStatusReport(
   );
 
   if (scope === "uncompressed") {
-    if (view === "messages") {
-      return renderMessageDrilldown(visible, toolFilter, sort, limit);
-    }
-    return renderUncompressedRanges(
-      visible,
-      sort,
-      limit,
+    const foldability = buildFoldabilityCheck(
       state,
       countTokens,
       options.config,
       options.originalMessages,
     );
+    if (view === "messages") {
+      return renderMessageDrilldown(
+        visible,
+        toolFilter,
+        sort,
+        limit,
+        foldability,
+      );
+    }
+    return renderUncompressedRanges(visible, sort, limit, foldability);
   }
 
   return renderOverview(
@@ -357,14 +361,66 @@ function renderOverview(
   return lines.join("\n");
 }
 
+type FoldabilityCheck = (range: {
+  startRef: string;
+  endRef: string;
+}) => string | null;
+
+function buildFoldabilityCheck(
+  state: CompressionState,
+  countTokens: (text: string) => number,
+  config?: Config,
+  original?: CoreMessage[],
+): FoldabilityCheck | undefined {
+  if (!config || !original) return undefined;
+  const coverage = collectCoverage(state);
+  const protectedRefs = computeProtectedRefs(
+    original,
+    state,
+    config,
+    countTokens,
+  );
+  const shared = buildProjectionShared(original, state, config);
+  return ({ startRef, endRef }): string | null => {
+    let projection: UnitProjection;
+    try {
+      projection = projectUnit({
+        messages: original,
+        state,
+        config,
+        startRef,
+        endRef,
+        preExistingCoverage: coverage,
+        protectedMessageIds: protectedRefs,
+        shared,
+      });
+    } catch {
+      return "\u26a0 not foldable: refs unresolvable";
+    }
+    if (projection.fatal?.kind === "zone")
+      return "\u26a0 not foldable: protected zone only";
+    if (projection.fatal?.kind === "split") {
+      const parts: string[] = [];
+      if (projection.splitTurnCount > 0)
+        parts.push(`${projection.splitTurnCount} turn(s)`);
+      if (projection.splitPairCount > 0)
+        parts.push(`${projection.splitPairCount} tool call/result pair(s)`);
+      return `\u26a0 not foldable: would split ${parts.join(" and ") || "turn structure"}`;
+    }
+    if (
+      projection.filteredIds.length === 0 &&
+      projection.consumedBlockIds.length === 0
+    )
+      return "\u26a0 not foldable: nothing new to fold";
+    return null;
+  };
+}
+
 function renderUncompressedRanges(
   visible: VisibleMessageInfo[],
   sort: string,
   limit: number,
-  state: CompressionState,
-  countTokens: (t: string) => number,
-  config?: Config,
-  original?: CoreMessage[],
+  flagFor?: FoldabilityCheck,
 ): string {
   const lines: string[] = [];
   const totalTokens = visible.reduce((s, m) => s + m.tokens, 0);
@@ -423,58 +479,6 @@ function renderUncompressedRanges(
   // ordering would mis-sort equal-size ranges.
   if (sort !== "time")
     merged.sort((a, b) => b.tokens - a.tokens || a.startIndex - b.startIndex);
-  // #3236: screen displayed rows through the SAME projection applySingleRange
-  // executes so a row that would be rejected wholesale carries a ⚠ flag. The
-  // diagnostic view flags rather than drops — it must keep showing what is
-  // visible even when it is not foldable as-is. Requires the exact array class
-  // apply runs on (`original`); without it projection would judge a different
-  // array class than execute, which is the #3236 bug itself.
-  let flagFor: ((r: Merged) => string | null) | null = null;
-  if (config && original) {
-    const coverage = collectCoverage(state);
-    const protectedRefs = computeProtectedRefs(
-      original,
-      state,
-      config,
-      countTokens,
-    );
-    // #5337 option A: every displayed row runs projectUnit against this same
-    // (original, state, config) triple — share the per-pass O(n) derivations
-    // instead of re-scanning the whole history per row (status refresh on a
-    // long session).
-    const shared = buildProjectionShared(original, state, config);
-    const splitDescOf = (p: UnitProjection): string => {
-      const parts: string[] = [];
-      if (p.splitTurnCount > 0) parts.push(`${p.splitTurnCount} turn(s)`);
-      if (p.splitPairCount > 0)
-        parts.push(`${p.splitPairCount} tool call/result pair(s)`);
-      return parts.join(" and ") || "turn structure";
-    };
-    flagFor = (r): string | null => {
-      let proj: UnitProjection;
-      try {
-        proj = projectUnit({
-          messages: original!,
-          state,
-          config,
-          startRef: r.startRef,
-          endRef: r.endRef,
-          preExistingCoverage: coverage,
-          protectedMessageIds: protectedRefs,
-          shared,
-        });
-      } catch {
-        return "\u26a0 not foldable: refs unresolvable";
-      }
-      if (proj.fatal?.kind === "zone")
-        return "\u26a0 not foldable: protected zone only";
-      if (proj.fatal?.kind === "split")
-        return `\u26a0 not foldable: would split ${splitDescOf(proj)}`;
-      if (proj.filteredIds.length === 0 && proj.consumedBlockIds.length === 0)
-        return "\u26a0 not foldable: nothing new to fold";
-      return null;
-    };
-  }
   lines.push(`Sorted by ${sort === "time" ? "time" : "size"}`);
   lines.push("");
   for (const r of merged.slice(0, limit)) {
@@ -500,6 +504,7 @@ function renderMessageDrilldown(
   toolFilter: string | undefined,
   sort: string,
   limit: number,
+  flagFor?: FoldabilityCheck,
 ): string {
   let filtered = visible;
   if (toolFilter) filtered = filtered.filter((m) => m.tool === toolFilter);
@@ -519,8 +524,9 @@ function renderMessageDrilldown(
   const lines = [header, `Sorted by ${sort}`, ""];
   const shown = filtered.slice(0, limit);
   for (const message of shown) {
+    const flag = flagFor?.({ startRef: message.ref, endRef: message.ref });
     lines.push(
-      `  ${message.ref} (${formatTokens(message.tokens)}) ${message.tool}`,
+      `  ${message.ref} (${formatTokens(message.tokens)}) ${message.tool}${flag ? `  ${flag}` : ""}`,
     );
   }
   if (filtered.length > shown.length) {

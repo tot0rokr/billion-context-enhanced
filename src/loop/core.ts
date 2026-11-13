@@ -51,6 +51,22 @@ import { safePrefix, safeSuffix, scrubLoneSurrogateEscapesOnJson } from "../text
 
 export const MAX_LOOP_ROUNDS = 10;
 
+function isCompressionNoop(result: { name: string } & Pick<ProxyToolResult, "outcome" | "blocksCreated" | "reason">): boolean {
+    return result.name === COMPRESS_TOOL_NAME && result.outcome === "applied" && result.blocksCreated === 0 && result.reason === "noop";
+}
+
+function replaceProxyFramesWithReceipt(messages: CoreMessage[], round: number, results: ReadonlyArray<{ callId: string }>, markers: string[]): void {
+    const dropIds = new Set<string>();
+    for (const result of results) {
+        dropIds.add(`acp_loop_r${round}_asst_tc_${result.callId}`);
+        dropIds.add(`acp_loop_r${round}_tool_${result.callId}`);
+    }
+    messages.splice(0, messages.length, ...messages.filter((message) => !dropIds.has(message.id)));
+    if (markers.length > 0) {
+        messages.push({ id: `acp_loop_r${round}_rcpt`, role: "assistant", contentType: "text", text: markers.join("") });
+    }
+}
+
 /** #5220: canonical signature of a failed proxy call — sorted-key JSON so
  *  argument-order noise doesn't defeat the repeat-detection set. Unparseable
  *  arguments fall back to the raw string (byte equality still catches the
@@ -1256,7 +1272,7 @@ export async function* runCompressLoop(
 
             let realCalls = 0;
             const realToolCalls: ToolCallEmit[] = [];
-            const proxyResults: { name: string; callId: string; result: string; arguments: string; wireArguments: string; signature?: string; image?: { base64: string; mediaType: string } }[] = [];
+            const proxyResults: ({ name: string; callId: string; result: string; arguments: string; wireArguments: string; signature?: string; image?: { base64: string; mediaType: string } } & Pick<ProxyToolResult, "outcome" | "blocksCreated" | "reason">)[] = [];
             // #5220: the marker lines ACTUALLY streamed to the client this round
             // (deduped, same order as the stream). On a failed-only round this IS
             // the recovery receipt the retry body must carry — reconstructing it
@@ -1287,7 +1303,7 @@ export async function* runCompressLoop(
                         parsedArgs = {};
                     }
                     const result = await withSessionLock(ctx.session, () => executeProxyToolAsync(call.name, parsedArgs, ctx, call.callId, rawArgs, signal));
-                    proxyResults.push({ name: call.name, callId: call.callId, result: result.text, arguments: call.arguments, wireArguments: rawArgs === undefined ? call.arguments : MALFORMED_PROXY_TOOL_ARGS_REPLAY, signature: call.signature, ...(result.image ? { image: result.image } : {}) });
+                    proxyResults.push({ name: call.name, callId: call.callId, result: result.text, arguments: call.arguments, wireArguments: rawArgs === undefined ? call.arguments : MALFORMED_PROXY_TOOL_ARGS_REPLAY, signature: call.signature, outcome: result.outcome, blocksCreated: result.blocksCreated, reason: result.reason, ...(result.image ? { image: result.image } : {}) });
                     if (ctx.visibilityMarkers !== false) {
                         const markerKey = `${call.name}\u0000${result.text}`;
                         if (seenMarkers.has(markerKey)) {
@@ -1492,7 +1508,7 @@ export async function* runCompressLoop(
                 const absorbName = activeAbsorbToolName(ctx.session, ctx.config);
                 if (
                     ctx.refreshFolded &&
-                    proxyResults.some((pr) => (pr.name === "compress" || pr.name === absorbName) && !pr.result.includes("FAILED"))
+                    proxyResults.some((pr) => (pr.name === "compress" || pr.name === absorbName) && !pr.result.includes("FAILED") && !isCompressionNoop(pr))
                 ) {
                     try {
                         const refreshed = await ctx.refreshFolded(coreMessages);
@@ -1615,15 +1631,9 @@ export async function* runCompressLoop(
                 // client this round (same order, same dedup: seenMarkers holds
                 // exactly what went out). Falls through to the normal
                 // re-request path below.
-                const dropIds = new Set<string>();
-                for (const pr of failedMutating) {
-                    dropIds.add(`acp_loop_r${round}_asst_tc_${pr.callId}`);
-                    dropIds.add(`acp_loop_r${round}_tool_${pr.callId}`);
-                }
-                coreMessages.splice(0, coreMessages.length, ...coreMessages.filter((m) => !dropIds.has(m.id)));
+                replaceProxyFramesWithReceipt(coreMessages, round, failedMutating, streamedMarkers);
                 if (streamedMarkers.length > 0) {
                     ctx.log(`[acp-loop] round ${round}: failed-only mutating round; feeding the model a recovery receipt (${streamedMarkers.length} marker line(s)) and re-requesting (#5220)`);
-                    coreMessages.push({ id: `acp_loop_r${round}_rcpt`, role: "assistant", contentType: "text", text: streamedMarkers.join("") });
                 } else {
                     // Every failure marker of this round was deduped against an
                     // earlier round — the client saw nothing new, so a receipt
@@ -1633,6 +1643,13 @@ export async function* runCompressLoop(
                     // MAX_LOOP_ROUNDS bound any resulting ping-pong.
                     ctx.log(`[acp-loop] round ${round}: failed-only mutating round; all markers deduped (nothing new reached the client), re-requesting without a receipt (#5220)`);
                 }
+            }
+
+            // Avoid accumulating hidden tool pairs on repeated Responses no-op
+            // rounds. Other wires keep their native tool-result continuation.
+            if (ctx.protocol === "responses" && proxyResults.every(isCompressionNoop) && ctx.visibilityMarkers !== false && !threadContinue) {
+                replaceProxyFramesWithReceipt(coreMessages, round, proxyResults, streamedMarkers);
+                ctx.log(`[acp-loop] round ${round}: no-op-only compress round; continuing with the client-visible receipt`);
             }
 
             ctx.log(`[acp-loop] round ${round}: proxy tool executed; re-requesting so the model sees the result`);
