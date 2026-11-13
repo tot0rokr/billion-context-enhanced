@@ -37,7 +37,7 @@ Node.js 22 또는 24, npm, Git이 필요하다. Codex 또는 Claude Code CLI는 
 현재 배포 경로는 이 저장소의 소스 빌드다. npm 공개 패키지 `billion-context`를 설치하면 원본을 받는다.
 
 ```bash
-git clone https://github.com/OWNER/billion-context-enhanced.git
+git clone https://github.com/tot0rokr/billion-context-enhanced.git
 cd billion-context-enhanced
 npm ci --ignore-scripts --no-fund --no-audit
 npm run build

@@ -7,7 +7,7 @@
 - Git, npm, Node.js를 준비한다. package 요구사항은 Node ≥20이며, 이 작업의 검증 환경은 Node 22/24다.
 - 사용할 Codex CLI 또는 Claude Code를 먼저 설치하고 로그인한다. [Codex CLI 공식 문서](https://developers.openai.com/codex/cli/), [Claude Code 공식 문서](https://code.claude.com/docs/en/quickstart)를 따른다.
 - 실제 비교에 사용한 Codex 버전은 `0.163.0`이다. 다른 버전의 호환성, 성능을 같은 결과로 간주하지 않는다.
-- 아래 clone URL의 `OWNER`는 이 저장소의 소유자로 바꾼다.
+- 개선판 저장소는 `https://github.com/tot0rokr/billion-context-enhanced`다.
 
 ```bash
 node --version
@@ -21,7 +21,7 @@ claude --version
 ## 소스에서 설치
 
 ```bash
-git clone https://github.com/OWNER/billion-context-enhanced.git
+git clone https://github.com/tot0rokr/billion-context-enhanced.git
 cd billion-context-enhanced
 npm ci --ignore-scripts --no-fund --no-audit
 npm run build

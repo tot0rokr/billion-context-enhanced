@@ -1,6 +1,11 @@
 {
   "date": "2026-11-13",
   "scope": "Publication preparation checks; no new paid model trial. Historical A/B/C measurements remain unchanged.",
+  "publication": {
+    "repository": "https://github.com/tot0rokr/billion-context-enhanced",
+    "visibility": "public",
+    "github_actions_enabled": false
+  },
   "checks": [
     {
       "command": "npm ci --ignore-scripts --no-fund --no-audit",
@@ -58,7 +63,6 @@
   "limits": [
     "No fresh paid A/B/C run of the portable runner was performed.",
     "Claude subscription OAuth end-to-end behavior was not exercised.",
-    "Inherited upstream workflows have not been used as a full-suite verdict for this fork.",
-    "GitHub repository creation, host selection and publication remain pending until authentication and destination are resolved."
+    "Inherited upstream workflows have not been used as a full-suite verdict for this fork."
   ]
 }
