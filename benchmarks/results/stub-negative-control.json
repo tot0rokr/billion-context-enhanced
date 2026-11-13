@@ -1,0 +1,102 @@
+{
+  "phase": "final",
+  "hidden_pass": 0,
+  "hidden_total": 13,
+  "cases": {
+    "unseen_mixed": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.765,
+      "case_artifacts": "/tmp/bili-grade-case-onszn_5n",
+      "exact": false
+    },
+    "semantic-00": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.689,
+      "case_artifacts": "/tmp/bili-grade-case-oezv2m0g",
+      "exact": false
+    },
+    "semantic-01": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.694,
+      "case_artifacts": "/tmp/bili-grade-case-f8holbch",
+      "exact": false
+    },
+    "semantic-02": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.674,
+      "case_artifacts": "/tmp/bili-grade-case-jjvk9zvu",
+      "exact": false
+    },
+    "semantic-03": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.69,
+      "case_artifacts": "/tmp/bili-grade-case-w3lnhtkr",
+      "exact": false
+    },
+    "semantic-04": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.68,
+      "case_artifacts": "/tmp/bili-grade-case-gbr61gxk",
+      "exact": false
+    },
+    "semantic-05": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.69,
+      "case_artifacts": "/tmp/bili-grade-case-zvyejrv0",
+      "exact": false
+    },
+    "semantic-06": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.689,
+      "case_artifacts": "/tmp/bili-grade-case-zj9seddn",
+      "exact": false
+    },
+    "semantic-07": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.72,
+      "case_artifacts": "/tmp/bili-grade-case-5l5ipy8f",
+      "exact": false
+    },
+    "semantic-08": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.688,
+      "case_artifacts": "/tmp/bili-grade-case-vylnguh6",
+      "exact": false
+    },
+    "semantic-09": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.692,
+      "case_artifacts": "/tmp/bili-grade-case-_83yye6r",
+      "exact": false
+    },
+    "semantic-10": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.692,
+      "case_artifacts": "/tmp/bili-grade-case-z82r82gd",
+      "exact": false
+    },
+    "semantic-11": {
+      "exit_code": 1,
+      "stderr_tail": "Traceback (most recent call last):\n  File \"/candidate/reconcile.py\", line 22, in <module>\n    main()\n  File \"/candidate/reconcile.py\", line 18, in main\n    json.dump(reconcile(events), target, sort_keys=True, indent=2)\n              ^^^^^^^^^^^^^^^^^\n  File \"/candidate/reconcile.py\", line 7, in reconcile\n    raise NotImplementedError(\"Implement the rollout reconciliation contract\")\nNotImplementedError: Implement the rollout reconciliation contract\n",
+      "seconds": 0.683,
+      "case_artifacts": "/tmp/bili-grade-case-mooas59r",
+      "exact": false
+    }
+  },
+  "visible_report": {
+    "exact": false,
+    "error": "[Errno 2] No such file or directory: '/tmp/billion-context-benchmark-20261106/dataset-v2/visible/analysis.json'"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "arm": "B",
+  "model": "gpt-6-astra",
+  "reasoning_effort": "xhigh",
+  "context_window": 1000000,
+  "auto_compact_limit": 900000,
+  "bili_commit": "be611a8566c22ee0a65fb5765365671d47e810d5",
+  "codex_version": "0.163.0",
+  "image": "node@sha256:18a6d90fd60542269850c80ca03b29b1d9b14d6b221ac7ee8e35b0d33ef904bd",
+  "mode": "controlled-long-context",
+  "fixture": "/tmp/billion-context-benchmark-20261106/dataset-v2",
+  "config_sha256": "1f7fd3126f9a562b13504df74215a4a13f3850f74b0d41252d94c830fed9058a",
+  "instrumentation": "B: response-byte-preserving usage observer in fetchWithTimeout; A/B: Codex OTLP and rollouts"
+}

@@ -1,3 +1,9 @@
+# billion-context-enhanced Fork Scope
+
+This repository preserves the tested C implementation based on upstream commit `be611a8566c22ee0a65fb5765365671d47e810d5`. Keep benchmark observations separate from causal claims, preserve historical artifacts, and never commit authentication files, account identifiers, CA keys, or private runtime homes. Read `docs/benchmark-methodology.md` before changing reproduction code.
+
+The upstream specification below describes engine invariants and the original project's contribution process. Its upstream-specific issue, PR, release, npm publishing, and automation procedures do not authorize actions against the upstream repository. This independent repository uses explicit owner-directed commits and publication. Keep inherited GitHub Actions disabled until their external writes and schedules have been adapted. The npm package name and version remain upstream-compatible; document the source commit when identifying an enhanced build.
+
 # billion-context Development Specification
 
 > **This document is the highest-priority specification. All developers (including AI Agents) MUST comply.**

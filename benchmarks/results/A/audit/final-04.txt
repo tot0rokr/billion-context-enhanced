@@ -1,0 +1,5 @@
+Batch 3 complete. All 66 tests pass, including public tests. [Reports and audits](/task/audit/README.md) regenerated; F01–F08 corrected and F33–F48 preserved.
+
+R3 applies everywhere: epoch advances clear pending state while retaining active image/history; rollback requires the exact `(slot,digest)` pair. R2 ordering and failed-VERIFY flag clearing remain in force.
+
+No unresolved implementation tasks.

@@ -1,0 +1,5 @@
+Batch 1 complete: 64 cases audited, deterministic audit output added, and replay memory usage reduced. All 44 tests pass, including public tests.
+
+[Report](/task/audit/batch-1-report.json), [audit](/task/audit/batch-1-audit.json), and [exact operational notes](/task/audit/operations-notes.json) saved.
+
+Unresolved: timestamp/sequence discrepancies remain documented for contract review. R1 remains in force: timestamp ordering, pending state across epochs, and verification flags surviving failed VERIFY. No semantic revisions applied.

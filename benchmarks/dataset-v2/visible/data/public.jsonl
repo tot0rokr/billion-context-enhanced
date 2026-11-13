@@ -1,0 +1,5 @@
+{"schema":1,"event_id":"pub-0","board":"public-board","epoch":0,"sequence":0,"action":"BASELINE","tx":null,"slot":0,"digest":"old","success":true,"time":0}
+{"schema":1,"event_id":"pub-1","board":"public-board","epoch":0,"sequence":1,"action":"STAGE","tx":"t1","slot":1,"digest":"new","success":true,"time":1}
+{"schema":1,"event_id":"pub-2","board":"public-board","epoch":0,"sequence":2,"action":"VERIFY","tx":"t1","slot":1,"digest":"new","success":true,"time":2}
+{"schema":1,"event_id":"pub-3","board":"public-board","epoch":0,"sequence":3,"action":"COMMIT","tx":"t1","slot":1,"digest":"new","success":true,"time":3}
+{"schema":1,"event_id":"pub-3","board":"public-board","epoch":0,"sequence":3,"action":"COMMIT","tx":"t1","slot":1,"digest":"new","success":true,"time":3}

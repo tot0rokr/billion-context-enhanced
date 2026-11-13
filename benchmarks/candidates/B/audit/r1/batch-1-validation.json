@@ -1,0 +1,75 @@
+{
+  "batch": 1,
+  "batch_input_rows": 662,
+  "batch_operations": {
+    "COMMIT": {
+      "accepted": 13,
+      "attempted": 144,
+      "rejected": 131,
+      "reported_success": 139
+    },
+    "ROLLBACK": {
+      "accepted": 5,
+      "attempted": 15,
+      "rejected": 10,
+      "reported_success": 10
+    }
+  },
+  "batch_rejection_reasons": {
+    "commit_failed": 5,
+    "commit_mismatch": 28,
+    "commit_unverified": 26,
+    "commit_without_stage": 72,
+    "duplicate_conflict": 12,
+    "reset_failed": 5,
+    "rollback_failed": 5,
+    "rollback_unverified": 5,
+    "stage_failed": 5,
+    "verify_failed": 14,
+    "verify_mismatch": 17,
+    "verify_without_stage": 64
+  },
+  "batch_retained_events": 510,
+  "batch_totals": {
+    "accepted_rollbacks": 5,
+    "applied_commits": 13,
+    "board_count": 64,
+    "conflicted_ids": 12,
+    "duplicate_replays": 128,
+    "rejected_events": 258
+  },
+  "case_range": [
+    "INC-00001",
+    "INC-00064"
+  ],
+  "contract_revision": "R1",
+  "full_corpus_input_rows": 1990,
+  "full_corpus_totals": {
+    "accepted_rollbacks": 16,
+    "applied_commits": 30,
+    "board_count": 192,
+    "conflicted_ids": 38,
+    "duplicate_replays": 384,
+    "rejected_events": 786
+  },
+  "sha256": {
+    "audit/batch-1-report.json": "5c8d63980666a573e7451a6867329603c34e418bf3174dd03f20e6473d80b4bb",
+    "audit/batch-1-trace.json": "9f7ace6c6b331e91edf1b36ceff7025d737cf9f2bc0db768e7c40ea207b8aba7",
+    "audit/operations-batch-1.json": "bdce36fbacb47b14b52cdd2daed0083d6f8ddb2789bf6c7ef4093ca323c39b39",
+    "audit/visible-r1-report.json": "b1141eff3ad38ad03719bbc3260ce0c5c8bc2f24a0422ff951f7237575676ebf",
+    "data/visible.jsonl": "403dc5ae6a3ad6da05ab37dffdc0fc0f76b36027e62ba8591a4c439f7d8bf87a",
+    "ingest.py": "1c641d18d588ab8f8029a069066e4addf6dd781909f252994a887f22fe5716d6",
+    "reconcile.py": "ccac07df5883fd8fa405b8aaa6ae4359f4ea9ab7ad939619b9084f0592cf51aa",
+    "report.py": "890fd912e37ada913484fda0775f5cc7a53291f112da12c76dbce4c58c540c6e",
+    "state_machine.py": "30f42ab06c0b81b1470afb68eaa07abebd2d39dd98035b7e761d67d087a20fd2"
+  },
+  "validation": {
+    "batch_matches_global_reconciliation_projection": true,
+    "command": "python3 -m unittest discover -s tests -v",
+    "full_corpus_shuffle_seeds": [
+      17,
+      20261106
+    ],
+    "tests_passed": 40
+  }
+}

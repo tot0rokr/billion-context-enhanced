@@ -1,0 +1,5 @@
+Batch 1 complete; **40 tests pass**. Added `--audit-output`, saved the [report](/task/audit/batch-1-report.json), and preserved all [16 operational notes](/task/audit/operations-batch-1.json) exactly.
+
+Results: 13 accepted commits, 5 accepted rollbacks, 258 rejection incidents.
+
+**R1 remains unchanged:** timestamp ordering, pending state across epochs, and prior verification after failed VERIFY. These provisional rules and documented edge-case assumptions remain unresolved pending explicit revision.

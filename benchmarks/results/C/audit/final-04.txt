@@ -1,0 +1,7 @@
+Batch 3 complete; all 38 tests pass. All batches were regenerated under R3. Batch 3 has 51 accepted commits, 6 accepted rollbacks, and 167 incidents.
+
+Rules now in force: sequence ordering, failed-VERIFY invalidation, epoch clearing of all pending state, and exact `(slot,digest)` rollback authorization. Active image and verified history survive epochs.
+
+[Current audit](/task/reports/visible-r3-audit.json) includes all 48 notes, with F01–F08 corrected.
+
+Unresolved: malformed-input and conflict-removed-baseline policies remain unspecified; existing behavior is unchanged.

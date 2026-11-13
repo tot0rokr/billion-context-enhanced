@@ -1,0 +1,5 @@
+R3 integration verified. **57 tests pass**, including public tests and generated unseen-event regressions.
+
+Created [analysis.json](/task/analysis.json). CLI arguments and JSON shape are unchanged; runtime logic contains no corpus-specific hardcoding.
+
+The requested command ran through a temporary `python` → `python3` shell alias because `python` is unavailable.

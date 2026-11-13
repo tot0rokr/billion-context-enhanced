@@ -1,0 +1,84 @@
+TAP version 13
+# (node:14) ExperimentalWarning: SQLite is an experimental feature and might change at any time
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# Subtest: overflow: compression really happens in codex; bulk folded, sentinels retained
+ok 1 - overflow: compression really happens in codex; bulk folded, sentinels retained
+  ---
+  duration_ms: 28557.40483
+  type: 'test'
+  ...
+# Subtest: under-window: no compression occurs (control)
+ok 2 - under-window: no compression occurs (control)
+  ---
+  duration_ms: 6413.786222
+  type: 'test'
+  ...
+# Subtest: native tools: real codex uses bili-injected ACP tools without MCP
+ok 3 - native tools: real codex uses bili-injected ACP tools without MCP
+  ---
+  duration_ms: 6489.409807
+  type: 'test'
+  ...
+# Subtest: native tools: real codex reaches an external Docker bili without MCP
+ok 4 - native tools: real codex reaches an external Docker bili without MCP # SKIP set E2E_CODEX_ATTACH_ORIGIN=http://127.0.0.1:8787 to exercise a running Docker proxy
+  ---
+  duration_ms: 0.335621
+  type: 'test'
+  ...
+# Subtest: \#1802: a hostile user .env cannot reroute a bili-launched codex
+ok 5 - \#1802: a hostile user .env cannot reroute a bili-launched codex
+  ---
+  duration_ms: 6401.220637
+  type: 'test'
+  ...
+# Subtest: \#1965: a clean bili exit writes the run's state back into the real home; native codex resumes it
+ok 6 - \#1965: a clean bili exit writes the run's state back into the real home; native codex resumes it
+  ---
+  duration_ms: 11760.080119
+  type: 'test'
+  ...
+# Subtest: \#2195: two sequential bili launches keep every thread in the real home
+ok 7 - \#2195: two sequential bili launches keep every thread in the real home
+  ---
+  duration_ms: 23921.012806
+  type: 'test'
+  ...
+# Subtest: \#2197: a provider defined ONLY in the selected -p profile file must route through bili
+ok 8 - \#2197: a provider defined ONLY in the selected -p profile file must route through bili
+  ---
+  duration_ms: 6389.511692
+  type: 'test'
+  ...
+# Subtest: \#2197: a CLI-selected provider (-c model_provider / model_providers.<id>.base_url) must route through bili
+ok 9 - \#2197: a CLI-selected provider (-c model_provider / model_providers.<id>.base_url) must route through bili
+  ---
+  duration_ms: 6437.548464
+  type: 'test'
+  ...
+# Subtest: \#2197: a user -c base_url override selects the target AND still routes through bili
+ok 10 - \#2197: a user -c base_url override selects the target AND still routes through bili
+  ---
+  duration_ms: 6423.374066
+  type: 'test'
+  ...
+# Subtest: \#2222: shared state — the live db stays in the real home across bili and native runs
+ok 11 - \#2222: shared state — the live db stays in the real home across bili and native runs
+  ---
+  duration_ms: 17588.705787
+  type: 'test'
+  ...
+# Subtest: \#3203: two concurrent bili codex sessions on ONE CODEX_HOME both run and keep their history
+ok 12 - \#3203: two concurrent bili codex sessions on ONE CODEX_HOME both run and keep their history
+  ---
+  duration_ms: 17711.934826
+  type: 'test'
+  ...
+1..12
+# tests 12
+# suites 0
+# pass 11
+# fail 0
+# cancelled 0
+# skipped 1
+# todo 0
+# duration_ms 138501.288328

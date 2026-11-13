@@ -1,0 +1,415 @@
+{
+  "acceptance_or_reason_changes": [
+    {
+      "action": "COMMIT",
+      "board": "board-00002",
+      "epoch": 1,
+      "event_id": "board-00002-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00014",
+      "epoch": 1,
+      "event_id": "board-00014-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00026",
+      "epoch": 1,
+      "event_id": "board-00026-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00038",
+      "epoch": 1,
+      "event_id": "board-00038-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00062",
+      "epoch": 1,
+      "event_id": "board-00062-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00074",
+      "epoch": 1,
+      "event_id": "board-00074-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00086",
+      "epoch": 1,
+      "event_id": "board-00086-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00098",
+      "epoch": 1,
+      "event_id": "board-00098-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00122",
+      "epoch": 1,
+      "event_id": "board-00122-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00134",
+      "epoch": 1,
+      "event_id": "board-00134-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00146",
+      "epoch": 1,
+      "event_id": "board-00146-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00158",
+      "epoch": 1,
+      "event_id": "board-00158-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    },
+    {
+      "action": "COMMIT",
+      "board": "board-00182",
+      "epoch": 1,
+      "event_id": "board-00182-e003",
+      "r2": {
+        "accepted": true,
+        "reason": null
+      },
+      "r3": {
+        "accepted": false,
+        "reason": "commit_without_stage"
+      },
+      "sequence": 21
+    }
+  ],
+  "current_contract_revision": "R3",
+  "current_totals": {
+    "accepted_rollbacks": 16,
+    "applied_commits": 150,
+    "board_count": 192,
+    "conflicted_ids": 38,
+    "duplicate_replays": 384,
+    "rejected_events": 502
+  },
+  "final_board_changes": [
+    {
+      "board": "board-00002",
+      "r2": {
+        "active_digest": "425d9a017781a7368369d5be02c6d0ff6d867bec5d9bcdb5fec75ae4d9a0e9c2",
+        "active_slot": "B",
+        "board": "board-00002",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "9ef348a6ddd7a7cdac333e669b3e564d1168e1a28cad33f6685fe57bfda50b76",
+        "active_slot": "A",
+        "board": "board-00002",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00014",
+      "r2": {
+        "active_digest": "7011be336f2e44d4a38ae9c09103c5d7d19aeca62cdf071a23187e4611b9901d",
+        "active_slot": "B",
+        "board": "board-00014",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "4871b9048410e732e006e049d35831047adfa07a5f796887ab68b154faa2afd0",
+        "active_slot": "A",
+        "board": "board-00014",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00026",
+      "r2": {
+        "active_digest": "b1b7000128d32ea641efd9a79782c001523d40b151331dedbfdf1c27d4df1c23",
+        "active_slot": "B",
+        "board": "board-00026",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "45fafe5091c17830de57e93de8afca41938df34d87dccbd0a729466511cf1540",
+        "active_slot": "A",
+        "board": "board-00026",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00038",
+      "r2": {
+        "active_digest": "955785298b882d6ed4ed0cef4465205e8485f67619ce86c96288966a2a42a505",
+        "active_slot": "B",
+        "board": "board-00038",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "725b339b56392904e9e6f36e7b4803f049d41716bdaa6b019da33e6d0fea2c18",
+        "active_slot": "A",
+        "board": "board-00038",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00062",
+      "r2": {
+        "active_digest": "eb9eee62404f4697593924989e42f059b7f6f933c4262c75e8565f7163c3a07e",
+        "active_slot": "B",
+        "board": "board-00062",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "8dc16e80433885af32a980c3a0463769f0dad24f7bbaf30494556ff1d5980c15",
+        "active_slot": "A",
+        "board": "board-00062",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00074",
+      "r2": {
+        "active_digest": "4a4f90bcd3c95e2f2208050a66de1b8b9446360fe7724b95fe04fa17e206a6f3",
+        "active_slot": "B",
+        "board": "board-00074",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "97925d2fbe90da049bf99233f2fa103bad28d59982372060b847c04dcfd919eb",
+        "active_slot": "A",
+        "board": "board-00074",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00086",
+      "r2": {
+        "active_digest": "fbb16c82d010aff5bfadd78aaab1626af1dd525d8f5a3a6e86cae2f0bed1db1d",
+        "active_slot": "B",
+        "board": "board-00086",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "3f630f07fa6d18b2f4b4fc3261f170cfa76a3bc3af477b405c0b9ba4493bcc27",
+        "active_slot": "A",
+        "board": "board-00086",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00098",
+      "r2": {
+        "active_digest": "e8108946c4d2742b6384599350dc56b9725c7ccb075b6d499448c331e0e33d92",
+        "active_slot": "B",
+        "board": "board-00098",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "38e72ed34db4a45cffba9b5601456a9e6961959e41d83e061c8136406198eb16",
+        "active_slot": "A",
+        "board": "board-00098",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00122",
+      "r2": {
+        "active_digest": "71e63ff4c838b05024c23aeb63c5b1de1d332f317e4500a3171709f75320e9bb",
+        "active_slot": "B",
+        "board": "board-00122",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "561dec2331da322c57d2286bf7d85748d11b99bc0851101d295735a7ca464588",
+        "active_slot": "A",
+        "board": "board-00122",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00134",
+      "r2": {
+        "active_digest": "f1dba782a0594e12b7a81e66cd3e82c15f2c099cf62e25114bd62aedcb24bc50",
+        "active_slot": "B",
+        "board": "board-00134",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "bf88fe7b79a136323a0bcdf5692a6d01401ce0611c112b19876607bde1c3efc0",
+        "active_slot": "A",
+        "board": "board-00134",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00146",
+      "r2": {
+        "active_digest": "879787b4ad138986548c87593a1b28a7ae604de99a92f1db6b9a1f0cdebe53c4",
+        "active_slot": "B",
+        "board": "board-00146",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "d3c758832bb2837d57ba4f661f16b7a981e7641e407a2a17fc3c00d39614aba4",
+        "active_slot": "A",
+        "board": "board-00146",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00158",
+      "r2": {
+        "active_digest": "c275c1ef6a60409b08847b6443f9c9d3c1c3413c69fe040a73d3c4bf909e2a9b",
+        "active_slot": "B",
+        "board": "board-00158",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "5b537d63e278d22c9fdb54391ae8066a242de67228ae847054e7bc7e13776c28",
+        "active_slot": "A",
+        "board": "board-00158",
+        "epoch": 2
+      }
+    },
+    {
+      "board": "board-00182",
+      "r2": {
+        "active_digest": "0bebb1d28b6a6f7ff0c07f2ac40921f0a9d2a6c5327593e86fd09fc044b0d243",
+        "active_slot": "B",
+        "board": "board-00182",
+        "epoch": 2
+      },
+      "r3": {
+        "active_digest": "3c943f254a4c477b91d60867393dc29bbcf81656084575279ffd64ce5fe519f8",
+        "active_slot": "A",
+        "board": "board-00182",
+        "epoch": 2
+      }
+    }
+  ],
+  "note": "These decision changes also affect subsequent active-image trace fields. Operational corrections are recorded separately.",
+  "previous_contract_revision": "R2",
+  "previous_totals": {
+    "accepted_rollbacks": 16,
+    "applied_commits": 163,
+    "board_count": 192,
+    "conflicted_ids": 38,
+    "duplicate_replays": 384,
+    "rejected_events": 489
+  }
+}

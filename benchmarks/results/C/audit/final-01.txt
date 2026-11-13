@@ -1,0 +1,7 @@
+Initial R1 implementation is complete. All 20 tests pass, including public tests; five visible-data shuffles produced identical output. Decisions and open contract questions are preserved in [PHASE_NOTES.md](/task/PHASE_NOTES.md). No commits made.
+
+Exactly three subagents, using the inherited model:
+
+- `/root/ingest_schema`
+- `/root/state_machine`
+- `/root/report_audit`

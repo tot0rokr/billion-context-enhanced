@@ -1,0 +1,34 @@
+{
+  "boards": [
+    {
+      "board": "board-20006",
+      "epoch": 1,
+      "active_slot": "B",
+      "active_digest": "aa2d18046572ef23503db9965e225430bbc816fe33ab51a1506a2d4af2ba274f"
+    }
+  ],
+  "incidents": [
+    {
+      "board": "board-20006",
+      "epoch": 0,
+      "sequence": 21,
+      "event_id": "board-20006-e003",
+      "reason": "reset_failed"
+    },
+    {
+      "board": "board-20006",
+      "epoch": 1,
+      "sequence": 56,
+      "event_id": "board-20006-e008",
+      "reason": "commit_without_stage"
+    }
+  ],
+  "totals": {
+    "board_count": 1,
+    "applied_commits": 1,
+    "accepted_rollbacks": 0,
+    "duplicate_replays": 2,
+    "conflicted_ids": 0,
+    "rejected_events": 2
+  }
+}

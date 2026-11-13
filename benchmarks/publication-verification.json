@@ -1,0 +1,64 @@
+{
+  "date": "2026-11-13",
+  "scope": "Publication preparation checks; no new paid model trial. Historical A/B/C measurements remain unchanged.",
+  "checks": [
+    {
+      "command": "npm ci --ignore-scripts --no-fund --no-audit",
+      "exit_code": 0
+    },
+    {
+      "command": "npm run build",
+      "exit_code": 0
+    },
+    {
+      "command": "npx tsc --noEmit --project tsconfig.json",
+      "exit_code": 0
+    },
+    {
+      "command": "npm run check:dist-thin",
+      "exit_code": 0,
+      "cli_version": "0.1.212",
+      "agent_bundles_imported": 9
+    },
+    {
+      "command": "node --import ./tests/preload-test-env.mjs --import tsx --test tests/acp-status.test.ts tests/loop-core.test.ts tests/issue2701-threads-continue.test.ts tests/dist-ready.test.ts tests/launcher.test.ts tests/launcher-plugin-mode.test.ts tests/claude-mcp-entry.test.ts tests/claude-bridge-e2e.test.ts",
+      "exit_code": 0,
+      "tests": 440,
+      "passed": 440,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "command": "python3 -m unittest discover -s benchmarks -p 'test_*.py' -v",
+      "exit_code": 0,
+      "tests": 23,
+      "passed": 23
+    },
+    {
+      "command": "python3 benchmarks/recompute.py --grade-code",
+      "exit_code": 0,
+      "artifact_hashes": 303,
+      "fixture_hashes": 43,
+      "hidden_cases": {
+        "A": "13/13",
+        "B": "13/13",
+        "C": "13/13"
+      },
+      "visible_reports_exact": true,
+      "reported_usage_and_costs_match": true
+    },
+    {
+      "command": "python3 benchmarks/reproduce.py preflight <explicit local source, vendor, auth and output paths>",
+      "exit_code": 0,
+      "codex_version": "0.163.0",
+      "model_requests": 0,
+      "output_directory_created": false
+    }
+  ],
+  "limits": [
+    "No fresh paid A/B/C run of the portable runner was performed.",
+    "Claude subscription OAuth end-to-end behavior was not exercised.",
+    "Inherited upstream workflows have not been used as a full-suite verdict for this fork.",
+    "GitHub repository creation, host selection and publication remain pending until authentication and destination are resolved."
+  ]
+}

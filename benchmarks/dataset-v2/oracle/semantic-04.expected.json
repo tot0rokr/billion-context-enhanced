@@ -1,0 +1,55 @@
+{
+  "boards": [
+    {
+      "board": "board-20005",
+      "epoch": 1,
+      "active_slot": "A",
+      "active_digest": "3d16583223b9c1c02931fba447cfc552b73ec36fbf75f65b01ae8c8ea9b63a50"
+    }
+  ],
+  "incidents": [
+    {
+      "board": "board-20005",
+      "epoch": 0,
+      "sequence": 7,
+      "event_id": "board-20005-e001",
+      "reason": "duplicate_conflict"
+    },
+    {
+      "board": "board-20005",
+      "epoch": 0,
+      "sequence": 14,
+      "event_id": "board-20005-e002",
+      "reason": "verify_without_stage"
+    },
+    {
+      "board": "board-20005",
+      "epoch": 0,
+      "sequence": 28,
+      "event_id": "board-20005-e004",
+      "reason": "commit_without_stage"
+    },
+    {
+      "board": "board-20005",
+      "epoch": 1,
+      "sequence": 42,
+      "event_id": "board-20005-e006",
+      "reason": "verify_failed"
+    },
+    {
+      "board": "board-20005",
+      "epoch": 1,
+      "sequence": 49,
+      "event_id": "board-20005-e007",
+      "reason": "commit_unverified"
+    }
+  ],
+  "totals": {
+    "board_count": 1,
+    "applied_commits": 0,
+    "accepted_rollbacks": 0,
+    "duplicate_replays": 2,
+    "conflicted_ids": 1,
+    "rejected_events": 5
+  }
+}

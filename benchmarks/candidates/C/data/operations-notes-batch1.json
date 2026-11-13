@@ -1,0 +1,18 @@
+[
+  {"note_id": "F01", "operation_id": "OPS-001", "field": "change_ticket", "value": "revised-CHG-1106-001"},
+  {"note_id": "F02", "operation_id": "OPS-002", "field": "approved_rollback_digest", "value": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"},
+  {"note_id": "F03", "operation_id": "OPS-003", "field": "settle_window_ms", "value": "17524"},
+  {"note_id": "F04", "operation_id": "OPS-004", "field": "forbidden_operator_action", "value": "revised-reuse-old-epoch-verification"},
+  {"note_id": "F05", "operation_id": "OPS-005", "field": "escalation_scope", "value": "revised-deployment-batch"},
+  {"note_id": "F06", "operation_id": "OPS-006", "field": "accepted_boot_status", "value": "revised-ready-epoch-13"},
+  {"note_id": "F07", "operation_id": "OPS-007", "field": "audit_correlation_nonce", "value": "revised-118a27ca65904294cb9e"},
+  {"note_id": "F08", "operation_id": "OPS-008", "field": "evidence_retention_days", "value": "151"},
+  {"note_id": "F09", "operation_id": "OPS-009", "field": "change_ticket", "value": "CHG-1106-009"},
+  {"note_id": "F10", "operation_id": "OPS-010", "field": "approved_rollback_digest", "value": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"},
+  {"note_id": "F11", "operation_id": "OPS-011", "field": "settle_window_ms", "value": "18507"},
+  {"note_id": "F12", "operation_id": "OPS-012", "field": "forbidden_operator_action", "value": "reuse-old-epoch-verification"},
+  {"note_id": "F13", "operation_id": "OPS-013", "field": "escalation_scope", "value": "rack"},
+  {"note_id": "F14", "operation_id": "OPS-014", "field": "accepted_boot_status", "value": "ready-epoch-21"},
+  {"note_id": "F15", "operation_id": "OPS-015", "field": "audit_correlation_nonce", "value": "726907cf0954db14e4ea"},
+  {"note_id": "F16", "operation_id": "OPS-016", "field": "evidence_retention_days", "value": "46"}
+]

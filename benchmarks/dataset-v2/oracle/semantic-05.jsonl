@@ -1,0 +1,11 @@
+{"schema":1,"event_id":"board-20006-e008","board":"board-20006","epoch":1,"sequence":56,"action":"COMMIT","tx":"tx-12","slot":1,"digest":"d321a00c5624af0271f13f81593e5f63842433777e13e344e8b045c8857977ce","success":true,"time":1700089793}
+{"schema":2,"id":"board-20006-e007","device":"board-20006","boot":1,"seq":49,"kind":"reset","transaction":null,"slot":null,"sha256":null,"ok":true,"timestamp":1700627577}
+{"schema":1,"event_id":"board-20006-e006","board":"board-20006","epoch":1,"sequence":42,"action":"VERIFY","tx":"tx-12","slot":1,"digest":"d321a00c5624af0271f13f81593e5f63842433777e13e344e8b045c8857977ce","success":true,"time":1700000736}
+{"schema":1,"event_id":"board-20006-e007","board":"board-20006","epoch":1,"sequence":49,"action":"RESET","tx":null,"slot":null,"digest":null,"success":true,"time":1900000000}
+{"schema":2,"id":"board-20006-e005","device":"board-20006","boot":1,"seq":35,"kind":"stage","transaction":"tx-12","slot":"B","sha256":"d321a00c5624af0271f13f81593e5f63842433777e13e344e8b045c8857977ce","ok":true,"timestamp":1700100914}
+{"schema":1,"event_id":"board-20006-e000","board":"board-20006","epoch":0,"sequence":0,"action":"BASELINE","tx":null,"slot":0,"digest":"14a8aeb951943da675220d8a49b4059529581852ce73d29af75fff85dcb4bfe1","success":true,"time":1700516567}
+{"schema":1,"event_id":"board-20006-e004","board":"board-20006","epoch":0,"sequence":28,"action":"COMMIT","tx":"tx-12","slot":1,"digest":"aa2d18046572ef23503db9965e225430bbc816fe33ab51a1506a2d4af2ba274f","success":true,"time":1700833649}
+{"schema":2,"id":"board-20006-e003","device":"board-20006","boot":0,"seq":21,"kind":"reset","transaction":null,"slot":null,"sha256":null,"ok":false,"timestamp":1700964184}
+{"schema":1,"event_id":"board-20006-e002","board":"board-20006","epoch":0,"sequence":14,"action":"VERIFY","tx":"tx-12","slot":1,"digest":"aa2d18046572ef23503db9965e225430bbc816fe33ab51a1506a2d4af2ba274f","success":true,"time":1700647352}
+{"schema":2,"id":"board-20006-e007","device":"board-20006","boot":1,"seq":49,"kind":"reset","transaction":null,"slot":null,"sha256":null,"ok":true,"timestamp":1700627577}
+{"schema":2,"id":"board-20006-e001","device":"board-20006","boot":0,"seq":7,"kind":"stage","transaction":"tx-12","slot":"B","sha256":"aa2d18046572ef23503db9965e225430bbc816fe33ab51a1506a2d4af2ba274f","ok":true,"timestamp":1700592215}

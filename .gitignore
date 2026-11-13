@@ -14,3 +14,9 @@ plugin-lanes/
 # local tool scratch (esbuild temp redirection, see persona-fork tests)
 .esbuild-tmp/
 
+# Local reproduction runs contain account credentials and private traces.
+/benchmark-runs/
+/artifacts/
+/benchmarks/__pycache__/
+!/benchmarks/results/product-validation/*.log
+

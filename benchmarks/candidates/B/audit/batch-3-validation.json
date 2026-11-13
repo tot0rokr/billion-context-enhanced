@@ -1,0 +1,109 @@
+{
+  "batch": 3,
+  "batch_input_rows": 664,
+  "batch_operations": {
+    "COMMIT": {
+      "accepted": 51,
+      "attempted": 144,
+      "rejected": 93,
+      "reported_success": 139
+    },
+    "ROLLBACK": {
+      "accepted": 6,
+      "attempted": 17,
+      "rejected": 11,
+      "reported_success": 11
+    }
+  },
+  "batch_rejection_reasons": {
+    "commit_failed": 5,
+    "commit_mismatch": 20,
+    "commit_unverified": 24,
+    "commit_without_stage": 44,
+    "duplicate_conflict": 13,
+    "reset_failed": 5,
+    "rollback_failed": 6,
+    "rollback_unverified": 5,
+    "stage_failed": 6,
+    "verify_failed": 20,
+    "verify_mismatch": 4,
+    "verify_without_stage": 15
+  },
+  "batch_retained_events": 510,
+  "batch_totals": {
+    "accepted_rollbacks": 6,
+    "applied_commits": 51,
+    "board_count": 64,
+    "conflicted_ids": 13,
+    "duplicate_replays": 128,
+    "rejected_events": 167
+  },
+  "case_range": [
+    "INC-00129",
+    "INC-00192"
+  ],
+  "contract_revision": "R3",
+  "current_operational_note_count": 48,
+  "full_corpus_input_rows": 1990,
+  "full_corpus_totals": {
+    "accepted_rollbacks": 16,
+    "applied_commits": 150,
+    "board_count": 192,
+    "conflicted_ids": 38,
+    "duplicate_replays": 384,
+    "rejected_events": 502
+  },
+  "operational_notes_as_of_batch": 3,
+  "sha256": {
+    "PHASE_NOTES.md": "2dab65c21a3aded15b5810d69457495776766ff82611b1796080c14b399cddad",
+    "README.md": "1e06e68ed44e36bfa80aea143def37700d95e7e2af28ab1299b3728dadb4695f",
+    "analysis.json": "7f9833813e072dbcba508bc26d1144f2ad8480e8a309d0c57aad225341244383",
+    "audit/README.md": "5b1dddd7f80ff0fb61c0e663431844804714ceb07e1d8d9a1a6c2ced1f08bb54",
+    "audit/batch-1-report.json": "9129c654315a2330ef7a817ad7a803767c65b71105c945891d929b34b41d3d40",
+    "audit/batch-1-trace.json": "3aa35a0c0a70112d8686be54e8e204a6a64a379cfc3fef847d40c21c4f09c1f9",
+    "audit/batch-2-report.json": "8cfab0da3b50a0f2ae0acc0a5ac25d76faa63ac6c4897f3f7df9be5335c1fa07",
+    "audit/batch-2-trace.json": "bcc81d369aa2197dd99c426b6caea89716262dc785e1c64e65707f259ad383c9",
+    "audit/batch-3-report.json": "70b6638cd12163ffe439db336a60bde947e234a6b21a1b4b130abd8707f4e487",
+    "audit/batch-3-trace.json": "1831886416afe7345e4067fc51899c6ac51e7ff83b9505cedbd3795fa5e3ab60",
+    "audit/ingest-batch-3.md": "498b5e4814d60b8340e6ca8e86e6b15275637e1f4ed50a9d96f09030bbce647b",
+    "audit/operations-batch-1.json": "6811457d7715e9467ca80e95151c66b6d3881e6a94f487926e07c49345a99273",
+    "audit/operations-batch-2.json": "d69c6a9b541cc4c0412e6f013b0029953cef4e678a0b397754483afb0f12c4db",
+    "audit/operations-batch-3.json": "76827cf86231e0a7ac944f15d87a08897d40295e17a1d877f359f53268a1dad0",
+    "audit/operations-corrections-batch-3.json": "2b949afe2f757914d0cf379fafa804bda57d43d3eb60d922f1ffccffd822d00c",
+    "audit/operations-current.json": "7606a42afded098a2693887d25e7f4357c9396a5da83c06cb23668fe70f434df",
+    "audit/r2-to-r3-changes.json": "621bc5448f19deaaa240f3154387a8a90262001334629f53e3cb36b0b1680e16",
+    "audit/report-batch-3.md": "bc62106eb87e6a107e3e7803030f1cae6ddd68e73842eb871b5b423f5cd18f36",
+    "audit/state-batch-3.md": "a1aff7399479c6e98fdc3d4bfd879a67ae815d87f9372d6d06f516e5fd202ba5",
+    "audit/visible-r3-report.json": "7f9833813e072dbcba508bc26d1144f2ad8480e8a309d0c57aad225341244383",
+    "audit/visible-r3-trace.json": "df055df32b7d4438fb2a5378ce659c450f3aca50bf0e43d5fb778a80b8d6e83f",
+    "data/visible.jsonl": "403dc5ae6a3ad6da05ab37dffdc0fc0f76b36027e62ba8591a4c439f7d8bf87a",
+    "ingest.py": "543b164dafc3f32fb50e5976c968d18452203bcf075808078b73795e67d6c45c",
+    "reconcile.py": "2fd60020c2eb283368fe79151254cff2835fa6d91a19567a21aa32e261d797a3",
+    "report.py": "361332e37257524fe222e0eb01ceffa1cb3772a5c6acf2f7f699b6ebbcfc549d",
+    "state_machine.py": "67ea8a56a276cdf6d1bddbddef0e11f85cee32add23ff045c9b8c66588cefffa",
+    "tests/test_ingest.py": "9ad9ced7428608ec2a4aabe854c8bd4eaed29f8d0d544218da683d5a2ce51170",
+    "tests/test_public.py": "69bd1d7de0636e948d8d7189296f7b1d03c9d1bd43d1dfd35744a3cab1545731",
+    "tests/test_reconcile.py": "50e2d4551b4126375be2a5f54c3bcb9b475080402d1a04be10a50cf975b59aba",
+    "tests/test_report.py": "de4bd705a2fd37270dda96441f43b03366c5e8bf03bd3d167cc28935461d052f",
+    "tests/test_state_machine.py": "f1304cb6894732570d2c75ef11330af14415a1c4d11b229340f029d1e49b85f5"
+  },
+  "validation": {
+    "all_timestamps_rewritten_without_report_or_trace_change": true,
+    "batch_matches_global_reconciliation_projection": true,
+    "command": "python3 -m unittest discover -s tests -v",
+    "final_cli_command": "python reconcile.py --input data/visible.jsonl --output analysis.json",
+    "full_corpus_shuffle_seeds": [
+      17,
+      20261106
+    ],
+    "generated_unseen_cli_seeds": [
+      317,
+      809,
+      2027
+    ],
+    "python_command_resolution": "Temporary shell function delegates to python3; no python executable is installed.",
+    "r2_to_r3_changed_acceptance_count": 13,
+    "tests_passed": 57,
+    "timestamp_rewrite_seed": 20261106
+  }
+}

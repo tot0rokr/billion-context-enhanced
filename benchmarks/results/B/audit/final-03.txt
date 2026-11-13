@@ -1,0 +1,7 @@
+Batch 2 complete; **50 tests pass**. Results: 54 accepted commits, 5 accepted rollbacks, 165 rejection incidents.
+
+R2 applies to all batches: order by `(board, epoch, sequence, event_id)`; failed VERIFY clears pending verification. Other rules remain unchanged.
+
+[Reports and audit records](/task/audit/README.md) are saved, including regenerated batch 1 results and exact F17–F32 notes.
+
+Unresolved: malformed inputs and missing/conflicted baselines remain outside the contract guarantees.

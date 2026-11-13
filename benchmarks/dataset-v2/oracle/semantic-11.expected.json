@@ -1,0 +1,27 @@
+{
+  "boards": [
+    {
+      "board": "board-20012",
+      "epoch": 1,
+      "active_slot": "B",
+      "active_digest": "f94c9956d915788d750eec169a2c5d02c7305cc12d875af46a6306c09e8de3bd"
+    }
+  ],
+  "incidents": [
+    {
+      "board": "board-20012",
+      "epoch": 0,
+      "sequence": 28,
+      "event_id": "board-20012-e004",
+      "reason": "rollback_failed"
+    }
+  ],
+  "totals": {
+    "board_count": 1,
+    "applied_commits": 2,
+    "accepted_rollbacks": 0,
+    "duplicate_replays": 2,
+    "conflicted_ids": 0,
+    "rejected_events": 1
+  }
+}

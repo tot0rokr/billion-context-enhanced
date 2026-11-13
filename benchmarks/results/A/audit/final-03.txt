@@ -1,0 +1,5 @@
+Batch 2 complete. All 54 tests pass, including public tests. [Reports and audits](/task/audit/README.md) regenerated under R2; exact F01–F32 notes preserved.
+
+R2 now applies to all batches: order by `(board, epoch, sequence, event_id)`, ignore clocks, and clear the pending verified flag on failed VERIFY. Epoch-state preservation remains unchanged.
+
+No unresolved implementation tasks.

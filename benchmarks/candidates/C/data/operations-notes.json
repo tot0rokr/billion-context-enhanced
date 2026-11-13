@@ -1,0 +1,290 @@
+[
+  {
+    "field": "change_ticket",
+    "note_id": "F01",
+    "operation_id": "OPS-001",
+    "value": "revised-CHG-1106-001"
+  },
+  {
+    "field": "approved_rollback_digest",
+    "note_id": "F02",
+    "operation_id": "OPS-002",
+    "value": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+  },
+  {
+    "field": "settle_window_ms",
+    "note_id": "F03",
+    "operation_id": "OPS-003",
+    "value": "17524"
+  },
+  {
+    "field": "forbidden_operator_action",
+    "note_id": "F04",
+    "operation_id": "OPS-004",
+    "value": "revised-reuse-old-epoch-verification"
+  },
+  {
+    "field": "escalation_scope",
+    "note_id": "F05",
+    "operation_id": "OPS-005",
+    "value": "revised-deployment-batch"
+  },
+  {
+    "field": "accepted_boot_status",
+    "note_id": "F06",
+    "operation_id": "OPS-006",
+    "value": "revised-ready-epoch-13"
+  },
+  {
+    "field": "audit_correlation_nonce",
+    "note_id": "F07",
+    "operation_id": "OPS-007",
+    "value": "revised-118a27ca65904294cb9e"
+  },
+  {
+    "field": "evidence_retention_days",
+    "note_id": "F08",
+    "operation_id": "OPS-008",
+    "value": "151"
+  },
+  {
+    "field": "change_ticket",
+    "note_id": "F09",
+    "operation_id": "OPS-009",
+    "value": "CHG-1106-009"
+  },
+  {
+    "field": "approved_rollback_digest",
+    "note_id": "F10",
+    "operation_id": "OPS-010",
+    "value": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+  },
+  {
+    "field": "settle_window_ms",
+    "note_id": "F11",
+    "operation_id": "OPS-011",
+    "value": "18507"
+  },
+  {
+    "field": "forbidden_operator_action",
+    "note_id": "F12",
+    "operation_id": "OPS-012",
+    "value": "reuse-old-epoch-verification"
+  },
+  {
+    "field": "escalation_scope",
+    "note_id": "F13",
+    "operation_id": "OPS-013",
+    "value": "rack"
+  },
+  {
+    "field": "accepted_boot_status",
+    "note_id": "F14",
+    "operation_id": "OPS-014",
+    "value": "ready-epoch-21"
+  },
+  {
+    "field": "audit_correlation_nonce",
+    "note_id": "F15",
+    "operation_id": "OPS-015",
+    "value": "726907cf0954db14e4ea"
+  },
+  {
+    "field": "evidence_retention_days",
+    "note_id": "F16",
+    "operation_id": "OPS-016",
+    "value": "46"
+  },
+  {
+    "field": "change_ticket",
+    "note_id": "F17",
+    "operation_id": "OPS-017",
+    "value": "CHG-1106-017"
+  },
+  {
+    "field": "approved_rollback_digest",
+    "note_id": "F18",
+    "operation_id": "OPS-018",
+    "value": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"
+  },
+  {
+    "field": "settle_window_ms",
+    "note_id": "F19",
+    "operation_id": "OPS-019",
+    "value": "19603"
+  },
+  {
+    "field": "forbidden_operator_action",
+    "note_id": "F20",
+    "operation_id": "OPS-020",
+    "value": "reuse-old-epoch-verification"
+  },
+  {
+    "field": "escalation_scope",
+    "note_id": "F21",
+    "operation_id": "OPS-021",
+    "value": "single-board"
+  },
+  {
+    "field": "accepted_boot_status",
+    "note_id": "F22",
+    "operation_id": "OPS-022",
+    "value": "ready-epoch-29"
+  },
+  {
+    "field": "audit_correlation_nonce",
+    "note_id": "F23",
+    "operation_id": "OPS-023",
+    "value": "4f69c385ab1772576a87"
+  },
+  {
+    "field": "evidence_retention_days",
+    "note_id": "F24",
+    "operation_id": "OPS-024",
+    "value": "54"
+  },
+  {
+    "field": "change_ticket",
+    "note_id": "F25",
+    "operation_id": "OPS-025",
+    "value": "CHG-1106-025"
+  },
+  {
+    "field": "approved_rollback_digest",
+    "note_id": "F26",
+    "operation_id": "OPS-026",
+    "value": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"
+  },
+  {
+    "field": "settle_window_ms",
+    "note_id": "F27",
+    "operation_id": "OPS-027",
+    "value": "20699"
+  },
+  {
+    "field": "forbidden_operator_action",
+    "note_id": "F28",
+    "operation_id": "OPS-028",
+    "value": "reuse-old-epoch-verification"
+  },
+  {
+    "field": "escalation_scope",
+    "note_id": "F29",
+    "operation_id": "OPS-029",
+    "value": "deployment-batch"
+  },
+  {
+    "field": "accepted_boot_status",
+    "note_id": "F30",
+    "operation_id": "OPS-030",
+    "value": "ready-epoch-37"
+  },
+  {
+    "field": "audit_correlation_nonce",
+    "note_id": "F31",
+    "operation_id": "OPS-031",
+    "value": "c3a8bceb370890311a34"
+  },
+  {
+    "field": "evidence_retention_days",
+    "note_id": "F32",
+    "operation_id": "OPS-032",
+    "value": "62"
+  },
+  {
+    "field": "change_ticket",
+    "note_id": "F33",
+    "operation_id": "OPS-033",
+    "value": "CHG-1106-033"
+  },
+  {
+    "field": "approved_rollback_digest",
+    "note_id": "F34",
+    "operation_id": "OPS-034",
+    "value": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79"
+  },
+  {
+    "field": "settle_window_ms",
+    "note_id": "F35",
+    "operation_id": "OPS-035",
+    "value": "21795"
+  },
+  {
+    "field": "forbidden_operator_action",
+    "note_id": "F36",
+    "operation_id": "OPS-036",
+    "value": "reuse-old-epoch-verification"
+  },
+  {
+    "field": "escalation_scope",
+    "note_id": "F37",
+    "operation_id": "OPS-037",
+    "value": "rack"
+  },
+  {
+    "field": "accepted_boot_status",
+    "note_id": "F38",
+    "operation_id": "OPS-038",
+    "value": "ready-epoch-45"
+  },
+  {
+    "field": "audit_correlation_nonce",
+    "note_id": "F39",
+    "operation_id": "OPS-039",
+    "value": "f88754d0b542d90447a5"
+  },
+  {
+    "field": "evidence_retention_days",
+    "note_id": "F40",
+    "operation_id": "OPS-040",
+    "value": "70"
+  },
+  {
+    "field": "change_ticket",
+    "note_id": "F41",
+    "operation_id": "OPS-041",
+    "value": "CHG-1106-041"
+  },
+  {
+    "field": "approved_rollback_digest",
+    "note_id": "F42",
+    "operation_id": "OPS-042",
+    "value": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09"
+  },
+  {
+    "field": "settle_window_ms",
+    "note_id": "F43",
+    "operation_id": "OPS-043",
+    "value": "22891"
+  },
+  {
+    "field": "forbidden_operator_action",
+    "note_id": "F44",
+    "operation_id": "OPS-044",
+    "value": "reuse-old-epoch-verification"
+  },
+  {
+    "field": "escalation_scope",
+    "note_id": "F45",
+    "operation_id": "OPS-045",
+    "value": "single-board"
+  },
+  {
+    "field": "accepted_boot_status",
+    "note_id": "F46",
+    "operation_id": "OPS-046",
+    "value": "ready-epoch-53"
+  },
+  {
+    "field": "audit_correlation_nonce",
+    "note_id": "F47",
+    "operation_id": "OPS-047",
+    "value": "8e22fa7c84b9d3a89b8d"
+  },
+  {
+    "field": "evidence_retention_days",
+    "note_id": "F48",
+    "operation_id": "OPS-048",
+    "value": "78"
+  }
+]

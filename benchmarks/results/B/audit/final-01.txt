@@ -1,0 +1,7 @@
+Implemented and integrated initial R1. All 26 tests pass, including public tests; shuffled visible data produces identical results. Decisions and handoff saved in [PHASE_NOTES.md](/task/PHASE_NOTES.md). No commits.
+
+Exactly three subagents, using the same inherited model:
+
+- `/root/ingest_schema`
+- `/root/state_machine`
+- `/root/report_audit`

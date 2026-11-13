@@ -1,0 +1,119 @@
+{
+  "batch": 1,
+  "corrections_applied_from_batch": 3,
+  "notes": [
+    {
+      "case_id": "INC-00001",
+      "field": "change ticket",
+      "note_id": "F01",
+      "operations_id": "OPS-001",
+      "value": "revised-CHG-1106-001"
+    },
+    {
+      "case_id": "INC-00002",
+      "field": "approved rollback digest",
+      "note_id": "F02",
+      "operations_id": "OPS-002",
+      "value": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+    },
+    {
+      "case_id": "INC-00003",
+      "field": "settle window in milliseconds",
+      "note_id": "F03",
+      "operations_id": "OPS-003",
+      "value": "17524"
+    },
+    {
+      "case_id": "INC-00004",
+      "field": "forbidden operator action",
+      "note_id": "F04",
+      "operations_id": "OPS-004",
+      "value": "revised-reuse-old-epoch-verification"
+    },
+    {
+      "case_id": "INC-00005",
+      "field": "escalation scope",
+      "note_id": "F05",
+      "operations_id": "OPS-005",
+      "value": "revised-deployment-batch"
+    },
+    {
+      "case_id": "INC-00006",
+      "field": "accepted boot status",
+      "note_id": "F06",
+      "operations_id": "OPS-006",
+      "value": "revised-ready-epoch-13"
+    },
+    {
+      "case_id": "INC-00007",
+      "field": "audit correlation nonce",
+      "note_id": "F07",
+      "operations_id": "OPS-007",
+      "value": "revised-118a27ca65904294cb9e"
+    },
+    {
+      "case_id": "INC-00008",
+      "field": "evidence retention in days",
+      "note_id": "F08",
+      "operations_id": "OPS-008",
+      "value": "151"
+    },
+    {
+      "case_id": "INC-00009",
+      "field": "change ticket",
+      "note_id": "F09",
+      "operations_id": "OPS-009",
+      "value": "CHG-1106-009"
+    },
+    {
+      "case_id": "INC-00010",
+      "field": "approved rollback digest",
+      "note_id": "F10",
+      "operations_id": "OPS-010",
+      "value": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+    },
+    {
+      "case_id": "INC-00011",
+      "field": "settle window in milliseconds",
+      "note_id": "F11",
+      "operations_id": "OPS-011",
+      "value": "18507"
+    },
+    {
+      "case_id": "INC-00012",
+      "field": "forbidden operator action",
+      "note_id": "F12",
+      "operations_id": "OPS-012",
+      "value": "reuse-old-epoch-verification"
+    },
+    {
+      "case_id": "INC-00013",
+      "field": "escalation scope",
+      "note_id": "F13",
+      "operations_id": "OPS-013",
+      "value": "rack"
+    },
+    {
+      "case_id": "INC-00014",
+      "field": "accepted boot status",
+      "note_id": "F14",
+      "operations_id": "OPS-014",
+      "value": "ready-epoch-21"
+    },
+    {
+      "case_id": "INC-00015",
+      "field": "audit correlation nonce",
+      "note_id": "F15",
+      "operations_id": "OPS-015",
+      "value": "726907cf0954db14e4ea"
+    },
+    {
+      "case_id": "INC-00016",
+      "field": "evidence retention in days",
+      "note_id": "F16",
+      "operations_id": "OPS-016",
+      "value": "46"
+    }
+  ],
+  "usage": "Audit/reporting values only; these notes do not authorize actions or revise reconciliation rules."
+}

@@ -1,0 +1,4613 @@
+{
+  "design": "Historical A/B plus one later C run; not a contemporaneous randomized comparison.",
+  "metric_scope": "Reported usage only; unreported cancelled requests are unknown. Cached input and reasoning are subsets.",
+  "arms": {
+    "A": {
+      "arm": "A",
+      "completed": true,
+      "wall_s": 2013.8004705905914,
+      "implementation_wall_s": 1885.9065566062927,
+      "memory_probe_wall_s": 127.88329696655273,
+      "phase_seconds": {
+        "1": 259.13471150398254,
+        "2": 494.7799587249756,
+        "3": 402.05184721946716,
+        "4": 506.833945274353,
+        "5": 223.1060938835144,
+        "6": 39.728325843811035,
+        "7": 51.5516676902771,
+        "8": 36.6033034324646
+      },
+      "reported_tokens": {
+        "input_tokens": 18827367,
+        "cached_input_tokens": 18147328,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 123555,
+        "reasoning_output_tokens": 25004,
+        "uncached_input_tokens": 680039
+      },
+      "token_source": "Codex OTLP terminal usage events, all threads",
+      "host_visible_tokens": {
+        "input_tokens": 18827367,
+        "cached_input_tokens": 18147328,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 123555,
+        "reasoning_output_tokens": 25004,
+        "uncached_input_tokens": 680039
+      },
+      "phase_host_visible_tokens": {
+        "1": {
+          "input_tokens": 966279,
+          "cached_input_tokens": 827392,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 18682,
+          "reasoning_output_tokens": 2749
+        },
+        "2": {
+          "input_tokens": 2981061,
+          "cached_input_tokens": 2814848,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 33311,
+          "reasoning_output_tokens": 7010
+        },
+        "3": {
+          "input_tokens": 3740212,
+          "cached_input_tokens": 3585664,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 26512,
+          "reasoning_output_tokens": 4718
+        },
+        "4": {
+          "input_tokens": 7025415,
+          "cached_input_tokens": 6863744,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 34779,
+          "reasoning_output_tokens": 7012
+        },
+        "5": {
+          "input_tokens": 2198879,
+          "cached_input_tokens": 2177920,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 6211,
+          "reasoning_output_tokens": 2529
+        },
+        "6": {
+          "input_tokens": 382035,
+          "cached_input_tokens": 370176,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1287,
+          "reasoning_output_tokens": 516
+        },
+        "7": {
+          "input_tokens": 762573,
+          "cached_input_tokens": 749568,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1593,
+          "reasoning_output_tokens": 470
+        },
+        "8": {
+          "input_tokens": 770913,
+          "cached_input_tokens": 758016,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1180,
+          "reasoning_output_tokens": 0
+        }
+      },
+      "measured_upstream_responses": 204,
+      "provider_request_errors": 0,
+      "provider_missing_usage_requests": [],
+      "zero_output_reported_input": 191392,
+      "peak_host_reported_input": 381240,
+      "peak_upstream_reported_input": 381240,
+      "context_management_responses": 0,
+      "context_management_response_input_tokens": 0,
+      "context_management_response_output_tokens": 0,
+      "subagent_threads": 3,
+      "models_seen": [
+        "gpt-6-astra"
+      ],
+      "effective_windows": [
+        828400
+      ],
+      "compression_log_receipts": [],
+      "compression_noop_count": 0,
+      "phase6_tool_free": true,
+      "phase6_tool_events": [],
+      "code": {
+        "phase": "final",
+        "hidden_pass": 13,
+        "hidden_total": 13,
+        "cases": {
+          "unseen_mixed": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.845,
+            "case_artifacts": "/tmp/bili-grade-case-088xkq4w",
+            "exact": true,
+            "boards_correct": 72,
+            "boards_total": 72,
+            "incident_true_positive": 187,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-00": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.821,
+            "case_artifacts": "/tmp/bili-grade-case-yp0dnn8g",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-01": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.825,
+            "case_artifacts": "/tmp/bili-grade-case-3n8i_p95",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-02": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.774,
+            "case_artifacts": "/tmp/bili-grade-case-9tscqkxg",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 2,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-03": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.842,
+            "case_artifacts": "/tmp/bili-grade-case-b_7f2kxi",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 1,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-04": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.791,
+            "case_artifacts": "/tmp/bili-grade-case-kg4hagoa",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 5,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-05": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.751,
+            "case_artifacts": "/tmp/bili-grade-case-z4_86e30",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 2,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-06": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.743,
+            "case_artifacts": "/tmp/bili-grade-case-648410jc",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-07": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.755,
+            "case_artifacts": "/tmp/bili-grade-case-lykfqa06",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 1,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-08": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.766,
+            "case_artifacts": "/tmp/bili-grade-case-w1aouf2b",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-09": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.78,
+            "case_artifacts": "/tmp/bili-grade-case-6en7o_yc",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 4,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-10": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.781,
+            "case_artifacts": "/tmp/bili-grade-case-rw1uvlqk",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 2,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-11": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.855,
+            "case_artifacts": "/tmp/bili-grade-case-xohj959b",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 1,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          }
+        },
+        "visible_report": {
+          "exact": true,
+          "boards_correct": 192,
+          "boards_total": 192,
+          "incident_true_positive": 502,
+          "incident_false_positive": 0,
+          "incident_false_negative": 0,
+          "totals_correct": true
+        }
+      },
+      "memory": {
+        "phase": "memory",
+        "correct": 48,
+        "total": 48,
+        "valid_json": true,
+        "missing": 0,
+        "plain_json_format": true,
+        "extra_keys": [],
+        "stale_values": 0,
+        "revised_correct": 8,
+        "revised_total": 8,
+        "outcomes": [
+          {
+            "id": "F01",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-CHG-1106-001",
+            "expected": "revised-CHG-1106-001"
+          },
+          {
+            "id": "F02",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e",
+            "expected": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+          },
+          {
+            "id": "F03",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "17524",
+            "expected": "17524"
+          },
+          {
+            "id": "F04",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-reuse-old-epoch-verification",
+            "expected": "revised-reuse-old-epoch-verification"
+          },
+          {
+            "id": "F05",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-deployment-batch",
+            "expected": "revised-deployment-batch"
+          },
+          {
+            "id": "F06",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-ready-epoch-13",
+            "expected": "revised-ready-epoch-13"
+          },
+          {
+            "id": "F07",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-118a27ca65904294cb9e",
+            "expected": "revised-118a27ca65904294cb9e"
+          },
+          {
+            "id": "F08",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "151",
+            "expected": "151"
+          },
+          {
+            "id": "F09",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-009",
+            "expected": "CHG-1106-009"
+          },
+          {
+            "id": "F10",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8",
+            "expected": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+          },
+          {
+            "id": "F11",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "18507",
+            "expected": "18507"
+          },
+          {
+            "id": "F12",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F13",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F14",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-21",
+            "expected": "ready-epoch-21"
+          },
+          {
+            "id": "F15",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "726907cf0954db14e4ea",
+            "expected": "726907cf0954db14e4ea"
+          },
+          {
+            "id": "F16",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "46",
+            "expected": "46"
+          },
+          {
+            "id": "F17",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-017",
+            "expected": "CHG-1106-017"
+          },
+          {
+            "id": "F18",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277",
+            "expected": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"
+          },
+          {
+            "id": "F19",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "19603",
+            "expected": "19603"
+          },
+          {
+            "id": "F20",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F21",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F22",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-29",
+            "expected": "ready-epoch-29"
+          },
+          {
+            "id": "F23",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "4f69c385ab1772576a87",
+            "expected": "4f69c385ab1772576a87"
+          },
+          {
+            "id": "F24",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "54",
+            "expected": "54"
+          },
+          {
+            "id": "F25",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-025",
+            "expected": "CHG-1106-025"
+          },
+          {
+            "id": "F26",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f",
+            "expected": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"
+          },
+          {
+            "id": "F27",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "20699",
+            "expected": "20699"
+          },
+          {
+            "id": "F28",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F29",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "deployment-batch",
+            "expected": "deployment-batch"
+          },
+          {
+            "id": "F30",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-37",
+            "expected": "ready-epoch-37"
+          },
+          {
+            "id": "F31",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "c3a8bceb370890311a34",
+            "expected": "c3a8bceb370890311a34"
+          },
+          {
+            "id": "F32",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "62",
+            "expected": "62"
+          },
+          {
+            "id": "F33",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-033",
+            "expected": "CHG-1106-033"
+          },
+          {
+            "id": "F34",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79",
+            "expected": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79"
+          },
+          {
+            "id": "F35",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "21795",
+            "expected": "21795"
+          },
+          {
+            "id": "F36",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F37",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F38",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-45",
+            "expected": "ready-epoch-45"
+          },
+          {
+            "id": "F39",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "f88754d0b542d90447a5",
+            "expected": "f88754d0b542d90447a5"
+          },
+          {
+            "id": "F40",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "70",
+            "expected": "70"
+          },
+          {
+            "id": "F41",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-041",
+            "expected": "CHG-1106-041"
+          },
+          {
+            "id": "F42",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09",
+            "expected": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09"
+          },
+          {
+            "id": "F43",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "22891",
+            "expected": "22891"
+          },
+          {
+            "id": "F44",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F45",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F46",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-53",
+            "expected": "ready-epoch-53"
+          },
+          {
+            "id": "F47",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "8e22fa7c84b9d3a89b8d",
+            "expected": "8e22fa7c84b9d3a89b8d"
+          },
+          {
+            "id": "F48",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "78",
+            "expected": "78"
+          }
+        ],
+        "tool_free_adherence": "runner must verify from trace"
+      },
+      "engine_recovery": {
+        "phase": "retrieval",
+        "correct": 48,
+        "total": 48,
+        "valid_json": true,
+        "missing": 0,
+        "plain_json_format": true,
+        "extra_keys": [],
+        "stale_values": 0,
+        "revised_correct": 8,
+        "revised_total": 8,
+        "outcomes": [
+          {
+            "id": "F01",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-CHG-1106-001",
+            "expected": "revised-CHG-1106-001"
+          },
+          {
+            "id": "F02",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e",
+            "expected": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+          },
+          {
+            "id": "F03",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "17524",
+            "expected": "17524"
+          },
+          {
+            "id": "F04",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-reuse-old-epoch-verification",
+            "expected": "revised-reuse-old-epoch-verification"
+          },
+          {
+            "id": "F05",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-deployment-batch",
+            "expected": "revised-deployment-batch"
+          },
+          {
+            "id": "F06",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-ready-epoch-13",
+            "expected": "revised-ready-epoch-13"
+          },
+          {
+            "id": "F07",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-118a27ca65904294cb9e",
+            "expected": "revised-118a27ca65904294cb9e"
+          },
+          {
+            "id": "F08",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "151",
+            "expected": "151"
+          },
+          {
+            "id": "F09",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-009",
+            "expected": "CHG-1106-009"
+          },
+          {
+            "id": "F10",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8",
+            "expected": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+          },
+          {
+            "id": "F11",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "18507",
+            "expected": "18507"
+          },
+          {
+            "id": "F12",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F13",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F14",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-21",
+            "expected": "ready-epoch-21"
+          },
+          {
+            "id": "F15",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "726907cf0954db14e4ea",
+            "expected": "726907cf0954db14e4ea"
+          },
+          {
+            "id": "F16",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "46",
+            "expected": "46"
+          },
+          {
+            "id": "F17",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-017",
+            "expected": "CHG-1106-017"
+          },
+          {
+            "id": "F18",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277",
+            "expected": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"
+          },
+          {
+            "id": "F19",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "19603",
+            "expected": "19603"
+          },
+          {
+            "id": "F20",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F21",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F22",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-29",
+            "expected": "ready-epoch-29"
+          },
+          {
+            "id": "F23",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "4f69c385ab1772576a87",
+            "expected": "4f69c385ab1772576a87"
+          },
+          {
+            "id": "F24",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "54",
+            "expected": "54"
+          },
+          {
+            "id": "F25",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-025",
+            "expected": "CHG-1106-025"
+          },
+          {
+            "id": "F26",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f",
+            "expected": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"
+          },
+          {
+            "id": "F27",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "20699",
+            "expected": "20699"
+          },
+          {
+            "id": "F28",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F29",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "deployment-batch",
+            "expected": "deployment-batch"
+          },
+          {
+            "id": "F30",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-37",
+            "expected": "ready-epoch-37"
+          },
+          {
+            "id": "F31",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "c3a8bceb370890311a34",
+            "expected": "c3a8bceb370890311a34"
+          },
+          {
+            "id": "F32",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "62",
+            "expected": "62"
+          },
+          {
+            "id": "F33",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-033",
+            "expected": "CHG-1106-033"
+          },
+          {
+            "id": "F34",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79",
+            "expected": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79"
+          },
+          {
+            "id": "F35",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "21795",
+            "expected": "21795"
+          },
+          {
+            "id": "F36",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F37",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F38",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-45",
+            "expected": "ready-epoch-45"
+          },
+          {
+            "id": "F39",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "f88754d0b542d90447a5",
+            "expected": "f88754d0b542d90447a5"
+          },
+          {
+            "id": "F40",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "70",
+            "expected": "70"
+          },
+          {
+            "id": "F41",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-041",
+            "expected": "CHG-1106-041"
+          },
+          {
+            "id": "F42",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09",
+            "expected": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09"
+          },
+          {
+            "id": "F43",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "22891",
+            "expected": "22891"
+          },
+          {
+            "id": "F44",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F45",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F46",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-53",
+            "expected": "ready-epoch-53"
+          },
+          {
+            "id": "F47",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "8e22fa7c84b9d3a89b8d",
+            "expected": "8e22fa7c84b9d3a89b8d"
+          },
+          {
+            "id": "F48",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "78",
+            "expected": "78"
+          }
+        ],
+        "tool_free_adherence": "runner must verify from trace"
+      },
+      "file_recovery": {
+        "phase": "retrieval",
+        "correct": 48,
+        "total": 48,
+        "valid_json": true,
+        "missing": 0,
+        "plain_json_format": true,
+        "extra_keys": [],
+        "stale_values": 0,
+        "revised_correct": 8,
+        "revised_total": 8,
+        "outcomes": [
+          {
+            "id": "F01",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-CHG-1106-001",
+            "expected": "revised-CHG-1106-001"
+          },
+          {
+            "id": "F02",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e",
+            "expected": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+          },
+          {
+            "id": "F03",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "17524",
+            "expected": "17524"
+          },
+          {
+            "id": "F04",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-reuse-old-epoch-verification",
+            "expected": "revised-reuse-old-epoch-verification"
+          },
+          {
+            "id": "F05",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-deployment-batch",
+            "expected": "revised-deployment-batch"
+          },
+          {
+            "id": "F06",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-ready-epoch-13",
+            "expected": "revised-ready-epoch-13"
+          },
+          {
+            "id": "F07",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-118a27ca65904294cb9e",
+            "expected": "revised-118a27ca65904294cb9e"
+          },
+          {
+            "id": "F08",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "151",
+            "expected": "151"
+          },
+          {
+            "id": "F09",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-009",
+            "expected": "CHG-1106-009"
+          },
+          {
+            "id": "F10",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8",
+            "expected": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+          },
+          {
+            "id": "F11",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "18507",
+            "expected": "18507"
+          },
+          {
+            "id": "F12",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F13",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F14",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-21",
+            "expected": "ready-epoch-21"
+          },
+          {
+            "id": "F15",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "726907cf0954db14e4ea",
+            "expected": "726907cf0954db14e4ea"
+          },
+          {
+            "id": "F16",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "46",
+            "expected": "46"
+          },
+          {
+            "id": "F17",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-017",
+            "expected": "CHG-1106-017"
+          },
+          {
+            "id": "F18",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277",
+            "expected": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"
+          },
+          {
+            "id": "F19",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "19603",
+            "expected": "19603"
+          },
+          {
+            "id": "F20",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F21",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F22",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-29",
+            "expected": "ready-epoch-29"
+          },
+          {
+            "id": "F23",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "4f69c385ab1772576a87",
+            "expected": "4f69c385ab1772576a87"
+          },
+          {
+            "id": "F24",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "54",
+            "expected": "54"
+          },
+          {
+            "id": "F25",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-025",
+            "expected": "CHG-1106-025"
+          },
+          {
+            "id": "F26",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f",
+            "expected": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"
+          },
+          {
+            "id": "F27",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "20699",
+            "expected": "20699"
+          },
+          {
+            "id": "F28",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F29",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "deployment-batch",
+            "expected": "deployment-batch"
+          },
+          {
+            "id": "F30",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-37",
+            "expected": "ready-epoch-37"
+          },
+          {
+            "id": "F31",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "c3a8bceb370890311a34",
+            "expected": "c3a8bceb370890311a34"
+          },
+          {
+            "id": "F32",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "62",
+            "expected": "62"
+          },
+          {
+            "id": "F33",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-033",
+            "expected": "CHG-1106-033"
+          },
+          {
+            "id": "F34",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79",
+            "expected": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79"
+          },
+          {
+            "id": "F35",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "21795",
+            "expected": "21795"
+          },
+          {
+            "id": "F36",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F37",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F38",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-45",
+            "expected": "ready-epoch-45"
+          },
+          {
+            "id": "F39",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "f88754d0b542d90447a5",
+            "expected": "f88754d0b542d90447a5"
+          },
+          {
+            "id": "F40",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "70",
+            "expected": "70"
+          },
+          {
+            "id": "F41",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-041",
+            "expected": "CHG-1106-041"
+          },
+          {
+            "id": "F42",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09",
+            "expected": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09"
+          },
+          {
+            "id": "F43",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "22891",
+            "expected": "22891"
+          },
+          {
+            "id": "F44",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F45",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F46",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-53",
+            "expected": "ready-epoch-53"
+          },
+          {
+            "id": "F47",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "8e22fa7c84b9d3a89b8d",
+            "expected": "8e22fa7c84b9d3a89b8d"
+          },
+          {
+            "id": "F48",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "78",
+            "expected": "78"
+          }
+        ],
+        "tool_free_adherence": "runner must verify from trace"
+      },
+      "prompt_hashes": {
+        "1": "dd7f47683f5108909fec6b372987a52f3468b9e5d40595f26389cdf08505e525",
+        "2": "2605302ed0f269a051554d02a308df0170a9bd1a437cae2a0b5529dcad0c28b6",
+        "3": "fbc1dae8428a96a218a28884fd83f07566ba2a3b12447dd8896e460aa1e7b5d5",
+        "4": "9db2a083d91d3f45c99638bf516a371848da447116c697b545b4aaad4b52c2ef",
+        "5": "d6282c99631914ac406bd67e8ea4c785036c8c51e208a2b9775ffb9abee30476",
+        "6": "8b04cf7ca2fb28302c460c975dd9e7ccacb654b9c1fe31362ecb08f022266c5d",
+        "7": "3ae3f1a959b97f7ef681c170093658023c9c1ee18a4c078640b3ed92e1f18d44",
+        "8": "b12d1a294366f76de5415013924e46f1a83de559d2139be76735bc14903bcab3"
+      },
+      "date_utc": "2026-11-06"
+    },
+    "B": {
+      "arm": "B",
+      "completed": true,
+      "wall_s": 2435.8299820423126,
+      "implementation_wall_s": 2297.53697514534,
+      "memory_probe_wall_s": 138.2761263847351,
+      "phase_seconds": {
+        "1": 311.5360643863678,
+        "2": 547.4789896011353,
+        "3": 524.4286801815033,
+        "4": 699.2235600948334,
+        "5": 214.86968088150024,
+        "6": 29.532409191131592,
+        "7": 58.43419313430786,
+        "8": 50.309524059295654
+      },
+      "reported_tokens": {
+        "input_tokens": 13798776,
+        "output_tokens": 118764,
+        "cached_input_tokens": 12943488,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 19747,
+        "uncached_input_tokens": 855288
+      },
+      "token_source": "bili upstream response observer",
+      "host_visible_tokens": {
+        "input_tokens": 10876012,
+        "cached_input_tokens": 10127360,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 100103,
+        "reasoning_output_tokens": 18312,
+        "uncached_input_tokens": 748652
+      },
+      "phase_host_visible_tokens": {
+        "1": {
+          "input_tokens": 1157368,
+          "cached_input_tokens": 1030016,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 16266,
+          "reasoning_output_tokens": 1638
+        },
+        "2": {
+          "input_tokens": 2079226,
+          "cached_input_tokens": 1862912,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 24292,
+          "reasoning_output_tokens": 4328
+        },
+        "3": {
+          "input_tokens": 2562387,
+          "cached_input_tokens": 2374016,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 24226,
+          "reasoning_output_tokens": 4512
+        },
+        "4": {
+          "input_tokens": 3541794,
+          "cached_input_tokens": 3355776,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 25840,
+          "reasoning_output_tokens": 4751
+        },
+        "5": {
+          "input_tokens": 898578,
+          "cached_input_tokens": 881280,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 5493,
+          "reasoning_output_tokens": 2017
+        },
+        "6": {
+          "input_tokens": 121906,
+          "cached_input_tokens": 119552,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1156,
+          "reasoning_output_tokens": 385
+        },
+        "7": {
+          "input_tokens": 254474,
+          "cached_input_tokens": 249856,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1213,
+          "reasoning_output_tokens": 260
+        },
+        "8": {
+          "input_tokens": 260279,
+          "cached_input_tokens": 253952,
+          "cache_write_input_tokens": 0,
+          "output_tokens": 1617,
+          "reasoning_output_tokens": 421
+        }
+      },
+      "measured_upstream_responses": 216,
+      "provider_request_errors": 12,
+      "provider_missing_usage_requests": [
+        "0236510d-7680-49df-8915-3b2d827f24d1",
+        "076677b2-be9c-4b8e-8627-60b901525d5f",
+        "13ea234a-effe-46df-a942-cfb22ae009e4",
+        "23fc0845-b29b-4221-8288-2bc9a495dd5f",
+        "385309ad-f491-4ab8-994a-8559f7a161ab",
+        "4891024a-057e-4f4e-99af-9be4226546ab",
+        "64f75e96-943d-43e1-80bc-c83d9d912026",
+        "67b45ef2-a5c6-46e5-b5a0-a08b9ba0171f",
+        "99de3a60-423a-486a-93ad-f32edb6a326e",
+        "a42b74a5-8a18-40dd-89b8-bf177f31b1d7",
+        "bcf48f12-3203-40fd-a5c6-51637952f675",
+        "ddf135d5-da3f-4960-8098-2f998a48c53a"
+      ],
+      "zero_output_reported_input": 0,
+      "peak_host_reported_input": 170015,
+      "peak_upstream_reported_input": 191641,
+      "context_management_responses": 25,
+      "context_management_response_input_tokens": 2922764,
+      "context_management_response_output_tokens": 18661,
+      "subagent_threads": 3,
+      "models_seen": [
+        "gpt-6-astra"
+      ],
+      "effective_windows": [
+        828400
+      ],
+      "compression_log_receipts": [
+        [
+          "m00001–m00060",
+          "1",
+          "29409"
+        ],
+        [
+          "m00061–m00081, m00082–m00107",
+          "2",
+          "62474"
+        ],
+        [
+          "m00108–m00126, m00127–m00147",
+          "2",
+          "88797"
+        ],
+        [
+          "m00159–m00176",
+          "1",
+          "12986"
+        ],
+        [
+          "m00158–m00158, m00179–m00187, m00189–m00208",
+          "2",
+          "20199"
+        ]
+      ],
+      "compression_noop_count": 7,
+      "phase6_tool_free": true,
+      "phase6_tool_events": [],
+      "code": {
+        "phase": "final",
+        "hidden_pass": 13,
+        "hidden_total": 13,
+        "cases": {
+          "unseen_mixed": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.779,
+            "case_artifacts": "/tmp/bili-grade-case-vjyt6850",
+            "exact": true,
+            "boards_correct": 72,
+            "boards_total": 72,
+            "incident_true_positive": 187,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-00": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.823,
+            "case_artifacts": "/tmp/bili-grade-case-tnsh1z4k",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-01": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.812,
+            "case_artifacts": "/tmp/bili-grade-case-7wiw2qy5",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-02": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.829,
+            "case_artifacts": "/tmp/bili-grade-case-jd7o4rgy",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 2,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-03": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.843,
+            "case_artifacts": "/tmp/bili-grade-case-po1ze7ev",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 1,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-04": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.82,
+            "case_artifacts": "/tmp/bili-grade-case-knrvzbhi",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 5,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-05": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.826,
+            "case_artifacts": "/tmp/bili-grade-case-uejyfy_a",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 2,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-06": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.963,
+            "case_artifacts": "/tmp/bili-grade-case-0ehsd29w",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-07": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.776,
+            "case_artifacts": "/tmp/bili-grade-case-m2kdqw6o",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 1,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-08": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.82,
+            "case_artifacts": "/tmp/bili-grade-case-35nzhkrm",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-09": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.802,
+            "case_artifacts": "/tmp/bili-grade-case-ieh0mkv6",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 4,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-10": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.811,
+            "case_artifacts": "/tmp/bili-grade-case-ymi47ssj",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 2,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-11": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.823,
+            "case_artifacts": "/tmp/bili-grade-case-80x2nupy",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 1,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          }
+        },
+        "visible_report": {
+          "exact": true,
+          "boards_correct": 192,
+          "boards_total": 192,
+          "incident_true_positive": 502,
+          "incident_false_positive": 0,
+          "incident_false_negative": 0,
+          "totals_correct": true
+        }
+      },
+      "memory": {
+        "phase": "memory",
+        "correct": 48,
+        "total": 48,
+        "valid_json": true,
+        "missing": 0,
+        "plain_json_format": true,
+        "extra_keys": [],
+        "stale_values": 0,
+        "revised_correct": 8,
+        "revised_total": 8,
+        "outcomes": [
+          {
+            "id": "F01",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-CHG-1106-001",
+            "expected": "revised-CHG-1106-001"
+          },
+          {
+            "id": "F02",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e",
+            "expected": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+          },
+          {
+            "id": "F03",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "17524",
+            "expected": "17524"
+          },
+          {
+            "id": "F04",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-reuse-old-epoch-verification",
+            "expected": "revised-reuse-old-epoch-verification"
+          },
+          {
+            "id": "F05",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-deployment-batch",
+            "expected": "revised-deployment-batch"
+          },
+          {
+            "id": "F06",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-ready-epoch-13",
+            "expected": "revised-ready-epoch-13"
+          },
+          {
+            "id": "F07",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-118a27ca65904294cb9e",
+            "expected": "revised-118a27ca65904294cb9e"
+          },
+          {
+            "id": "F08",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "151",
+            "expected": "151"
+          },
+          {
+            "id": "F09",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-009",
+            "expected": "CHG-1106-009"
+          },
+          {
+            "id": "F10",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8",
+            "expected": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+          },
+          {
+            "id": "F11",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "18507",
+            "expected": "18507"
+          },
+          {
+            "id": "F12",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F13",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F14",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-21",
+            "expected": "ready-epoch-21"
+          },
+          {
+            "id": "F15",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "726907cf0954db14e4ea",
+            "expected": "726907cf0954db14e4ea"
+          },
+          {
+            "id": "F16",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "46",
+            "expected": "46"
+          },
+          {
+            "id": "F17",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-017",
+            "expected": "CHG-1106-017"
+          },
+          {
+            "id": "F18",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277",
+            "expected": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"
+          },
+          {
+            "id": "F19",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "19603",
+            "expected": "19603"
+          },
+          {
+            "id": "F20",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F21",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F22",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-29",
+            "expected": "ready-epoch-29"
+          },
+          {
+            "id": "F23",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "4f69c385ab1772576a87",
+            "expected": "4f69c385ab1772576a87"
+          },
+          {
+            "id": "F24",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "54",
+            "expected": "54"
+          },
+          {
+            "id": "F25",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-025",
+            "expected": "CHG-1106-025"
+          },
+          {
+            "id": "F26",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f",
+            "expected": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"
+          },
+          {
+            "id": "F27",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "20699",
+            "expected": "20699"
+          },
+          {
+            "id": "F28",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F29",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "deployment-batch",
+            "expected": "deployment-batch"
+          },
+          {
+            "id": "F30",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-37",
+            "expected": "ready-epoch-37"
+          },
+          {
+            "id": "F31",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "c3a8bceb370890311a34",
+            "expected": "c3a8bceb370890311a34"
+          },
+          {
+            "id": "F32",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "62",
+            "expected": "62"
+          },
+          {
+            "id": "F33",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-033",
+            "expected": "CHG-1106-033"
+          },
+          {
+            "id": "F34",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79",
+            "expected": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79"
+          },
+          {
+            "id": "F35",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "21795",
+            "expected": "21795"
+          },
+          {
+            "id": "F36",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F37",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F38",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-45",
+            "expected": "ready-epoch-45"
+          },
+          {
+            "id": "F39",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "f88754d0b542d90447a5",
+            "expected": "f88754d0b542d90447a5"
+          },
+          {
+            "id": "F40",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "70",
+            "expected": "70"
+          },
+          {
+            "id": "F41",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-041",
+            "expected": "CHG-1106-041"
+          },
+          {
+            "id": "F42",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09",
+            "expected": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09"
+          },
+          {
+            "id": "F43",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "22891",
+            "expected": "22891"
+          },
+          {
+            "id": "F44",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F45",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F46",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-53",
+            "expected": "ready-epoch-53"
+          },
+          {
+            "id": "F47",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "8e22fa7c84b9d3a89b8d",
+            "expected": "8e22fa7c84b9d3a89b8d"
+          },
+          {
+            "id": "F48",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "78",
+            "expected": "78"
+          }
+        ],
+        "tool_free_adherence": "runner must verify from trace"
+      },
+      "engine_recovery": {
+        "phase": "retrieval",
+        "correct": 48,
+        "total": 48,
+        "valid_json": true,
+        "missing": 0,
+        "plain_json_format": true,
+        "extra_keys": [],
+        "stale_values": 0,
+        "revised_correct": 8,
+        "revised_total": 8,
+        "outcomes": [
+          {
+            "id": "F01",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-CHG-1106-001",
+            "expected": "revised-CHG-1106-001"
+          },
+          {
+            "id": "F02",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e",
+            "expected": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+          },
+          {
+            "id": "F03",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "17524",
+            "expected": "17524"
+          },
+          {
+            "id": "F04",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-reuse-old-epoch-verification",
+            "expected": "revised-reuse-old-epoch-verification"
+          },
+          {
+            "id": "F05",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-deployment-batch",
+            "expected": "revised-deployment-batch"
+          },
+          {
+            "id": "F06",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-ready-epoch-13",
+            "expected": "revised-ready-epoch-13"
+          },
+          {
+            "id": "F07",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-118a27ca65904294cb9e",
+            "expected": "revised-118a27ca65904294cb9e"
+          },
+          {
+            "id": "F08",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "151",
+            "expected": "151"
+          },
+          {
+            "id": "F09",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-009",
+            "expected": "CHG-1106-009"
+          },
+          {
+            "id": "F10",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8",
+            "expected": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+          },
+          {
+            "id": "F11",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "18507",
+            "expected": "18507"
+          },
+          {
+            "id": "F12",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F13",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F14",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-21",
+            "expected": "ready-epoch-21"
+          },
+          {
+            "id": "F15",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "726907cf0954db14e4ea",
+            "expected": "726907cf0954db14e4ea"
+          },
+          {
+            "id": "F16",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "46",
+            "expected": "46"
+          },
+          {
+            "id": "F17",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-017",
+            "expected": "CHG-1106-017"
+          },
+          {
+            "id": "F18",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277",
+            "expected": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"
+          },
+          {
+            "id": "F19",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "19603",
+            "expected": "19603"
+          },
+          {
+            "id": "F20",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F21",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F22",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-29",
+            "expected": "ready-epoch-29"
+          },
+          {
+            "id": "F23",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "4f69c385ab1772576a87",
+            "expected": "4f69c385ab1772576a87"
+          },
+          {
+            "id": "F24",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "54",
+            "expected": "54"
+          },
+          {
+            "id": "F25",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-025",
+            "expected": "CHG-1106-025"
+          },
+          {
+            "id": "F26",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f",
+            "expected": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"
+          },
+          {
+            "id": "F27",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "20699",
+            "expected": "20699"
+          },
+          {
+            "id": "F28",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F29",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "deployment-batch",
+            "expected": "deployment-batch"
+          },
+          {
+            "id": "F30",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-37",
+            "expected": "ready-epoch-37"
+          },
+          {
+            "id": "F31",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "c3a8bceb370890311a34",
+            "expected": "c3a8bceb370890311a34"
+          },
+          {
+            "id": "F32",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "62",
+            "expected": "62"
+          },
+          {
+            "id": "F33",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-033",
+            "expected": "CHG-1106-033"
+          },
+          {
+            "id": "F34",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79",
+            "expected": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79"
+          },
+          {
+            "id": "F35",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "21795",
+            "expected": "21795"
+          },
+          {
+            "id": "F36",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F37",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F38",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-45",
+            "expected": "ready-epoch-45"
+          },
+          {
+            "id": "F39",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "f88754d0b542d90447a5",
+            "expected": "f88754d0b542d90447a5"
+          },
+          {
+            "id": "F40",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "70",
+            "expected": "70"
+          },
+          {
+            "id": "F41",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-041",
+            "expected": "CHG-1106-041"
+          },
+          {
+            "id": "F42",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09",
+            "expected": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09"
+          },
+          {
+            "id": "F43",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "22891",
+            "expected": "22891"
+          },
+          {
+            "id": "F44",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F45",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F46",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-53",
+            "expected": "ready-epoch-53"
+          },
+          {
+            "id": "F47",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "8e22fa7c84b9d3a89b8d",
+            "expected": "8e22fa7c84b9d3a89b8d"
+          },
+          {
+            "id": "F48",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "78",
+            "expected": "78"
+          }
+        ],
+        "tool_free_adherence": "runner must verify from trace"
+      },
+      "file_recovery": {
+        "phase": "retrieval",
+        "correct": 48,
+        "total": 48,
+        "valid_json": true,
+        "missing": 0,
+        "plain_json_format": true,
+        "extra_keys": [],
+        "stale_values": 0,
+        "revised_correct": 8,
+        "revised_total": 8,
+        "outcomes": [
+          {
+            "id": "F01",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-CHG-1106-001",
+            "expected": "revised-CHG-1106-001"
+          },
+          {
+            "id": "F02",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e",
+            "expected": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+          },
+          {
+            "id": "F03",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "17524",
+            "expected": "17524"
+          },
+          {
+            "id": "F04",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-reuse-old-epoch-verification",
+            "expected": "revised-reuse-old-epoch-verification"
+          },
+          {
+            "id": "F05",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-deployment-batch",
+            "expected": "revised-deployment-batch"
+          },
+          {
+            "id": "F06",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-ready-epoch-13",
+            "expected": "revised-ready-epoch-13"
+          },
+          {
+            "id": "F07",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-118a27ca65904294cb9e",
+            "expected": "revised-118a27ca65904294cb9e"
+          },
+          {
+            "id": "F08",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "151",
+            "expected": "151"
+          },
+          {
+            "id": "F09",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-009",
+            "expected": "CHG-1106-009"
+          },
+          {
+            "id": "F10",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8",
+            "expected": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+          },
+          {
+            "id": "F11",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "18507",
+            "expected": "18507"
+          },
+          {
+            "id": "F12",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F13",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F14",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-21",
+            "expected": "ready-epoch-21"
+          },
+          {
+            "id": "F15",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "726907cf0954db14e4ea",
+            "expected": "726907cf0954db14e4ea"
+          },
+          {
+            "id": "F16",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "46",
+            "expected": "46"
+          },
+          {
+            "id": "F17",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-017",
+            "expected": "CHG-1106-017"
+          },
+          {
+            "id": "F18",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277",
+            "expected": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"
+          },
+          {
+            "id": "F19",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "19603",
+            "expected": "19603"
+          },
+          {
+            "id": "F20",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F21",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F22",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-29",
+            "expected": "ready-epoch-29"
+          },
+          {
+            "id": "F23",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "4f69c385ab1772576a87",
+            "expected": "4f69c385ab1772576a87"
+          },
+          {
+            "id": "F24",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "54",
+            "expected": "54"
+          },
+          {
+            "id": "F25",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-025",
+            "expected": "CHG-1106-025"
+          },
+          {
+            "id": "F26",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f",
+            "expected": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"
+          },
+          {
+            "id": "F27",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "20699",
+            "expected": "20699"
+          },
+          {
+            "id": "F28",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F29",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "deployment-batch",
+            "expected": "deployment-batch"
+          },
+          {
+            "id": "F30",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-37",
+            "expected": "ready-epoch-37"
+          },
+          {
+            "id": "F31",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "c3a8bceb370890311a34",
+            "expected": "c3a8bceb370890311a34"
+          },
+          {
+            "id": "F32",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "62",
+            "expected": "62"
+          },
+          {
+            "id": "F33",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-033",
+            "expected": "CHG-1106-033"
+          },
+          {
+            "id": "F34",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79",
+            "expected": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79"
+          },
+          {
+            "id": "F35",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "21795",
+            "expected": "21795"
+          },
+          {
+            "id": "F36",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F37",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F38",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-45",
+            "expected": "ready-epoch-45"
+          },
+          {
+            "id": "F39",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "f88754d0b542d90447a5",
+            "expected": "f88754d0b542d90447a5"
+          },
+          {
+            "id": "F40",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "70",
+            "expected": "70"
+          },
+          {
+            "id": "F41",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-041",
+            "expected": "CHG-1106-041"
+          },
+          {
+            "id": "F42",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09",
+            "expected": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09"
+          },
+          {
+            "id": "F43",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "22891",
+            "expected": "22891"
+          },
+          {
+            "id": "F44",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F45",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F46",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-53",
+            "expected": "ready-epoch-53"
+          },
+          {
+            "id": "F47",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "8e22fa7c84b9d3a89b8d",
+            "expected": "8e22fa7c84b9d3a89b8d"
+          },
+          {
+            "id": "F48",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "78",
+            "expected": "78"
+          }
+        ],
+        "tool_free_adherence": "runner must verify from trace"
+      },
+      "prompt_hashes": {
+        "1": "dd7f47683f5108909fec6b372987a52f3468b9e5d40595f26389cdf08505e525",
+        "2": "2605302ed0f269a051554d02a308df0170a9bd1a437cae2a0b5529dcad0c28b6",
+        "3": "fbc1dae8428a96a218a28884fd83f07566ba2a3b12447dd8896e460aa1e7b5d5",
+        "4": "9db2a083d91d3f45c99638bf516a371848da447116c697b545b4aaad4b52c2ef",
+        "5": "d6282c99631914ac406bd67e8ea4c785036c8c51e208a2b9775ffb9abee30476",
+        "6": "8b04cf7ca2fb28302c460c975dd9e7ccacb654b9c1fe31362ecb08f022266c5d",
+        "7": "3ae3f1a959b97f7ef681c170093658023c9c1ee18a4c078640b3ed92e1f18d44",
+        "8": "b12d1a294366f76de5415013924e46f1a83de559d2139be76735bc14903bcab3"
+      },
+      "date_utc": "2026-11-06"
+    },
+    "C": {
+      "arm": "C",
+      "completed": true,
+      "wall_s": 1498.3660440444946,
+      "implementation_wall_s": 1385.0556321144104,
+      "phase_seconds": {
+        "1": 242.8395857810974,
+        "2": 284.20294070243835,
+        "3": 401.61950302124023,
+        "4": 371.09713196754456,
+        "5": 85.29647064208984,
+        "6": 30.818950176239014,
+        "7": 55.51350784301758,
+        "8": 26.961604118347168
+      },
+      "reported_tokens": {
+        "input_tokens": 11864729,
+        "output_tokens": 92889,
+        "cached_input_tokens": 10893952,
+        "cache_write_input_tokens": 0,
+        "reasoning_output_tokens": 14793,
+        "uncached_input_tokens": 970777
+      },
+      "host_visible_tokens": {
+        "input_tokens": 9783164,
+        "cached_input_tokens": 8988288,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 81712,
+        "reasoning_output_tokens": 13951,
+        "uncached_input_tokens": 794876
+      },
+      "token_source": "bili upstream response observer, same as B",
+      "measured_upstream_responses": 179,
+      "provider_requests": 194,
+      "provider_missing_usage_requests": [
+        "15447403-072c-4a43-8149-3e5384df8ec4",
+        "1bb65326-793d-4b88-96c3-8352d354afb6",
+        "289721b6-2854-4f1e-b985-d2991a2b0e07",
+        "2adc5378-f800-4873-b46d-224583de9047",
+        "2fc9df33-969c-480a-a488-2f5461ce9140",
+        "36cdf640-11b0-46be-a0c3-f571f313215c",
+        "42016952-0264-4f7b-804a-87b90f412387",
+        "521bb621-23c3-4eb6-9ba6-71d79a234db7",
+        "97b080ca-5147-47a3-b000-9c2112d99fd2",
+        "aef3eb39-122f-4cf3-925d-2bd7c6413a5b",
+        "daa71872-39bd-4f50-8100-0c4b179a1bf1",
+        "e2dbdc63-7f9a-4102-9425-bdc36f874ea6",
+        "e6935909-6993-4d18-b685-36cff5c446b1",
+        "f2fc709e-b343-46ff-a7b2-b4caecc922cf",
+        "fdf4c5d4-2be3-4e53-a59e-be61ceafe889"
+      ],
+      "provider_request_errors": 15,
+      "duplicate_response_ids": 0,
+      "peak_upstream_reported_input": 193373,
+      "context_management_responses": 15,
+      "context_management_response_input_tokens": 2081565,
+      "context_management_response_output_tokens": 11177,
+      "subagent_threads": 3,
+      "models_seen": [
+        "gpt-6-astra"
+      ],
+      "effective_windows": [
+        828400
+      ],
+      "compression_log_receipts": [
+        [
+          "m00001–m00068, m00069–m00091, m00092–m00111",
+          "2",
+          "65829"
+        ],
+        [
+          "m00116–m00124, m00125–m00146, m00147–m00172",
+          "2",
+          "26582"
+        ],
+        [
+          "m00125–m00125, m00173–m00173",
+          "1",
+          "44094"
+        ]
+      ],
+      "compression_noop_count": 4,
+      "compression_failure_count": 0,
+      "patch_observations": {
+        "noop_receipt_rounds": 4,
+        "uncompressed_status_reports": 7,
+        "message_view_status_reports": 0,
+        "status_reports": [
+          {
+            "phase_file": "events-02.jsonl",
+            "message_view": false
+          },
+          {
+            "phase_file": "events-02.jsonl",
+            "message_view": false
+          },
+          {
+            "phase_file": "events-03.jsonl",
+            "message_view": false
+          },
+          {
+            "phase_file": "events-03.jsonl",
+            "message_view": false
+          },
+          {
+            "phase_file": "events-04.jsonl",
+            "message_view": false
+          },
+          {
+            "phase_file": "events-04.jsonl",
+            "message_view": false
+          },
+          {
+            "phase_file": "events-04.jsonl",
+            "message_view": false
+          }
+        ]
+      },
+      "phase6_tool_free": true,
+      "phase6_tool_events": [],
+      "code": {
+        "phase": "final",
+        "hidden_pass": 13,
+        "hidden_total": 13,
+        "cases": {
+          "unseen_mixed": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 1.07,
+            "case_artifacts": "/tmp/bili-grade-case-gnbshxrn",
+            "exact": true,
+            "boards_correct": 72,
+            "boards_total": 72,
+            "incident_true_positive": 187,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-00": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.865,
+            "case_artifacts": "/tmp/bili-grade-case-u0f7b1lf",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-01": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.9,
+            "case_artifacts": "/tmp/bili-grade-case-_rhehebj",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-02": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.795,
+            "case_artifacts": "/tmp/bili-grade-case-zsl215bu",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 2,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-03": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.856,
+            "case_artifacts": "/tmp/bili-grade-case-k3uux0zy",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 1,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-04": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.889,
+            "case_artifacts": "/tmp/bili-grade-case-x9haqis8",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 5,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-05": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.872,
+            "case_artifacts": "/tmp/bili-grade-case-w2dgwpcc",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 2,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-06": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.914,
+            "case_artifacts": "/tmp/bili-grade-case-3mbl5e1n",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-07": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.87,
+            "case_artifacts": "/tmp/bili-grade-case-d0ra_5e2",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 1,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-08": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.928,
+            "case_artifacts": "/tmp/bili-grade-case-p6fhr_05",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 3,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-09": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.887,
+            "case_artifacts": "/tmp/bili-grade-case-ih9fej8n",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 4,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-10": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.874,
+            "case_artifacts": "/tmp/bili-grade-case-7h7kmvr5",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 2,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          },
+          "semantic-11": {
+            "exit_code": 0,
+            "stderr_tail": "",
+            "seconds": 0.913,
+            "case_artifacts": "/tmp/bili-grade-case-o2ezuqw5",
+            "exact": true,
+            "boards_correct": 1,
+            "boards_total": 1,
+            "incident_true_positive": 1,
+            "incident_false_positive": 0,
+            "incident_false_negative": 0,
+            "totals_correct": true
+          }
+        },
+        "visible_report": {
+          "exact": true,
+          "boards_correct": 192,
+          "boards_total": 192,
+          "incident_true_positive": 502,
+          "incident_false_positive": 0,
+          "incident_false_negative": 0,
+          "totals_correct": true
+        }
+      },
+      "memory": {
+        "phase": "memory",
+        "correct": 48,
+        "total": 48,
+        "valid_json": true,
+        "missing": 0,
+        "plain_json_format": true,
+        "extra_keys": [],
+        "stale_values": 0,
+        "revised_correct": 8,
+        "revised_total": 8,
+        "outcomes": [
+          {
+            "id": "F01",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-CHG-1106-001",
+            "expected": "revised-CHG-1106-001"
+          },
+          {
+            "id": "F02",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e",
+            "expected": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+          },
+          {
+            "id": "F03",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "17524",
+            "expected": "17524"
+          },
+          {
+            "id": "F04",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-reuse-old-epoch-verification",
+            "expected": "revised-reuse-old-epoch-verification"
+          },
+          {
+            "id": "F05",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-deployment-batch",
+            "expected": "revised-deployment-batch"
+          },
+          {
+            "id": "F06",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-ready-epoch-13",
+            "expected": "revised-ready-epoch-13"
+          },
+          {
+            "id": "F07",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-118a27ca65904294cb9e",
+            "expected": "revised-118a27ca65904294cb9e"
+          },
+          {
+            "id": "F08",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "151",
+            "expected": "151"
+          },
+          {
+            "id": "F09",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-009",
+            "expected": "CHG-1106-009"
+          },
+          {
+            "id": "F10",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8",
+            "expected": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+          },
+          {
+            "id": "F11",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "18507",
+            "expected": "18507"
+          },
+          {
+            "id": "F12",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F13",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F14",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-21",
+            "expected": "ready-epoch-21"
+          },
+          {
+            "id": "F15",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "726907cf0954db14e4ea",
+            "expected": "726907cf0954db14e4ea"
+          },
+          {
+            "id": "F16",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "46",
+            "expected": "46"
+          },
+          {
+            "id": "F17",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-017",
+            "expected": "CHG-1106-017"
+          },
+          {
+            "id": "F18",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277",
+            "expected": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"
+          },
+          {
+            "id": "F19",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "19603",
+            "expected": "19603"
+          },
+          {
+            "id": "F20",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F21",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F22",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-29",
+            "expected": "ready-epoch-29"
+          },
+          {
+            "id": "F23",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "4f69c385ab1772576a87",
+            "expected": "4f69c385ab1772576a87"
+          },
+          {
+            "id": "F24",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "54",
+            "expected": "54"
+          },
+          {
+            "id": "F25",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-025",
+            "expected": "CHG-1106-025"
+          },
+          {
+            "id": "F26",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f",
+            "expected": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"
+          },
+          {
+            "id": "F27",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "20699",
+            "expected": "20699"
+          },
+          {
+            "id": "F28",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F29",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "deployment-batch",
+            "expected": "deployment-batch"
+          },
+          {
+            "id": "F30",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-37",
+            "expected": "ready-epoch-37"
+          },
+          {
+            "id": "F31",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "c3a8bceb370890311a34",
+            "expected": "c3a8bceb370890311a34"
+          },
+          {
+            "id": "F32",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "62",
+            "expected": "62"
+          },
+          {
+            "id": "F33",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-033",
+            "expected": "CHG-1106-033"
+          },
+          {
+            "id": "F34",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79",
+            "expected": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79"
+          },
+          {
+            "id": "F35",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "21795",
+            "expected": "21795"
+          },
+          {
+            "id": "F36",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F37",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F38",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-45",
+            "expected": "ready-epoch-45"
+          },
+          {
+            "id": "F39",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "f88754d0b542d90447a5",
+            "expected": "f88754d0b542d90447a5"
+          },
+          {
+            "id": "F40",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "70",
+            "expected": "70"
+          },
+          {
+            "id": "F41",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-041",
+            "expected": "CHG-1106-041"
+          },
+          {
+            "id": "F42",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09",
+            "expected": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09"
+          },
+          {
+            "id": "F43",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "22891",
+            "expected": "22891"
+          },
+          {
+            "id": "F44",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F45",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F46",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-53",
+            "expected": "ready-epoch-53"
+          },
+          {
+            "id": "F47",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "8e22fa7c84b9d3a89b8d",
+            "expected": "8e22fa7c84b9d3a89b8d"
+          },
+          {
+            "id": "F48",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "78",
+            "expected": "78"
+          }
+        ],
+        "tool_free_adherence": "runner must verify from trace"
+      },
+      "engine_recovery": {
+        "phase": "retrieval",
+        "correct": 48,
+        "total": 48,
+        "valid_json": true,
+        "missing": 0,
+        "plain_json_format": true,
+        "extra_keys": [],
+        "stale_values": 0,
+        "revised_correct": 8,
+        "revised_total": 8,
+        "outcomes": [
+          {
+            "id": "F01",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-CHG-1106-001",
+            "expected": "revised-CHG-1106-001"
+          },
+          {
+            "id": "F02",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e",
+            "expected": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+          },
+          {
+            "id": "F03",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "17524",
+            "expected": "17524"
+          },
+          {
+            "id": "F04",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-reuse-old-epoch-verification",
+            "expected": "revised-reuse-old-epoch-verification"
+          },
+          {
+            "id": "F05",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-deployment-batch",
+            "expected": "revised-deployment-batch"
+          },
+          {
+            "id": "F06",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-ready-epoch-13",
+            "expected": "revised-ready-epoch-13"
+          },
+          {
+            "id": "F07",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-118a27ca65904294cb9e",
+            "expected": "revised-118a27ca65904294cb9e"
+          },
+          {
+            "id": "F08",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "151",
+            "expected": "151"
+          },
+          {
+            "id": "F09",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-009",
+            "expected": "CHG-1106-009"
+          },
+          {
+            "id": "F10",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8",
+            "expected": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+          },
+          {
+            "id": "F11",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "18507",
+            "expected": "18507"
+          },
+          {
+            "id": "F12",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F13",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F14",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-21",
+            "expected": "ready-epoch-21"
+          },
+          {
+            "id": "F15",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "726907cf0954db14e4ea",
+            "expected": "726907cf0954db14e4ea"
+          },
+          {
+            "id": "F16",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "46",
+            "expected": "46"
+          },
+          {
+            "id": "F17",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-017",
+            "expected": "CHG-1106-017"
+          },
+          {
+            "id": "F18",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277",
+            "expected": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"
+          },
+          {
+            "id": "F19",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "19603",
+            "expected": "19603"
+          },
+          {
+            "id": "F20",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F21",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F22",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-29",
+            "expected": "ready-epoch-29"
+          },
+          {
+            "id": "F23",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "4f69c385ab1772576a87",
+            "expected": "4f69c385ab1772576a87"
+          },
+          {
+            "id": "F24",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "54",
+            "expected": "54"
+          },
+          {
+            "id": "F25",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-025",
+            "expected": "CHG-1106-025"
+          },
+          {
+            "id": "F26",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f",
+            "expected": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"
+          },
+          {
+            "id": "F27",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "20699",
+            "expected": "20699"
+          },
+          {
+            "id": "F28",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F29",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "deployment-batch",
+            "expected": "deployment-batch"
+          },
+          {
+            "id": "F30",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-37",
+            "expected": "ready-epoch-37"
+          },
+          {
+            "id": "F31",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "c3a8bceb370890311a34",
+            "expected": "c3a8bceb370890311a34"
+          },
+          {
+            "id": "F32",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "62",
+            "expected": "62"
+          },
+          {
+            "id": "F33",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-033",
+            "expected": "CHG-1106-033"
+          },
+          {
+            "id": "F34",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79",
+            "expected": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79"
+          },
+          {
+            "id": "F35",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "21795",
+            "expected": "21795"
+          },
+          {
+            "id": "F36",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F37",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F38",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-45",
+            "expected": "ready-epoch-45"
+          },
+          {
+            "id": "F39",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "f88754d0b542d90447a5",
+            "expected": "f88754d0b542d90447a5"
+          },
+          {
+            "id": "F40",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "70",
+            "expected": "70"
+          },
+          {
+            "id": "F41",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-041",
+            "expected": "CHG-1106-041"
+          },
+          {
+            "id": "F42",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09",
+            "expected": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09"
+          },
+          {
+            "id": "F43",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "22891",
+            "expected": "22891"
+          },
+          {
+            "id": "F44",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F45",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F46",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-53",
+            "expected": "ready-epoch-53"
+          },
+          {
+            "id": "F47",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "8e22fa7c84b9d3a89b8d",
+            "expected": "8e22fa7c84b9d3a89b8d"
+          },
+          {
+            "id": "F48",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "78",
+            "expected": "78"
+          }
+        ],
+        "tool_free_adherence": "runner must verify from trace"
+      },
+      "file_recovery": {
+        "phase": "retrieval",
+        "correct": 48,
+        "total": 48,
+        "valid_json": true,
+        "missing": 0,
+        "plain_json_format": true,
+        "extra_keys": [],
+        "stale_values": 0,
+        "revised_correct": 8,
+        "revised_total": 8,
+        "outcomes": [
+          {
+            "id": "F01",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-CHG-1106-001",
+            "expected": "revised-CHG-1106-001"
+          },
+          {
+            "id": "F02",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e",
+            "expected": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e"
+          },
+          {
+            "id": "F03",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "17524",
+            "expected": "17524"
+          },
+          {
+            "id": "F04",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-reuse-old-epoch-verification",
+            "expected": "revised-reuse-old-epoch-verification"
+          },
+          {
+            "id": "F05",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-deployment-batch",
+            "expected": "revised-deployment-batch"
+          },
+          {
+            "id": "F06",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-ready-epoch-13",
+            "expected": "revised-ready-epoch-13"
+          },
+          {
+            "id": "F07",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "revised-118a27ca65904294cb9e",
+            "expected": "revised-118a27ca65904294cb9e"
+          },
+          {
+            "id": "F08",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "151",
+            "expected": "151"
+          },
+          {
+            "id": "F09",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-009",
+            "expected": "CHG-1106-009"
+          },
+          {
+            "id": "F10",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8",
+            "expected": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8"
+          },
+          {
+            "id": "F11",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "18507",
+            "expected": "18507"
+          },
+          {
+            "id": "F12",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F13",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F14",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-21",
+            "expected": "ready-epoch-21"
+          },
+          {
+            "id": "F15",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "726907cf0954db14e4ea",
+            "expected": "726907cf0954db14e4ea"
+          },
+          {
+            "id": "F16",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "46",
+            "expected": "46"
+          },
+          {
+            "id": "F17",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-017",
+            "expected": "CHG-1106-017"
+          },
+          {
+            "id": "F18",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277",
+            "expected": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"
+          },
+          {
+            "id": "F19",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "19603",
+            "expected": "19603"
+          },
+          {
+            "id": "F20",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F21",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F22",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-29",
+            "expected": "ready-epoch-29"
+          },
+          {
+            "id": "F23",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "4f69c385ab1772576a87",
+            "expected": "4f69c385ab1772576a87"
+          },
+          {
+            "id": "F24",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "54",
+            "expected": "54"
+          },
+          {
+            "id": "F25",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-025",
+            "expected": "CHG-1106-025"
+          },
+          {
+            "id": "F26",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f",
+            "expected": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"
+          },
+          {
+            "id": "F27",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "20699",
+            "expected": "20699"
+          },
+          {
+            "id": "F28",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F29",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "deployment-batch",
+            "expected": "deployment-batch"
+          },
+          {
+            "id": "F30",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-37",
+            "expected": "ready-epoch-37"
+          },
+          {
+            "id": "F31",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "c3a8bceb370890311a34",
+            "expected": "c3a8bceb370890311a34"
+          },
+          {
+            "id": "F32",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "62",
+            "expected": "62"
+          },
+          {
+            "id": "F33",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-033",
+            "expected": "CHG-1106-033"
+          },
+          {
+            "id": "F34",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79",
+            "expected": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79"
+          },
+          {
+            "id": "F35",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "21795",
+            "expected": "21795"
+          },
+          {
+            "id": "F36",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F37",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "rack",
+            "expected": "rack"
+          },
+          {
+            "id": "F38",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-45",
+            "expected": "ready-epoch-45"
+          },
+          {
+            "id": "F39",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "f88754d0b542d90447a5",
+            "expected": "f88754d0b542d90447a5"
+          },
+          {
+            "id": "F40",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "70",
+            "expected": "70"
+          },
+          {
+            "id": "F41",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "CHG-1106-041",
+            "expected": "CHG-1106-041"
+          },
+          {
+            "id": "F42",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09",
+            "expected": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09"
+          },
+          {
+            "id": "F43",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "22891",
+            "expected": "22891"
+          },
+          {
+            "id": "F44",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "reuse-old-epoch-verification",
+            "expected": "reuse-old-epoch-verification"
+          },
+          {
+            "id": "F45",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "single-board",
+            "expected": "single-board"
+          },
+          {
+            "id": "F46",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "ready-epoch-53",
+            "expected": "ready-epoch-53"
+          },
+          {
+            "id": "F47",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "8e22fa7c84b9d3a89b8d",
+            "expected": "8e22fa7c84b9d3a89b8d"
+          },
+          {
+            "id": "F48",
+            "correct": true,
+            "missing": false,
+            "stale_value": false,
+            "actual": "78",
+            "expected": "78"
+          }
+        ],
+        "tool_free_adherence": "runner must verify from trace"
+      },
+      "prompt_hashes": {
+        "1": "dd7f47683f5108909fec6b372987a52f3468b9e5d40595f26389cdf08505e525",
+        "2": "2605302ed0f269a051554d02a308df0170a9bd1a437cae2a0b5529dcad0c28b6",
+        "3": "fbc1dae8428a96a218a28884fd83f07566ba2a3b12447dd8896e460aa1e7b5d5",
+        "4": "9db2a083d91d3f45c99638bf516a371848da447116c697b545b4aaad4b52c2ef",
+        "5": "d6282c99631914ac406bd67e8ea4c785036c8c51e208a2b9775ffb9abee30476",
+        "6": "8b04cf7ca2fb28302c460c975dd9e7ccacb654b9c1fe31362ecb08f022266c5d",
+        "7": "3ae3f1a959b97f7ef681c170093658023c9c1ee18a4c078640b3ed92e1f18d44",
+        "8": "b12d1a294366f76de5415013924e46f1a83de559d2139be76735bc14903bcab3"
+      },
+      "watchdog": {
+        "container_id": "82b276aa49d3d9445a4dc88356560bd4ee34fbddc6ddcdb49438de78c793f097",
+        "deadline": 1794565073.3417735,
+        "started_at": 1794561473.3417735,
+        "armed_at": 1794561636.1410503,
+        "triggered": false,
+        "result": "container exited before deadline",
+        "finished_at": 1794562982.5807097
+      },
+      "executed_runner": "/tmp/billion-context-c-benchmark-20261113/run_benchmark.py.bak.before-deadline-v1.20261113",
+      "date_utc": "2026-11-13"
+    }
+  },
+  "C_verification": {
+    "completed": true,
+    "prompt_hashes_match": true,
+    "visible_input_unchanged": true,
+    "python_files_modified_after_phase5": [],
+    "malformed_jsonl_records": [],
+    "original_evidence": [
+      {
+        "phase": 2,
+        "sha256": "2605302ed0f269a051554d02a308df0170a9bd1a437cae2a0b5529dcad0c28b6",
+        "matching_refs": [
+          "m00069"
+        ]
+      },
+      {
+        "phase": 3,
+        "sha256": "fbc1dae8428a96a218a28884fd83f07566ba2a3b12447dd8896e460aa1e7b5d5",
+        "matching_refs": [
+          "m00125"
+        ]
+      },
+      {
+        "phase": 4,
+        "sha256": "9db2a083d91d3f45c99638bf516a371848da447116c697b545b4aaad4b52c2ef",
+        "matching_refs": [
+          "m00173"
+        ]
+      }
+    ],
+    "blocks_by_tier": {
+      "1": 5
+    }
+  },
+  "matching_prompt_hashes": true
+}

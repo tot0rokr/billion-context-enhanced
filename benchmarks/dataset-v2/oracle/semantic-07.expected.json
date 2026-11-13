@@ -1,0 +1,27 @@
+{
+  "boards": [
+    {
+      "board": "board-20008",
+      "epoch": 1,
+      "active_slot": "B",
+      "active_digest": "0529fe389433a4ddcb8203ae1df342b176d98acc0f367c98efe5e71b18f42544"
+    }
+  ],
+  "incidents": [
+    {
+      "board": "board-20008",
+      "epoch": 0,
+      "sequence": 21,
+      "event_id": "board-20008-e003",
+      "reason": "commit_failed"
+    }
+  ],
+  "totals": {
+    "board_count": 1,
+    "applied_commits": 2,
+    "accepted_rollbacks": 0,
+    "duplicate_replays": 2,
+    "conflicted_ids": 0,
+    "rejected_events": 1
+  }
+}

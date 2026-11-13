@@ -1,0 +1,24 @@
+{
+  "phase": 1,
+  "started": 1793952057.0809543,
+  "finished": 1793952368.6170182,
+  "elapsed_s": 311.5360643863678,
+  "exit_code": 0,
+  "timed_out": false,
+  "thread_id": "01a1afe0-0b46-7cd1-b082-7ac6e2f041ab",
+  "prompt_sha256": "dd7f47683f5108909fec6b372987a52f3468b9e5d40595f26389cdf08505e525",
+  "prompt_chars": 815,
+  "turn_completions": [
+    {
+      "type": "turn.completed",
+      "usage": {
+        "input_tokens": 623892,
+        "cached_input_tokens": 580096,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 6046,
+        "reasoning_output_tokens": 918
+      }
+    }
+  ],
+  "errors": []
+}

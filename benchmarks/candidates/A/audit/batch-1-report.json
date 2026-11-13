@@ -1,0 +1,1560 @@
+{
+  "boards": [
+    {
+      "active_digest": "5fce90827b27d702f202c5dbe9e883f6a6ea7c4b1fd52c758e4a86e71da9d42a",
+      "active_slot": "A",
+      "board": "board-00001",
+      "epoch": 1
+    },
+    {
+      "active_digest": "9ef348a6ddd7a7cdac333e669b3e564d1168e1a28cad33f6685fe57bfda50b76",
+      "active_slot": "A",
+      "board": "board-00002",
+      "epoch": 2
+    },
+    {
+      "active_digest": "703c04101fb64da782f3e09df7cbec9d7255e6a97f849e7e5c4c4944b93ecc43",
+      "active_slot": "B",
+      "board": "board-00003",
+      "epoch": 1
+    },
+    {
+      "active_digest": "b16296c9159e0785f10093d33493dbe3f81d4d3c73e54e892d1cd507d465631f",
+      "active_slot": "B",
+      "board": "board-00004",
+      "epoch": 1
+    },
+    {
+      "active_digest": "4b7297239d483849702c32d064b67da37ca30491d23bad0469bb23df0669d526",
+      "active_slot": "A",
+      "board": "board-00005",
+      "epoch": 1
+    },
+    {
+      "active_digest": "c31efa6b21374a1a2c1446bfcc2a410b31463b9bb47141c66befbd6d299ca118",
+      "active_slot": "A",
+      "board": "board-00006",
+      "epoch": 1
+    },
+    {
+      "active_digest": "a1b3a15dd5d601d267338939dd8413d608c33b8863858bf160936acc44654dba",
+      "active_slot": "B",
+      "board": "board-00007",
+      "epoch": 1
+    },
+    {
+      "active_digest": "9f75e0896e8911a77b3c3864c352b94a3574d6b7a7d95f34270e3befc32272f3",
+      "active_slot": "B",
+      "board": "board-00008",
+      "epoch": 1
+    },
+    {
+      "active_digest": "0ccde202ed5a00cf92f3b240cb8b41966601b21ec99db26f6c96209cf16e6e82",
+      "active_slot": "A",
+      "board": "board-00009",
+      "epoch": 1
+    },
+    {
+      "active_digest": "011f7bc6c31c2bb01ae9e9822d25e5deade249224a0153476a5adb60052da5be",
+      "active_slot": "A",
+      "board": "board-00010",
+      "epoch": 1
+    },
+    {
+      "active_digest": "f57b5ca14e1f4ea4927ecb49674b6510f34ad791c4fecd823888ab90d1a7f55b",
+      "active_slot": "B",
+      "board": "board-00011",
+      "epoch": 1
+    },
+    {
+      "active_digest": "f221f6d0b598a7ddc7f6e13c2103457143e74b1e9af77cdce49f6ec136540715",
+      "active_slot": "B",
+      "board": "board-00012",
+      "epoch": 1
+    },
+    {
+      "active_digest": "5b7a0f2eab72700eff235497552689d5acd73dd06678baf562dfcde273e76f61",
+      "active_slot": "A",
+      "board": "board-00013",
+      "epoch": 1
+    },
+    {
+      "active_digest": "4871b9048410e732e006e049d35831047adfa07a5f796887ab68b154faa2afd0",
+      "active_slot": "A",
+      "board": "board-00014",
+      "epoch": 2
+    },
+    {
+      "active_digest": "44bc590b6b768361d27a86fcbc7ce6ab58de41d7c08c0adc25be71d537b88ba8",
+      "active_slot": "A",
+      "board": "board-00015",
+      "epoch": 1
+    },
+    {
+      "active_digest": "b0b2e0fd8c9eaad44ddb3dbdf46918f1254e94f2e4f5299d5e3dc53d6e0bfd83",
+      "active_slot": "B",
+      "board": "board-00016",
+      "epoch": 1
+    },
+    {
+      "active_digest": "3c27d72d42156e6f2efd7271768835203fb90d465dbebd59dbf5092a446fdab2",
+      "active_slot": "B",
+      "board": "board-00017",
+      "epoch": 1
+    },
+    {
+      "active_digest": "920eb4702e20dca5df2fa9119cd292f7ac79c4b426658ef001fe853c937cd21d",
+      "active_slot": "A",
+      "board": "board-00018",
+      "epoch": 1
+    },
+    {
+      "active_digest": "cf947c327093d33849ef3261c0e7050e5ece0f5aa2b9ed7575e1e8c21f31e067",
+      "active_slot": "B",
+      "board": "board-00019",
+      "epoch": 1
+    },
+    {
+      "active_digest": "391344de296e5cfd9fd6859a43b19071c4eb0f29e201bfc7d99d2b3b855bd6f9",
+      "active_slot": "B",
+      "board": "board-00020",
+      "epoch": 1
+    },
+    {
+      "active_digest": "e13a4c6ef0c0a3dd091c279ba5446ed44fde5f3c053fd635b45d4fb9aa2d7aed",
+      "active_slot": "A",
+      "board": "board-00021",
+      "epoch": 1
+    },
+    {
+      "active_digest": "eb4b2e30a7584dba6e67447f1ce432b4f63e5240d2f7adc1b40d075e9f79d5c5",
+      "active_slot": "B",
+      "board": "board-00022",
+      "epoch": 1
+    },
+    {
+      "active_digest": "37fc74d11fdfa5107418c72cd4261c6697838d3f13fe2b7e12211ab5adbe3ab1",
+      "active_slot": "B",
+      "board": "board-00023",
+      "epoch": 1
+    },
+    {
+      "active_digest": "f503a39c99bcd34a4171fbe59dd19abbf955c668c0c98400ce37a4cad8f4c022",
+      "active_slot": "B",
+      "board": "board-00024",
+      "epoch": 1
+    },
+    {
+      "active_digest": "50416a66440727e10e031e715123d00bc30625799882e257b66f2076b31e30b8",
+      "active_slot": "A",
+      "board": "board-00025",
+      "epoch": 1
+    },
+    {
+      "active_digest": "45fafe5091c17830de57e93de8afca41938df34d87dccbd0a729466511cf1540",
+      "active_slot": "A",
+      "board": "board-00026",
+      "epoch": 2
+    },
+    {
+      "active_digest": "4344020910fb9e74b61b24a08d4f99f5b514268ecc3b0f6780da5fbd465b9cd8",
+      "active_slot": "B",
+      "board": "board-00027",
+      "epoch": 1
+    },
+    {
+      "active_digest": "59e8847c608b04aad611d4b9ab747aac1c2ad658497611b409fbc446be9cff1e",
+      "active_slot": "B",
+      "board": "board-00028",
+      "epoch": 1
+    },
+    {
+      "active_digest": "a54bc0dc3102c711fb2e53e28230cb6cd2780306e0afa5c8991e34bad3885294",
+      "active_slot": "B",
+      "board": "board-00029",
+      "epoch": 1
+    },
+    {
+      "active_digest": "7778dde155ce5c7f57eb196dc54d95b738b35aa602a84e919e76fa3e84ee2afd",
+      "active_slot": "A",
+      "board": "board-00030",
+      "epoch": 1
+    },
+    {
+      "active_digest": "6d777106f73ac3a2fad3d6559c7d29731db68d175c72ad4779aee07e91ad8732",
+      "active_slot": "B",
+      "board": "board-00031",
+      "epoch": 1
+    },
+    {
+      "active_digest": "11279324df00b31c3fd75a1a7341d0e89f0f01072b506f839aca01d07fe01088",
+      "active_slot": "B",
+      "board": "board-00032",
+      "epoch": 1
+    },
+    {
+      "active_digest": "77411f77a4ec2cbce99206559b66edd6c0a81376f77c73c776a70e4f9c95935a",
+      "active_slot": "A",
+      "board": "board-00033",
+      "epoch": 1
+    },
+    {
+      "active_digest": "8bb0b970c364493dbefa794795b5fa3ae6d2fc15fddaddfdc37598c26a202d98",
+      "active_slot": "B",
+      "board": "board-00034",
+      "epoch": 1
+    },
+    {
+      "active_digest": "5b1ae30c2f479a9dd5992b5353b6b83822e4d349dbaa0b525f8c53538f02071a",
+      "active_slot": "A",
+      "board": "board-00035",
+      "epoch": 1
+    },
+    {
+      "active_digest": "7d9e59ea79be5a95749e1a4ea74282a6091d03c5db70ebe1fd5e294e96b74e19",
+      "active_slot": "B",
+      "board": "board-00036",
+      "epoch": 1
+    },
+    {
+      "active_digest": "54461c3fe6832cdbc6d22a1fca43e039257837011a0067143cefb4dbe9b3433b",
+      "active_slot": "A",
+      "board": "board-00037",
+      "epoch": 1
+    },
+    {
+      "active_digest": "725b339b56392904e9e6f36e7b4803f049d41716bdaa6b019da33e6d0fea2c18",
+      "active_slot": "A",
+      "board": "board-00038",
+      "epoch": 2
+    },
+    {
+      "active_digest": "12aab20ccadfb30d122758cc447fdb2cb9dc8af5b9135f13dc900ae8224df7b8",
+      "active_slot": "B",
+      "board": "board-00039",
+      "epoch": 1
+    },
+    {
+      "active_digest": "ad88806a7bdec753ac94a1d707c42db190740b8d1b02da3571d0dfcd28f95e4b",
+      "active_slot": "B",
+      "board": "board-00040",
+      "epoch": 1
+    },
+    {
+      "active_digest": "e0ba7a63e62f558727c6770d606a8a739bbe654f88ccebd543d42ba8d305922b",
+      "active_slot": "B",
+      "board": "board-00041",
+      "epoch": 1
+    },
+    {
+      "active_digest": "af0d63091346e9ff52093f564113d5f7ac35b7f6c6252ea02f26179981d8d9e5",
+      "active_slot": "A",
+      "board": "board-00042",
+      "epoch": 1
+    },
+    {
+      "active_digest": "61804c42bb1521744be954f4edb5d6821e32206add028f6df515042ae48a1dbd",
+      "active_slot": "B",
+      "board": "board-00043",
+      "epoch": 1
+    },
+    {
+      "active_digest": "facab3b52c8cccb15f1c9a63ed8ff445445fbd9ae62a3560fb6ff3c8a3d2b225",
+      "active_slot": "B",
+      "board": "board-00044",
+      "epoch": 1
+    },
+    {
+      "active_digest": "128227575957b15a1269e0c766901ca84c2f9ad2fe9b52c23938a6412a61caa7",
+      "active_slot": "A",
+      "board": "board-00045",
+      "epoch": 1
+    },
+    {
+      "active_digest": "50e83365700e6cf97ed1290f96c58d14ad4420f569225e123b90a95c0bbd97ff",
+      "active_slot": "B",
+      "board": "board-00046",
+      "epoch": 1
+    },
+    {
+      "active_digest": "a391ca3d4a2d0cb9902a1aff8767eacd3466daeb4a07d718493a7d9b5de5f17e",
+      "active_slot": "B",
+      "board": "board-00047",
+      "epoch": 1
+    },
+    {
+      "active_digest": "d25913d76adbe39b82ecc60521e2de3cec5459adf6a4d1ef4162b1ddbf00372a",
+      "active_slot": "B",
+      "board": "board-00048",
+      "epoch": 1
+    },
+    {
+      "active_digest": "657c8c9c2fbbf52b0e2c67a456002d55305b61f6b02c30621722a5666e310afd",
+      "active_slot": "A",
+      "board": "board-00049",
+      "epoch": 1
+    },
+    {
+      "active_digest": "23ae01c8ef9b136871cf2f5f6d0adee0a6056eb3a42c7ac115de653ef4510121",
+      "active_slot": "A",
+      "board": "board-00050",
+      "epoch": 2
+    },
+    {
+      "active_digest": "80b05f1a3a63dc00d2ee9b86f5506494524c925cfae89e763c22cb8252ee4b1c",
+      "active_slot": "B",
+      "board": "board-00051",
+      "epoch": 1
+    },
+    {
+      "active_digest": "267f2d09c502eabf887c575fe97c223eedd83bdb2d6eeff4a969cc65b705c4ee",
+      "active_slot": "B",
+      "board": "board-00052",
+      "epoch": 1
+    },
+    {
+      "active_digest": "2ddfd1c93aba1dd3297bdef4fdae23a1fd3de2b309d7139bb0237ff29fe8f1bf",
+      "active_slot": "B",
+      "board": "board-00053",
+      "epoch": 1
+    },
+    {
+      "active_digest": "b9c8fe00b86bb41dca47ad25483102e7d1a8676df1f3f6767c4940a8723c0ee8",
+      "active_slot": "A",
+      "board": "board-00054",
+      "epoch": 1
+    },
+    {
+      "active_digest": "58dfba73de5a6259d91f062ff771caddb7818d145a4e95bd1b6b932809181d85",
+      "active_slot": "A",
+      "board": "board-00055",
+      "epoch": 1
+    },
+    {
+      "active_digest": "d7989ba8755f11bab6b0b477a7996b642fb9c60f47948821f841ee2c20eab9ff",
+      "active_slot": "B",
+      "board": "board-00056",
+      "epoch": 1
+    },
+    {
+      "active_digest": "6adbfdd405dcc0f5037e74e056b9acbbe9bc1210619c9129e52e9e6c9b184b15",
+      "active_slot": "A",
+      "board": "board-00057",
+      "epoch": 1
+    },
+    {
+      "active_digest": "8fd2ab0d0a557c118e3823a8ecac6015ef9d90297350a36de8f10acdcd8f3f80",
+      "active_slot": "B",
+      "board": "board-00058",
+      "epoch": 1
+    },
+    {
+      "active_digest": "183dd9b48fbd81c49172318d2fec5b28665bfcf3763a85870187931bd3f60794",
+      "active_slot": "B",
+      "board": "board-00059",
+      "epoch": 1
+    },
+    {
+      "active_digest": "5eeb62c2ddbfd96f582fc7037759990a161cab2b5f0ef9a840c2e68106fe791b",
+      "active_slot": "B",
+      "board": "board-00060",
+      "epoch": 1
+    },
+    {
+      "active_digest": "70ed73c752c19e1c92ac1790ad6517d6a5ebc651d0a3bdeeaadca9e700f54c32",
+      "active_slot": "A",
+      "board": "board-00061",
+      "epoch": 1
+    },
+    {
+      "active_digest": "8dc16e80433885af32a980c3a0463769f0dad24f7bbaf30494556ff1d5980c15",
+      "active_slot": "A",
+      "board": "board-00062",
+      "epoch": 2
+    },
+    {
+      "active_digest": "fc41021e21c1b121ed2502176b721a72d810539a4be80f1b00570ed4e69c544e",
+      "active_slot": "B",
+      "board": "board-00063",
+      "epoch": 1
+    },
+    {
+      "active_digest": "8f16183d760da8f1d4019037301ea2f0e6efab2f34de73290927b6ae204f8292",
+      "active_slot": "B",
+      "board": "board-00064",
+      "epoch": 1
+    }
+  ],
+  "incidents": [
+    {
+      "board": "board-00001",
+      "epoch": 0,
+      "event_id": "board-00001-e003",
+      "reason": "verify_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00001",
+      "epoch": 0,
+      "event_id": "board-00001-e004",
+      "reason": "commit_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00001",
+      "epoch": 1,
+      "event_id": "board-00001-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00001",
+      "epoch": 1,
+      "event_id": "board-00001-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00002",
+      "epoch": 1,
+      "event_id": "board-00002-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00002",
+      "epoch": 2,
+      "event_id": "board-00002-e007",
+      "reason": "commit_without_stage",
+      "sequence": 49
+    },
+    {
+      "board": "board-00003",
+      "epoch": 0,
+      "event_id": "board-00003-e003",
+      "reason": "commit_mismatch",
+      "sequence": 21
+    },
+    {
+      "board": "board-00003",
+      "epoch": 1,
+      "event_id": "board-00003-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00004",
+      "epoch": 0,
+      "event_id": "board-00004-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00005",
+      "epoch": 0,
+      "event_id": "board-00005-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00005",
+      "epoch": 0,
+      "event_id": "board-00005-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00005",
+      "epoch": 0,
+      "event_id": "board-00005-e003",
+      "reason": "reset_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00005",
+      "epoch": 0,
+      "event_id": "board-00005-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00005",
+      "epoch": 1,
+      "event_id": "board-00005-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00005",
+      "epoch": 1,
+      "event_id": "board-00005-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00006",
+      "epoch": 0,
+      "event_id": "board-00006-e003",
+      "reason": "verify_mismatch",
+      "sequence": 21
+    },
+    {
+      "board": "board-00006",
+      "epoch": 0,
+      "event_id": "board-00006-e004",
+      "reason": "commit_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00006",
+      "epoch": 1,
+      "event_id": "board-00006-e008",
+      "reason": "commit_without_stage",
+      "sequence": 56
+    },
+    {
+      "board": "board-00007",
+      "epoch": 0,
+      "event_id": "board-00007-e003",
+      "reason": "commit_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00007",
+      "epoch": 1,
+      "event_id": "board-00007-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00008",
+      "epoch": 0,
+      "event_id": "board-00008-e004",
+      "reason": "rollback_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00009",
+      "epoch": 1,
+      "event_id": "board-00009-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00009",
+      "epoch": 1,
+      "event_id": "board-00009-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00010",
+      "epoch": 0,
+      "event_id": "board-00010-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00010",
+      "epoch": 0,
+      "event_id": "board-00010-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00010",
+      "epoch": 0,
+      "event_id": "board-00010-e003",
+      "reason": "stage_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00010",
+      "epoch": 0,
+      "event_id": "board-00010-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00010",
+      "epoch": 1,
+      "event_id": "board-00010-e008",
+      "reason": "commit_without_stage",
+      "sequence": 56
+    },
+    {
+      "board": "board-00011",
+      "epoch": 0,
+      "event_id": "board-00011-e004",
+      "reason": "rollback_failed",
+      "sequence": 28
+    },
+    {
+      "board": "board-00011",
+      "epoch": 1,
+      "event_id": "board-00011-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00012",
+      "epoch": 0,
+      "event_id": "board-00012-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00013",
+      "epoch": 0,
+      "event_id": "board-00013-e003",
+      "reason": "verify_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00013",
+      "epoch": 0,
+      "event_id": "board-00013-e004",
+      "reason": "commit_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00013",
+      "epoch": 1,
+      "event_id": "board-00013-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00013",
+      "epoch": 1,
+      "event_id": "board-00013-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00014",
+      "epoch": 1,
+      "event_id": "board-00014-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00014",
+      "epoch": 2,
+      "event_id": "board-00014-e007",
+      "reason": "commit_without_stage",
+      "sequence": 49
+    },
+    {
+      "board": "board-00015",
+      "epoch": 0,
+      "event_id": "board-00015-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00015",
+      "epoch": 0,
+      "event_id": "board-00015-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00015",
+      "epoch": 0,
+      "event_id": "board-00015-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00015",
+      "epoch": 0,
+      "event_id": "board-00015-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00015",
+      "epoch": 1,
+      "event_id": "board-00015-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00016",
+      "epoch": 0,
+      "event_id": "board-00016-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00017",
+      "epoch": 0,
+      "event_id": "board-00017-e003",
+      "reason": "reset_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00017",
+      "epoch": 1,
+      "event_id": "board-00017-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00017",
+      "epoch": 1,
+      "event_id": "board-00017-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00018",
+      "epoch": 0,
+      "event_id": "board-00018-e003",
+      "reason": "verify_mismatch",
+      "sequence": 21
+    },
+    {
+      "board": "board-00018",
+      "epoch": 0,
+      "event_id": "board-00018-e004",
+      "reason": "commit_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00018",
+      "epoch": 1,
+      "event_id": "board-00018-e008",
+      "reason": "commit_without_stage",
+      "sequence": 56
+    },
+    {
+      "board": "board-00019",
+      "epoch": 0,
+      "event_id": "board-00019-e003",
+      "reason": "commit_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00019",
+      "epoch": 1,
+      "event_id": "board-00019-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00020",
+      "epoch": 0,
+      "event_id": "board-00020-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00020",
+      "epoch": 0,
+      "event_id": "board-00020-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00020",
+      "epoch": 0,
+      "event_id": "board-00020-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00020",
+      "epoch": 0,
+      "event_id": "board-00020-e004",
+      "reason": "rollback_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00021",
+      "epoch": 1,
+      "event_id": "board-00021-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00021",
+      "epoch": 1,
+      "event_id": "board-00021-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00022",
+      "epoch": 0,
+      "event_id": "board-00022-e003",
+      "reason": "stage_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00022",
+      "epoch": 1,
+      "event_id": "board-00022-e008",
+      "reason": "commit_without_stage",
+      "sequence": 56
+    },
+    {
+      "board": "board-00023",
+      "epoch": 0,
+      "event_id": "board-00023-e004",
+      "reason": "rollback_failed",
+      "sequence": 28
+    },
+    {
+      "board": "board-00023",
+      "epoch": 1,
+      "event_id": "board-00023-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00024",
+      "epoch": 0,
+      "event_id": "board-00024-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00025",
+      "epoch": 0,
+      "event_id": "board-00025-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00025",
+      "epoch": 0,
+      "event_id": "board-00025-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00025",
+      "epoch": 0,
+      "event_id": "board-00025-e003",
+      "reason": "verify_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00025",
+      "epoch": 0,
+      "event_id": "board-00025-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00025",
+      "epoch": 1,
+      "event_id": "board-00025-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00025",
+      "epoch": 1,
+      "event_id": "board-00025-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00026",
+      "epoch": 1,
+      "event_id": "board-00026-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00026",
+      "epoch": 2,
+      "event_id": "board-00026-e007",
+      "reason": "commit_without_stage",
+      "sequence": 49
+    },
+    {
+      "board": "board-00027",
+      "epoch": 0,
+      "event_id": "board-00027-e003",
+      "reason": "commit_mismatch",
+      "sequence": 21
+    },
+    {
+      "board": "board-00027",
+      "epoch": 1,
+      "event_id": "board-00027-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00028",
+      "epoch": 0,
+      "event_id": "board-00028-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00029",
+      "epoch": 0,
+      "event_id": "board-00029-e003",
+      "reason": "reset_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00029",
+      "epoch": 1,
+      "event_id": "board-00029-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00029",
+      "epoch": 1,
+      "event_id": "board-00029-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00030",
+      "epoch": 0,
+      "event_id": "board-00030-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00030",
+      "epoch": 0,
+      "event_id": "board-00030-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00030",
+      "epoch": 0,
+      "event_id": "board-00030-e003",
+      "reason": "verify_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00030",
+      "epoch": 0,
+      "event_id": "board-00030-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00030",
+      "epoch": 1,
+      "event_id": "board-00030-e008",
+      "reason": "commit_without_stage",
+      "sequence": 56
+    },
+    {
+      "board": "board-00031",
+      "epoch": 0,
+      "event_id": "board-00031-e003",
+      "reason": "commit_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00031",
+      "epoch": 1,
+      "event_id": "board-00031-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00032",
+      "epoch": 0,
+      "event_id": "board-00032-e004",
+      "reason": "rollback_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00033",
+      "epoch": 1,
+      "event_id": "board-00033-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00033",
+      "epoch": 1,
+      "event_id": "board-00033-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00034",
+      "epoch": 0,
+      "event_id": "board-00034-e003",
+      "reason": "stage_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00034",
+      "epoch": 1,
+      "event_id": "board-00034-e008",
+      "reason": "commit_without_stage",
+      "sequence": 56
+    },
+    {
+      "board": "board-00035",
+      "epoch": 0,
+      "event_id": "board-00035-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00035",
+      "epoch": 0,
+      "event_id": "board-00035-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00035",
+      "epoch": 0,
+      "event_id": "board-00035-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00035",
+      "epoch": 0,
+      "event_id": "board-00035-e004",
+      "reason": "rollback_failed",
+      "sequence": 28
+    },
+    {
+      "board": "board-00035",
+      "epoch": 1,
+      "event_id": "board-00035-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00036",
+      "epoch": 0,
+      "event_id": "board-00036-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00037",
+      "epoch": 0,
+      "event_id": "board-00037-e003",
+      "reason": "verify_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00037",
+      "epoch": 0,
+      "event_id": "board-00037-e004",
+      "reason": "commit_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00037",
+      "epoch": 1,
+      "event_id": "board-00037-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00037",
+      "epoch": 1,
+      "event_id": "board-00037-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00038",
+      "epoch": 1,
+      "event_id": "board-00038-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00038",
+      "epoch": 2,
+      "event_id": "board-00038-e007",
+      "reason": "commit_without_stage",
+      "sequence": 49
+    },
+    {
+      "board": "board-00039",
+      "epoch": 0,
+      "event_id": "board-00039-e003",
+      "reason": "commit_mismatch",
+      "sequence": 21
+    },
+    {
+      "board": "board-00039",
+      "epoch": 1,
+      "event_id": "board-00039-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00040",
+      "epoch": 0,
+      "event_id": "board-00040-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00040",
+      "epoch": 0,
+      "event_id": "board-00040-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00040",
+      "epoch": 0,
+      "event_id": "board-00040-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00041",
+      "epoch": 0,
+      "event_id": "board-00041-e003",
+      "reason": "reset_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00041",
+      "epoch": 1,
+      "event_id": "board-00041-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00041",
+      "epoch": 1,
+      "event_id": "board-00041-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00042",
+      "epoch": 0,
+      "event_id": "board-00042-e003",
+      "reason": "verify_mismatch",
+      "sequence": 21
+    },
+    {
+      "board": "board-00042",
+      "epoch": 0,
+      "event_id": "board-00042-e004",
+      "reason": "commit_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00042",
+      "epoch": 1,
+      "event_id": "board-00042-e008",
+      "reason": "commit_without_stage",
+      "sequence": 56
+    },
+    {
+      "board": "board-00043",
+      "epoch": 0,
+      "event_id": "board-00043-e003",
+      "reason": "commit_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00043",
+      "epoch": 1,
+      "event_id": "board-00043-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00044",
+      "epoch": 0,
+      "event_id": "board-00044-e004",
+      "reason": "rollback_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00045",
+      "epoch": 0,
+      "event_id": "board-00045-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00045",
+      "epoch": 0,
+      "event_id": "board-00045-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00045",
+      "epoch": 0,
+      "event_id": "board-00045-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00045",
+      "epoch": 1,
+      "event_id": "board-00045-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00045",
+      "epoch": 1,
+      "event_id": "board-00045-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00046",
+      "epoch": 0,
+      "event_id": "board-00046-e003",
+      "reason": "stage_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00046",
+      "epoch": 1,
+      "event_id": "board-00046-e008",
+      "reason": "commit_without_stage",
+      "sequence": 56
+    },
+    {
+      "board": "board-00047",
+      "epoch": 0,
+      "event_id": "board-00047-e004",
+      "reason": "rollback_failed",
+      "sequence": 28
+    },
+    {
+      "board": "board-00047",
+      "epoch": 1,
+      "event_id": "board-00047-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00048",
+      "epoch": 0,
+      "event_id": "board-00048-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00049",
+      "epoch": 0,
+      "event_id": "board-00049-e003",
+      "reason": "verify_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00049",
+      "epoch": 0,
+      "event_id": "board-00049-e004",
+      "reason": "commit_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00049",
+      "epoch": 1,
+      "event_id": "board-00049-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00049",
+      "epoch": 1,
+      "event_id": "board-00049-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00050",
+      "epoch": 0,
+      "event_id": "board-00050-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00050",
+      "epoch": 0,
+      "event_id": "board-00050-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00050",
+      "epoch": 1,
+      "event_id": "board-00050-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00050",
+      "epoch": 2,
+      "event_id": "board-00050-e007",
+      "reason": "commit_without_stage",
+      "sequence": 49
+    },
+    {
+      "board": "board-00051",
+      "epoch": 0,
+      "event_id": "board-00051-e003",
+      "reason": "commit_mismatch",
+      "sequence": 21
+    },
+    {
+      "board": "board-00051",
+      "epoch": 1,
+      "event_id": "board-00051-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00052",
+      "epoch": 0,
+      "event_id": "board-00052-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00053",
+      "epoch": 0,
+      "event_id": "board-00053-e003",
+      "reason": "reset_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00053",
+      "epoch": 1,
+      "event_id": "board-00053-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00053",
+      "epoch": 1,
+      "event_id": "board-00053-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00054",
+      "epoch": 0,
+      "event_id": "board-00054-e003",
+      "reason": "verify_mismatch",
+      "sequence": 21
+    },
+    {
+      "board": "board-00054",
+      "epoch": 0,
+      "event_id": "board-00054-e004",
+      "reason": "commit_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00054",
+      "epoch": 1,
+      "event_id": "board-00054-e008",
+      "reason": "commit_without_stage",
+      "sequence": 56
+    },
+    {
+      "board": "board-00055",
+      "epoch": 0,
+      "event_id": "board-00055-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00055",
+      "epoch": 0,
+      "event_id": "board-00055-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00055",
+      "epoch": 0,
+      "event_id": "board-00055-e003",
+      "reason": "commit_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00055",
+      "epoch": 0,
+      "event_id": "board-00055-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00055",
+      "epoch": 1,
+      "event_id": "board-00055-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00056",
+      "epoch": 0,
+      "event_id": "board-00056-e004",
+      "reason": "rollback_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00057",
+      "epoch": 1,
+      "event_id": "board-00057-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00057",
+      "epoch": 1,
+      "event_id": "board-00057-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00058",
+      "epoch": 0,
+      "event_id": "board-00058-e003",
+      "reason": "stage_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00058",
+      "epoch": 1,
+      "event_id": "board-00058-e008",
+      "reason": "commit_without_stage",
+      "sequence": 56
+    },
+    {
+      "board": "board-00059",
+      "epoch": 0,
+      "event_id": "board-00059-e004",
+      "reason": "rollback_failed",
+      "sequence": 28
+    },
+    {
+      "board": "board-00059",
+      "epoch": 1,
+      "event_id": "board-00059-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00060",
+      "epoch": 0,
+      "event_id": "board-00060-e001",
+      "reason": "duplicate_conflict",
+      "sequence": 7
+    },
+    {
+      "board": "board-00060",
+      "epoch": 0,
+      "event_id": "board-00060-e002",
+      "reason": "verify_without_stage",
+      "sequence": 14
+    },
+    {
+      "board": "board-00060",
+      "epoch": 0,
+      "event_id": "board-00060-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00060",
+      "epoch": 0,
+      "event_id": "board-00060-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    },
+    {
+      "board": "board-00061",
+      "epoch": 0,
+      "event_id": "board-00061-e003",
+      "reason": "verify_failed",
+      "sequence": 21
+    },
+    {
+      "board": "board-00061",
+      "epoch": 0,
+      "event_id": "board-00061-e004",
+      "reason": "commit_unverified",
+      "sequence": 28
+    },
+    {
+      "board": "board-00061",
+      "epoch": 1,
+      "event_id": "board-00061-e006",
+      "reason": "verify_failed",
+      "sequence": 42
+    },
+    {
+      "board": "board-00061",
+      "epoch": 1,
+      "event_id": "board-00061-e007",
+      "reason": "commit_unverified",
+      "sequence": 49
+    },
+    {
+      "board": "board-00062",
+      "epoch": 1,
+      "event_id": "board-00062-e003",
+      "reason": "commit_without_stage",
+      "sequence": 21
+    },
+    {
+      "board": "board-00062",
+      "epoch": 2,
+      "event_id": "board-00062-e007",
+      "reason": "commit_without_stage",
+      "sequence": 49
+    },
+    {
+      "board": "board-00063",
+      "epoch": 0,
+      "event_id": "board-00063-e003",
+      "reason": "commit_mismatch",
+      "sequence": 21
+    },
+    {
+      "board": "board-00063",
+      "epoch": 1,
+      "event_id": "board-00063-e007",
+      "reason": "commit_mismatch",
+      "sequence": 49
+    },
+    {
+      "board": "board-00064",
+      "epoch": 0,
+      "event_id": "board-00064-e004",
+      "reason": "commit_without_stage",
+      "sequence": 28
+    }
+  ],
+  "totals": {
+    "accepted_rollbacks": 5,
+    "applied_commits": 49,
+    "board_count": 64,
+    "conflicted_ids": 12,
+    "duplicate_replays": 128,
+    "rejected_events": 166
+  }
+}

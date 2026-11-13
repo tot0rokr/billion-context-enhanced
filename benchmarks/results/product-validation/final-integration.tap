@@ -1,0 +1,984 @@
+TAP version 13
+# 2026-11-13T08:43:54.537 [warn] [v=0.1.212] [acp-status-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=15000 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:43:54.549 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# Subtest: \#389: acp_status after compress lists no already-compressed refs, without a new prepare
+ok 1 - \#389: acp_status after compress lists no already-compressed refs, without a new prepare
+  ---
+  duration_ms: 22.908287
+  type: 'test'
+  ...
+# Subtest: \#389: scope= short-circuit returns the live base report only
+ok 2 - \#389: scope= short-circuit returns the live base report only
+  ---
+  duration_ms: 0.749861
+  type: 'test'
+  ...
+# Subtest: message status exposes protection without hiding eligible older work
+ok 3 - message status exposes protection without hiding eligible older work
+  ---
+  duration_ms: 0.628558
+  type: 'test'
+  ...
+# Subtest: \#389: same-turn loop — acp_status after compress in one round shows live ranges
+ok 4 - \#389: same-turn loop — acp_status after compress in one round shows live ranges
+  ---
+  duration_ms: 31.396801
+  type: 'test'
+  ...
+# Subtest: \#897: acp_status surfaces blind-tunneled CONNECT traffic as UNDECRYPTED TRAFFIC
+ok 5 - \#897: acp_status surfaces blind-tunneled CONNECT traffic as UNDECRYPTED TRAFFIC
+  ---
+  duration_ms: 35.653822
+  type: 'test'
+  ...
+# Subtest: \#2863: UNRECOGNIZED PATHS section renders the live count with an unambiguous stats pointer
+ok 6 - \#2863: UNRECOGNIZED PATHS section renders the live count with an unambiguous stats pointer
+  ---
+  duration_ms: 1.257805
+  type: 'test'
+  ...
+# Subtest: \#1577: acp_status surfaces an active instance-level advisory
+ok 7 - \#1577: acp_status surfaces an active instance-level advisory
+  ---
+  duration_ms: 2.207283
+  type: 'test'
+  ...
+# Subtest: acp_status renders the ACTIVE SURFACE line from the session's pack stamp
+ok 8 - acp_status renders the ACTIVE SURFACE line from the session's pack stamp
+  ---
+  duration_ms: 2.649486
+  type: 'test'
+  ...
+# Subtest: acp_status marks host-native compaction landings per session (\#4458)
+ok 9 - acp_status marks host-native compaction landings per session (\#4458)
+  ---
+  duration_ms: 2.996076
+  type: 'test'
+  ...
+# Subtest: \#3925: acp_status names a skipped fork adoption and stays quiet once blocks exist
+ok 10 - \#3925: acp_status names a skipped fork adoption and stays quiet once blocks exist
+  ---
+  duration_ms: 4.461958
+  type: 'test'
+  ...
+# 2026-11-13T08:43:54.635 [debug] [sess=fuzz-1592] [v=0.1.212] [fuzz-1592] [invariant-judge/main] clean growth verdict: matched 1/1, exempt carrier=0 reasoning=0 crush=0 ccr=0 truncate=0
+# Subtest: cache-seam fuzz: 3 randomized scenarios (seed 1592)
+ok 11 - cache-seam fuzz: 3 randomized scenarios (seed 1592)
+  ---
+  duration_ms: 7013.283527
+  type: 'test'
+  ...
+# 2026-11-13T08:43:54.698 [debug] [sess=e2e-anthropic] [v=0.1.212] [e2e-anthropic] [invariant-judge/main] clean growth verdict: matched 1/1, exempt carrier=0 reasoning=0 crush=0 ccr=0 truncate=0
+# Subtest: e2e anthropic: text streams through with incremental deltas, injected tools + system reach upstream
+ok 12 - e2e anthropic: text streams through with incremental deltas, injected tools + system reach upstream
+  ---
+  duration_ms: 3339.209672
+  type: 'test'
+  ...
+# Subtest: e2e anthropic: tool_use reconstruction preserves id, name and full arguments (namespaced tools, issue \#143 analog)
+ok 13 - e2e anthropic: tool_use reconstruction preserves id, name and full arguments (namespaced tools, issue \#143 analog)
+  ---
+  duration_ms: 3068.691867
+  type: 'test'
+  ...
+# Subtest: e2e anthropic: compress tool_use round-trip — 2nd upstream request carries tool_result, round-2 text reaches client
+ok 14 - e2e anthropic: compress tool_use round-trip — 2nd upstream request carries tool_result, round-2 text reaches client
+  ---
+  duration_ms: 3091.151901
+  type: 'test'
+  ...
+# Subtest: e2e anthropic: auto-mode classifier passthrough when BILI_AUTO_MODE_FORGE=0 (\#353 legacy behavior, \#2740 kill switch)
+ok 15 - e2e anthropic: auto-mode classifier passthrough when BILI_AUTO_MODE_FORGE=0 (\#353 legacy behavior, \#2740 kill switch)
+  ---
+  duration_ms: 3153.370607
+  type: 'test'
+  ...
+# Subtest: e2e anthropic: auto-mode classifier forged locally by default — zero upstream egress (\#2740)
+ok 16 - e2e anthropic: auto-mode classifier forged locally by default — zero upstream egress (\#2740)
+  ---
+  duration_ms: 3030.372009
+  type: 'test'
+  ...
+# Subtest: e2e anthropic: auto-mode classifier block flavor forged as bare <block>no</block> (\#2740)
+ok 17 - e2e anthropic: auto-mode classifier block flavor forged as bare <block>no</block> (\#2740)
+  ---
+  duration_ms: 3043.734792
+  type: 'test'
+  ...
+# Subtest: e2e anthropic: magic stop sequences ALONE are NOT forged — legit severity-XML traffic passes through (\#3359)
+ok 18 - e2e anthropic: magic stop sequences ALONE are NOT forged — legit severity-XML traffic passes through (\#3359)
+  ---
+  duration_ms: 3164.974352
+  type: 'test'
+  ...
+# Subtest: e2e anthropic: auto-mode classifier no-stop shape (stage-2/fast) forged via policy+transcript detection (\#2740)
+ok 19 - e2e anthropic: auto-mode classifier no-stop shape (stage-2/fast) forged via policy+transcript detection (\#2740)
+  ---
+  duration_ms: 3038.083051
+  type: 'test'
+  ...
+# Subtest: e2e anthropic: forged classifier call leaves ACP state byte-equivalent (\#2740 acceptance item 3)
+# (node:15) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 uncaughtException listeners added to [process]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+# (Use `node --trace-warnings ...` to show where the warning was created)
+# (node:15) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 unhandledRejection listeners added to [process]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+ok 20 - e2e anthropic: forged classifier call leaves ACP state byte-equivalent (\#2740 acceptance item 3)
+  ---
+  duration_ms: 3082.786915
+  type: 'test'
+  ...
+# Subtest: e2e anthropic: bare side call (no tools, globally-scoped system) bypasses compress injection (\#2648)
+# (node:15) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 SIGTERM listeners added to [process]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+# (node:15) MaxListenersExceededWarning: Possible EventEmitter memory leak detected. 11 SIGINT listeners added to [process]. MaxListeners is 10. Use emitter.setMaxListeners() to increase limit
+ok 21 - e2e anthropic: bare side call (no tools, globally-scoped system) bypasses compress injection (\#2648)
+  ---
+  duration_ms: 3166.571989
+  type: 'test'
+  ...
+# Subtest: e2e anthropic: client-sent cache_control breakpoints ride their logical blocks across turns (\#1092 salvage / \#1097 prerequisite)
+ok 22 - e2e anthropic: client-sent cache_control breakpoints ride their logical blocks across turns (\#1092 salvage / \#1097 prerequisite)
+  ---
+  duration_ms: 3455.322469
+  type: 'test'
+  ...
+# 2026-11-13T08:43:55.785 [debug] [sess=google-grow-1] [v=0.1.212] [google-grow-1] [invariant-judge/main] clean growth verdict: matched 1/1, exempt carrier=0 reasoning=0 crush=0 ccr=0 truncate=0
+# Subtest: e2e google: session-identified Gemini stream compresses and keeps the upstream payload bounded
+ok 23 - e2e google: session-identified Gemini stream compresses and keeps the upstream payload bounded
+  ---
+  duration_ms: 4063.153675
+  type: 'test'
+  ...
+# Subtest: e2e google: an anonymous Gemini client (no headers, omp's shape) attaches by prefix affinity and still compresses
+ok 24 - e2e google: an anonymous Gemini client (no headers, omp's shape) attaches by prefix affinity and still compresses
+  ---
+  duration_ms: 4095.403629
+  type: 'test'
+  ...
+# Subtest: e2e google: plugin mode (omp) keeps the agent's tool call, credits usage and ends the stream cleanly
+ok 25 - e2e google: plugin mode (omp) keeps the agent's tool call, credits usage and ends the stream cleanly
+  ---
+  duration_ms: 3160.640524
+  type: 'test'
+  ...
+# Subtest: e2e google: a non-streaming generateContent turn stays JSON, passes the reply through and rebuilds the request
+ok 26 - e2e google: a non-streaming generateContent turn stays JSON, passes the reply through and rebuilds the request
+  ---
+  duration_ms: 3058.756883
+  type: 'test'
+  ...
+# 2026-11-13T08:44:04.420 [error] [v=0.1.212] [acp-loop] upstream error 400: {"type":"error","error":{"type":"invalid_request_error","message":"messages.19.content.1: `thinking` or `redacted_thinking` blocks in the latest assistant message cannot be modified."}}
+# Subtest: \#1960: redacted_thinking replays byte-exact and position-exact on the compress re-request
+ok 27 - \#1960: redacted_thinking replays byte-exact and position-exact on the compress re-request
+  ---
+  duration_ms: 43.276573
+  type: 'test'
+  ...
+# Subtest: \#1960 regression guard: plain signed-thinking tail is unchanged by the ordered-parts restructure
+ok 28 - \#1960 regression guard: plain signed-thinking tail is unchanged by the ordered-parts restructure
+  ---
+  duration_ms: 8.742731
+  type: 'test'
+  ...
+# Subtest: \#1960 recovery: 'cannot be modified' 400 skips the guaranteed-failing strip retry
+ok 29 - \#1960 recovery: 'cannot be modified' 400 skips the guaranteed-failing strip retry
+  ---
+  duration_ms: 7.255828
+  type: 'test'
+  ...
+# Subtest: \#2146: distinct-spec failure streak arms the circuit breaker at 3
+ok 30 - \#2146: distinct-spec failure streak arms the circuit breaker at 3
+  ---
+  duration_ms: 13.305061
+  type: 'test'
+  ...
+# Subtest: \#2146: success clears the streak; later failures start fresh
+ok 31 - \#2146: success clears the streak; later failures start fresh
+  ---
+  duration_ms: 7.752982
+  type: 'test'
+  ...
+# Subtest: \#2146: streak decays after 10 min quiet but continues within the window
+ok 32 - \#2146: streak decays after 10 min quiet but continues within the window
+  ---
+  duration_ms: 1.602497
+  type: 'test'
+  ...
+# Subtest: \#2146: all-refs-above-frontier gets the deterministic stale-generation diagnosis
+ok 33 - \#2146: all-refs-above-frontier gets the deterministic stale-generation diagnosis
+  ---
+  duration_ms: 0.913376
+  type: 'test'
+  ...
+# Subtest: \#2146: beyondFrontierNote unit shapes
+ok 34 - \#2146: beyondFrontierNote unit shapes
+  ---
+  duration_ms: 0.166135
+  type: 'test'
+  ...
+# Subtest: \#4252: partially-past-frontier ranges get the ceiling clamp note
+ok 35 - \#4252: partially-past-frontier ranges get the ceiling clamp note
+  ---
+  duration_ms: 0.233757
+  type: 'test'
+  ...
+# Subtest: \#4252: mixed receipt names the ceiling instead of generic guidance
+ok 36 - \#4252: mixed receipt names the ceiling instead of generic guidance
+  ---
+  duration_ms: 0.447973
+  type: 'test'
+  ...
+# Subtest: \#2146: loopTracking:false (preflight lane) never touches the model-facing streak
+ok 37 - \#2146: loopTracking:false (preflight lane) never touches the model-facing streak
+  ---
+  duration_ms: 1.71853
+  type: 'test'
+  ...
+# Subtest: \#2146: stale-generation receipts scrub the phantom refs; in-frontier failures keep them verbatim
+ok 38 - \#2146: stale-generation receipts scrub the phantom refs; in-frontier failures keep them verbatim
+  ---
+  duration_ms: 1.839033
+  type: 'test'
+  ...
+# 2026-11-13T08:44:06.122 [warn] [v=0.1.212] [t2701-blind-unsafe] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# Subtest: threads-continue: re-request continues from round-1 id, delta-only messages, fingerprint-stable, ids persisted, terminal id = tail
+ok 39 - threads-continue: re-request continues from round-1 id, delta-only messages, fingerprint-stable, ids persisted, terminal id = tail
+  ---
+  duration_ms: 27.388715
+  type: 'test'
+  ...
+# Subtest: anthropic protected no-op retains its tool result and permits real work (threads=true)
+ok 40 - anthropic protected no-op retains its tool result and permits real work (threads=true)
+  ---
+  duration_ms: 10.09879
+  type: 'test'
+  ...
+# Subtest: anthropic protected no-op retains its tool result and permits real work (threads=false)
+ok 41 - anthropic protected no-op retains its tool result and permits real work (threads=false)
+  ---
+  duration_ms: 3.449209
+  type: 'test'
+  ...
+# Subtest: threads-continue: truncation BEFORE any response id — blind retry stays legal (byte-identical re-send)
+ok 42 - threads-continue: truncation BEFORE any response id — blind retry stays legal (byte-identical re-send)
+  ---
+  duration_ms: 2.873401
+  type: 'test'
+  ...
+# Subtest: threads-continue: truncation AFTER the response started — blind re-send barred (target consumed)
+ok 43 - threads-continue: truncation AFTER the response started — blind re-send barred (target consumed)
+  ---
+  duration_ms: 2.283096
+  type: 'test'
+  ...
+# Subtest: threads-create: legacy full-rebuild path preserved (fold delivery channel)
+ok 44 - threads-create: legacy full-rebuild path preserved (fold delivery channel)
+  ---
+  duration_ms: 3.18212
+  type: 'test'
+  ...
+# Subtest: thread-tracking unit: roll, cap, rewrite, reset
+ok 45 - thread-tracking unit: roll, cap, rewrite, reset
+  ---
+  duration_ms: 0.419052
+  type: 'test'
+  ...
+# 2026-11-13T08:44:07.066 [debug] [sess=3f9c1a6e-4b2d-4e8a-9c1f-2d5e8b7a6c4d] [v=0.1.212] [3f9c1a6e-4b2d-4e8a-9c1f-2d5e8b7a6c4d] [invariant-judge/main] clean growth verdict: matched 6/6, exempt carrier=0 reasoning=0 crush=0 ccr=0 truncate=0
+# Subtest: \#3280 A: round-2+ of the compress loop reads the standard shape and reaches the client
+ok 46 - \#3280 A: round-2+ of the compress loop reads the standard shape and reaches the client
+  ---
+  duration_ms: 161.657117
+  type: 'test'
+  ...
+# Subtest: \#3280 B: the non-streaming generateContent lane parses the enveloped reply
+ok 47 - \#3280 B: the non-streaming generateContent lane parses the enveloped reply
+  ---
+  duration_ms: 41.884842
+  type: 'test'
+  ...
+# 2026-11-13T08:44:10.980 [warn] [v=0.1.212] [issue5220-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.001 [warn] [v=0.1.212] [issue5220-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.005 [warn] [v=0.1.212] [acp-loop] failed compress/decompress round at round 2; breaking early (every failing signature already failed in an earlier round) (\#156/\#4186/\#5220)
+# 2026-11-13T08:44:11.006 [warn] [v=0.1.212] [issue5220-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.030 [warn] [v=0.1.212] [acp-loop] loop limit (10) reached; completing gracefully
+# 2026-11-13T08:44:11.031 [warn] [v=0.1.212] [issue5220-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.031 [warn] [v=0.1.212] [acp-loop] failed compress/decompress round at round 1; breaking early (receipt channel unavailable (visibility markers off)) (\#156/\#4186/\#5220)
+# 2026-11-13T08:44:11.032 [warn] [v=0.1.212] [issue5220-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# Subtest: \#5220 failedCallSignature: key order normalized, unknown names kept, raw fallback on bad JSON
+ok 48 - \#5220 failedCallSignature: key order normalized, unknown names kept, raw fallback on bad JSON
+  ---
+  duration_ms: 0.753942
+  type: 'test'
+  ...
+# Subtest: \#5220 T1: first-time failed compress → exactly one recovery-receipt re-request; the model decides (natural end)
+ok 49 - \#5220 T1: first-time failed compress → exactly one recovery-receipt re-request; the model decides (natural end)
+  ---
+  duration_ms: 33.533131
+  type: 'test'
+  ...
+# Subtest: \#5220 T3: identical failing call resubmitted → \#156 signature breaker stops at round 2
+ok 50 - \#5220 T3: identical failing call resubmitted → \#156 signature breaker stops at round 2
+  ---
+  duration_ms: 5.987532
+  type: 'test'
+  ...
+# Subtest: \#5220 T4: DIFFERENT failing args every round → no breaker, runs to MAX_LOOP_ROUNDS (probe family survives, bounded)
+ok 51 - \#5220 T4: DIFFERENT failing args every round → no breaker, runs to MAX_LOOP_ROUNDS (probe family survives, bounded)
+  ---
+  duration_ms: 24.888494
+  type: 'test'
+  ...
+# Subtest: \#5220 T5 fallback: visibilityMarkers=false keeps the old contract — break, zero re-requests (no client-visible bytes to anchor the receipt)
+ok 52 - \#5220 T5 fallback: visibilityMarkers=false keeps the old contract — break, zero re-requests (no client-visible bytes to anchor the receipt)
+  ---
+  duration_ms: 1.246537
+  type: 'test'
+  ...
+# Subtest: \#5220 T6: deduped markers → re-request WITHOUT an empty assistant frame (strict wires reject zero-byte turns)
+ok 53 - \#5220 T6: deduped markers → re-request WITHOUT an empty assistant frame (strict wires reject zero-byte turns)
+  ---
+  duration_ms: 4.831438
+  type: 'test'
+  ...
+# 2026-11-13T08:44:10.983 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:10.995 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:10.997 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:10.998 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:10.999 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.002 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.003 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.015 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.017 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.028 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.029 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.032 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.033 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.039 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.040 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.044 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.044 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.046 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.050 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.052 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.060 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.061 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=45 (source=usage); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.061 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.070 [warn] [v=0.1.212] [acp-loop] upstream rejected replay (HTTP 500); retrying in 1ms (attempt 1/3)
+# Subtest: loop \#3: proxy-tool round → re-request fires (model continues with result), marker shown
+ok 54 - loop \#3: proxy-tool round → re-request fires (model continues with result), marker shown
+  ---
+  duration_ms: 28.844308
+  type: 'test'
+  ...
+# Subtest: loop \#4: decompress round → re-request fires (model continues with result)
+ok 55 - loop \#4: decompress round → re-request fires (model continues with result)
+  ---
+  duration_ms: 2.663946
+  type: 'test'
+  ...
+# Subtest: loop \#6: philosophy systemPrompt is transient — appears in the ONE re-request body, does not accumulate across rounds
+ok 56 - loop \#6: philosophy systemPrompt is transient — appears in the ONE re-request body, does not accumulate across rounds
+  ---
+  duration_ms: 3.614324
+  type: 'test'
+  ...
+# Subtest: loop \#7: successful compress (real block) → re-request fires (model continues; one-compress guard prevents a second mutate)
+ok 57 - loop \#7: successful compress (real block) → re-request fires (model continues; one-compress guard prevents a second mutate)
+  ---
+  duration_ms: 13.165788
+  type: 'test'
+  ...
+# Subtest: loop external summary: streaming compress uses the configured model and credential
+ok 58 - loop external summary: streaming compress uses the configured model and credential
+  ---
+  duration_ms: 12.625022
+  type: 'test'
+  ...
+# Subtest: loop \#8 (B3): textProtocol compress round → marker shown, re-request fires
+ok 59 - loop \#8 (B3): textProtocol compress round → marker shown, re-request fires
+  ---
+  duration_ms: 4.076397
+  type: 'test'
+  ...
+# Subtest: loop \#11 (no-guard): a SECOND compress in the same request EXECUTES (no short-circuit) — the model may legitimately compress multiple ranges
+ok 60 - loop \#11 (no-guard): a SECOND compress in the same request EXECUTES (no short-circuit) — the model may legitimately compress multiple ranges
+  ---
+  duration_ms: 6.980501
+  type: 'test'
+  ...
+# Subtest: loop \#12 (no-guard): a SECOND acp_status in the same request EXECUTES (no short-circuit) — the model may re-query; result fed back
+ok 61 - loop \#12 (no-guard): a SECOND acp_status in the same request EXECUTES (no short-circuit) — the model may re-query; result fed back
+  ---
+  duration_ms: 4.461428
+  type: 'test'
+  ...
+# Subtest: loop \#13 (feedback fix): textProtocol + native function_call → round-2 re-request carries a proper function_call_output (not a bare developer message)
+ok 62 - loop \#13 (feedback fix): textProtocol + native function_call → round-2 re-request carries a proper function_call_output (not a bare developer message)
+  ---
+  duration_ms: 2.42588
+  type: 'test'
+  ...
+# Subtest: loop \#906: textProtocol compress extracted from plain text → round-2 re-request carries a proper function_call/function_call_output pair (not a bare developer marker)
+ok 63 - loop \#906: textProtocol compress extracted from plain text → round-2 re-request carries a proper function_call/function_call_output pair (not a bare developer marker)
+  ---
+  duration_ms: 6.304792
+  type: 'test'
+  ...
+# Subtest: loop \#9 (S2): responses round yields usage → session.stats populated (nudge/stat tracking)
+ok 64 - loop \#9 (S2): responses round yields usage → session.stats populated (nudge/stat tracking)
+  ---
+  duration_ms: 8.127083
+  type: 'test'
+  ...
+# 2026-11-13T08:44:11.074 [warn] [v=0.1.212] [acp-loop] upstream rejected replay (HTTP 500); retrying in 2ms (attempt 2/3)
+# 2026-11-13T08:44:11.077 [error] [v=0.1.212] [acp-loop] upstream error 500 after 3 attempt(s): upstream error
+# 2026-11-13T08:44:11.078 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.081 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.082 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.083 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.084 [warn] [v=0.1.212] [loop-compress-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.085 [warn] [v=0.1.212] [acp-loop] fold refresh failed: Error: host fold blew up
+# 2026-11-13T08:44:11.086 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# Subtest: loop \#10 (S3): upstream 500 mid-loop terminates cleanly (timer cleared, no hang)
+ok 65 - loop \#10 (S3): upstream 500 mid-loop terminates cleanly (timer cleared, no hang)
+  ---
+  duration_ms: 16.76685
+  type: 'test'
+  ...
+# Subtest: loop \#422a: successful compress → re-request carries the refreshed fold + round records
+ok 66 - loop \#422a: successful compress → re-request carries the refreshed fold + round records
+  ---
+  duration_ms: 3.484849
+  type: 'test'
+  ...
+# Subtest: loop \#422b/\#5220: failed compress → no fold refresh; recovery-receipt re-request; identical resubmit breaks
+ok 67 - loop \#422b/\#5220: failed compress → no fold refresh; recovery-receipt re-request; identical resubmit breaks
+  ---
+  duration_ms: 2.306586
+  type: 'test'
+  ...
+# Subtest: loop \#422c: refreshFolded throws → re-request keeps the pre-compress view
+ok 68 - loop \#422c: refreshFolded throws → re-request keeps the pre-compress view
+  ---
+  duration_ms: 2.740528
+  type: 'test'
+  ...
+# 2026-11-13T08:44:11.849 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.853 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.859 [warn] [v=0.1.212] [degenerate-turn] openai: turn ended stop with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.859 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.861 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.863 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.870 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.872 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.881 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.882 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.883 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.884 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.885 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.890 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.906 [warn] [v=0.1.212] [acp-loop] loop limit (10) reached; completing gracefully
+# 2026-11-13T08:44:11.906 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.909 [warn] [v=0.1.212] [acp-loop] failed compress/decompress round at round 2; breaking early (every failing signature already failed in an earlier round) (\#156/\#4186/\#5220)
+# 2026-11-13T08:44:11.910 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.931 [warn] [v=0.1.212] [acp-loop] loop limit (10) reached; completing gracefully
+# 2026-11-13T08:44:11.932 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.948 [debug] [v=0.1.212] [loop-core-test] [invariant-judge/loop] clean growth verdict: matched 8/8, exempt carrier=0 reasoning=0 crush=0 ccr=0 truncate=0
+# 2026-11-13T08:44:11.951 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.957 [debug] [v=0.1.212] [loop-core-test] [invariant-judge/loop] clean growth verdict: matched 9/9, exempt carrier=0 reasoning=0 crush=0 ccr=0 truncate=0
+# 2026-11-13T08:44:11.958 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.962 [warn] [v=0.1.212] [loop-core-test] [cache-seam] suspected mid-history prefix break: hit 4.1% (input=100000, unexplained=45904 tok, no fold/switch/restart attribution); outbound body pair unavailable (lane without body capture) — aggregate flag only
+# 2026-11-13T08:44:11.963 [warn] [v=0.1.212] [loop-core-test] [cache-seam] suspected mid-history prefix break: hit 4.1% (input=100000, unexplained=45904 tok, no fold/switch/restart attribution); outbound body pair unavailable (lane without body capture) — aggregate flag only
+# 2026-11-13T08:44:11.964 [warn] [v=0.1.212] [loop-core-test] [cache-seam] suspected mid-history prefix break: hit 4.1% (input=100000, unexplained=45904 tok, no fold/switch/restart attribution); outbound body pair unavailable (lane without body capture) — aggregate flag only
+# 2026-11-13T08:44:11.966 [warn] [v=0.1.212] [loop-core-test] [cache-seam] suspected mid-history prefix break: hit 4.1% (input=100000, unexplained=45904 tok, no fold/switch/restart attribution); outbound body pair unavailable (lane without body capture) — aggregate flag only
+# 2026-11-13T08:44:11.967 [warn] [v=0.1.212] [loop-core-test] [cache-seam] suspected mid-history prefix break: hit 4.1% (input=100000, unexplained=45904 tok, no fold/switch/restart attribution); outbound body pair unavailable (lane without body capture) — aggregate flag only
+# 2026-11-13T08:44:11.976 [warn] [v=0.1.212] [loop-core-test] [cache-seam] suspected mid-history prefix break: hit 4.1% (input=100000, unexplained=45904 tok, no fold/switch/restart attribution); outbound body pair unavailable (lane without body capture) — aggregate flag only
+# 2026-11-13T08:44:11.976 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.977 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.986 [warn] [v=0.1.212] [acp-loop] upstream rejected replay (HTTP 400); retrying in 1ms (attempt 1/3) [after compress: shrink 19% foldPoint=m00001 blocks=1 ~1430tok]
+# Subtest: handoff uses the loop's parsed output without changing client bytes
+ok 69 - handoff uses the loop's parsed output without changing client bytes
+  ---
+  duration_ms: 22.650839
+  type: 'test'
+  ...
+# Subtest: handoff retains forwarded continuation text and omits a failed terminal
+ok 70 - handoff retains forwarded continuation text and omits a failed terminal
+  ---
+  duration_ms: 8.168615
+  type: 'test'
+  ...
+# Subtest: loop \#1: acp_status-only round → marker surfaced + re-request (avoids tool_calls-no-body hang)
+ok 71 - loop \#1: acp_status-only round → marker surfaced + re-request (avoids tool_calls-no-body hang)
+  ---
+  duration_ms: 8.919016
+  type: 'test'
+  ...
+# Subtest: loop \#2: search_context-only round → marker surfaced + re-request
+ok 72 - loop \#2: search_context-only round → marker surfaced + re-request
+  ---
+  duration_ms: 10.258114
+  type: 'test'
+  ...
+# Subtest: loop \#714: search_context with zero blocks → empty-state marker, NOT ❌
+ok 73 - loop \#714: search_context with zero blocks → empty-state marker, NOT ❌
+  ---
+  duration_ms: 2.324598
+  type: 'test'
+  ...
+# Subtest: loop \#8: real-tool passthrough → emitted to client, loop ends (no re-request)
+ok 74 - loop \#8: real-tool passthrough → emitted to client, loop ends (no re-request)
+  ---
+  duration_ms: 0.922926
+  type: 'test'
+  ...
+# Subtest: loop \#9: mixed compress + real tool → forwarded (no re-request), compress executed, marker shown
+ok 75 - loop \#9: mixed compress + real tool → forwarded (no re-request), compress executed, marker shown
+  ---
+  duration_ms: 4.747157
+  type: 'test'
+  ...
+# Subtest: loop \#5: limit-hit graceful — 10 re-request rounds never degenerate empty, no crash
+ok 76 - loop \#5: limit-hit graceful — 10 re-request rounds never degenerate empty, no crash
+  ---
+  duration_ms: 16.790183
+  type: 'test'
+  ...
+# Subtest: loop \#5220: failed-only compress round → recovery-receipt re-request, identical resubmit breaks
+ok 77 - loop \#5220: failed-only compress round → recovery-receipt re-request, identical resubmit breaks
+  ---
+  duration_ms: 3.50418
+  type: 'test'
+  ...
+# Subtest: loop \#156 guard: failing compress + other proxy call → no early break
+ok 78 - loop \#156 guard: failing compress + other proxy call → no early break
+  ---
+  duration_ms: 21.709063
+  type: 'test'
+  ...
+# Subtest: protected no-op keeps work running without refreshing the fold (markers=true)
+ok 79 - protected no-op keeps work running without refreshing the fold (markers=true)
+  ---
+  duration_ms: 19.15572
+  type: 'test'
+  ...
+# Subtest: protected no-op keeps work running without refreshing the fold (markers=false)
+ok 80 - protected no-op keeps work running without refreshing the fold (markers=false)
+  ---
+  duration_ms: 7.583657
+  type: 'test'
+  ...
+# Subtest: loop usage: protocol='responses' → cached NOT double-counted (input_tokens is the total)
+ok 81 - loop usage: protocol='responses' → cached NOT double-counted (input_tokens is the total)
+  ---
+  duration_ms: 2.019758
+  type: 'test'
+  ...
+# Subtest: \#4943: OpenAI text empty-delta-tail usage settles once and replaces the stale anchor
+ok 82 - \#4943: OpenAI text empty-delta-tail usage settles once and replaces the stale anchor
+  ---
+  duration_ms: 1.619087
+  type: 'test'
+  ...
+# Subtest: \#4943: OpenAI text empty-choices-tail usage settles once and replaces the stale anchor
+ok 83 - \#4943: OpenAI text empty-choices-tail usage settles once and replaces the stale anchor
+  ---
+  duration_ms: 1.130912
+  type: 'test'
+  ...
+# Subtest: \#4943: OpenAI text finish usage settles once and replaces the stale anchor
+ok 84 - \#4943: OpenAI text finish usage settles once and replaces the stale anchor
+  ---
+  duration_ms: 1.000528
+  type: 'test'
+  ...
+# Subtest: \#4943: OpenAI tool empty-delta-tail usage settles once and replaces the stale anchor
+ok 85 - \#4943: OpenAI tool empty-delta-tail usage settles once and replaces the stale anchor
+  ---
+  duration_ms: 1.918075
+  type: 'test'
+  ...
+# Subtest: \#4943: OpenAI tool empty-choices-tail usage settles once and replaces the stale anchor
+ok 86 - \#4943: OpenAI tool empty-choices-tail usage settles once and replaces the stale anchor
+  ---
+  duration_ms: 0.979528
+  type: 'test'
+  ...
+# Subtest: \#4943: OpenAI tool finish usage settles once and replaces the stale anchor
+ok 87 - \#4943: OpenAI tool finish usage settles once and replaces the stale anchor
+  ---
+  duration_ms: 9.170634
+  type: 'test'
+  ...
+# Subtest: loop usage: protocol unset → legacy additive behavior (prompt + cached)
+ok 88 - loop usage: protocol unset → legacy additive behavior (prompt + cached)
+  ---
+  duration_ms: 0.542326
+  type: 'test'
+  ...
+# 2026-11-13T08:44:11.992 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:11.992 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:11.998 [warn] [v=0.1.212] [acp-loop] upstream rejected replay (HTTP 400); retrying in 1ms (attempt 1/3) [after compress: shrink 19% foldPoint=m00001 blocks=1 ~1430tok]
+# Subtest: replay retry: transient 400 (captcha) then success → retried, no error surfaced
+ok 89 - replay retry: transient 400 (captcha) then success → retried, no error surfaced
+  ---
+  duration_ms: 15.046281
+  type: 'test'
+  ...
+# 2026-11-13T08:44:12.002 [warn] [v=0.1.212] [acp-loop] upstream rejected replay (HTTP 400); retrying in 2ms (attempt 2/3) [after compress: shrink 19% foldPoint=m00001 blocks=1 ~1430tok]
+# 2026-11-13T08:44:12.005 [error] [v=0.1.212] [acp-loop] upstream error 400 after 3 attempt(s): {"code":3007,"msg":"captcha verify failed"}
+# 2026-11-13T08:44:12.006 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:12.009 [error] [v=0.1.212] [acp-loop] upstream error 400: {"error":{"message":"Invalid model"}}
+# 2026-11-13T08:44:12.009 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:12.012 [warn] [v=0.1.212] [acp-proxy] [429-hold] mock: upstream 429 — arming egress hold (~2s backoff+jitter) instead of letting host retries amplify (\#4204)
+# 2026-11-13T08:44:12.012 [warn] [v=0.1.212] [acp-loop] upstream rejected replay (HTTP 429); retrying in 1ms (attempt 1/3) [after compress: shrink 19% foldPoint=m00001 blocks=1 ~1430tok]
+# Subtest: replay retry: persistent captcha 400 → bounded retries, error names attempt count
+ok 90 - replay retry: persistent captcha 400 → bounded retries, error names attempt count
+  ---
+  duration_ms: 13.868419
+  type: 'test'
+  ...
+# Subtest: replay retry: fatal 400 (invalid model) → NO retry, fail fast
+ok 91 - replay retry: fatal 400 (invalid model) → NO retry, fail fast
+  ---
+  duration_ms: 3.401497
+  type: 'test'
+  ...
+# 2026-11-13T08:44:12.014 [info] [v=0.1.212] [acp-proxy] [429-hold] mock: cleared after HTTP 200 (was 1 consecutive 429s) (\#4204)
+# 2026-11-13T08:44:12.014 [warn] [v=0.1.212] [degenerate-turn] responses: turn ended completed with zero visible text and zero tool calls (no visible text emitted) — the agent receives an empty turn and may stall until nudged (\#673)
+# 2026-11-13T08:44:12.015 [warn] [v=0.1.212] [loop-core-test] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:12.018 [error] [v=0.1.212] [acp-loop] upstream error 400: {"code":3007,"msg":"captcha verify failed"}
+# Subtest: replay retry: 429 then success → retried
+ok 92 - replay retry: 429 then success → retried
+  ---
+  duration_ms: 5.004324
+  type: 'test'
+  ...
+# Subtest: isTransientUpstreamError: classifier matrix
+ok 93 - isTransientUpstreamError: classifier matrix
+  ---
+  duration_ms: 0.195785
+  type: 'test'
+  ...
+# Subtest: replayBackoffMs: exponential from env-tunable base
+ok 94 - replayBackoffMs: exponential from env-tunable base
+  ---
+  duration_ms: 0.181306
+  type: 'test'
+  ...
+# Subtest: replayMaxAttempts: env-tunable total attempts (1 = legacy no-retry)
+ok 95 - replayMaxAttempts: env-tunable total attempts (1 = legacy no-retry)
+  ---
+  duration_ms: 0.245768
+  type: 'test'
+  ...
+# Subtest: replay retry: BILI_REPLAY_RETRY_MAX=1 → legacy fail-fast (no retry)
+ok 96 - replay retry: BILI_REPLAY_RETRY_MAX=1 → legacy fail-fast (no retry)
+  ---
+  duration_ms: 2.920754
+  type: 'test'
+  ...
+# 2026-11-13T08:44:12.939 [info] [v=0.1.212] [persist] disabled
+# 2026-11-13T08:44:12.940 [info] [v=0.1.212] [log] writing to /tmp/bili-reloop-resp-oVC7ov/billion-context/bili.log
+# 2026-11-13T08:44:12.948 [info] [v=0.1.212] [conn] keepAliveTimeout=5000ms clientErrorBackstop=30000ms
+# 2026-11-13T08:44:12.957 [info] [v=0.1.212] [acp-registry] using bundled snapshot (428 models, 2026-09-26T13:43:04.017Z); fetch failed
+# Subtest: \#1479: responses-wire main path and loop re-request carry the blank strict-echo repair
+ok 97 - \#1479: responses-wire main path and loop re-request carry the blank strict-echo repair
+  ---
+  duration_ms: 3209.301503
+  type: 'test'
+  ...
+# Subtest: \#2169: blank reasoning content from client history is cleared at the outbound gate; DeepSeek's reasoning_text wording arms the learner
+ok 98 - \#2169: blank reasoning content from client history is cleared at the outbound gate; DeepSeek's reasoning_text wording arms the learner
+  ---
+  duration_ms: 3106.956167
+  type: 'test'
+  ...
+# 2026-11-13T08:44:14.984 [info] [v=0.1.212] [persist] disabled
+# 2026-11-13T08:44:14.985 [info] [v=0.1.212] [log] writing to /tmp/bili-reloop-FONjIu/billion-context/bili.log
+# 2026-11-13T08:44:14.993 [info] [v=0.1.212] [conn] keepAliveTimeout=5000ms clientErrorBackstop=30000ms
+# 2026-11-13T08:44:15.002 [info] [v=0.1.212] [acp-registry] using bundled snapshot (428 models, 2026-09-26T13:43:04.017Z); fetch failed
+# Subtest: \#762: loop re-request carries the blank strict-echo repair
+ok 99 - \#762: loop re-request carries the blank strict-echo repair
+  ---
+  duration_ms: 3181.940484
+  type: 'test'
+  ...
+# 2026-11-13T08:44:18.935 [warn] [v=0.1.212] [cont-c1] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:18.940 [debug] [v=0.1.212] [cont-c2] [invariant-judge/loop] clean growth verdict: matched 1/1, exempt carrier=0 reasoning=0 crush=0 ccr=0 truncate=0
+# 2026-11-13T08:44:18.942 [warn] [v=0.1.212] [cont-c2] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:18.945 [warn] [v=0.1.212] [cont-c3] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:18.947 [debug] [v=0.1.212] [cont-c4] [invariant-judge/loop] clean growth verdict: matched 1/1, exempt carrier=0 reasoning=0 crush=0 ccr=0 truncate=0
+# 2026-11-13T08:44:18.948 [warn] [v=0.1.212] [cont-c4] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:18.950 [warn] [v=0.1.212] [cont-c5] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:18.958 [warn] [v=0.1.212] [cont-c6] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:18.959 [warn] [v=0.1.212] [acp-loop] truncation continuation retry failed round 1: socket hang up
+# 2026-11-13T08:44:18.959 [warn] [v=0.1.212] [cont-c7] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# Subtest: \#862 C1: visible-text truncation → one continuation retry, output appends after the forwarded tail
+ok 100 - \#862 C1: visible-text truncation → one continuation retry, output appends after the forwarded tail
+  ---
+  duration_ms: 22.137445
+  type: 'test'
+  ...
+# Subtest: \#862 C2: visible cut → invisible cut → good: both budgets fire (visible→invisible ordering)
+ok 101 - \#862 C2: visible cut → invisible cut → good: both budgets fire (visible→invisible ordering)
+  ---
+  duration_ms: 5.716585
+  type: 'test'
+  ...
+# Subtest: \#862 C3: invisible cut → visible cut → good: \#413 then continuation (invisible→visible ordering)
+ok 102 - \#862 C3: invisible cut → visible cut → good: \#413 then continuation (invisible→visible ordering)
+  ---
+  duration_ms: 3.073628
+  type: 'test'
+  ...
+# Subtest: \#862 C4: budget bound — visible/invisible/visible cuts exhaust both one-shots, then the error surfaces
+ok 103 - \#862 C4: budget bound — visible/invisible/visible cuts exhaust both one-shots, then the error surfaces
+  ---
+  duration_ms: 3.392747
+  type: 'test'
+  ...
+# Subtest: \#862 C5: truncated round carrying tool-call fragments settles nothing → retried cleanly
+ok 104 - \#862 C5: truncated round carrying tool-call fragments settles nothing → retried cleanly
+  ---
+  duration_ms: 1.928576
+  type: 'test'
+  ...
+# Subtest: \#862 C6: nudge quotes only the last 800 chars of the forwarded text
+ok 105 - \#862 C6: nudge quotes only the last 800 chars of the forwarded text
+  ---
+  duration_ms: 7.286479
+  type: 'test'
+  ...
+# Subtest: \#862 C7: a failing continuation re-fetch falls back to the truncation error
+ok 106 - \#862 C7: a failing continuation re-fetch falls back to the truncation error
+  ---
+  duration_ms: 1.694579
+  type: 'test'
+  ...
+# 2026-11-13T08:44:19.768 [warn] [v=0.1.212] [trunc-reasoning] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# Subtest: truncation after live reasoning chunks retries once (reasoning-only prefix is invisible to host turn semantics)
+ok 107 - truncation after live reasoning chunks retries once (reasoning-only prefix is invisible to host turn semantics)
+  ---
+  duration_ms: 20.492098
+  type: 'test'
+  ...
+# 2026-11-13T08:44:20.021 [info] [v=0.1.212] [trunc-t1] [acp-loop] round 1: upstream truncated with no visible output reaching the client; retrying fetch once
+# 2026-11-13T08:44:20.024 [info] [v=0.1.212] [trunc-t1] [acp-loop] round 1: truncation retry failed (upstream error 500: {"error":"boom"})
+# 2026-11-13T08:44:20.026 [warn] [v=0.1.212] [trunc-t1] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:20.026 [info] [v=0.1.212] [trunc-t1] [acp-loop] round 1: upstream stream truncated (no completion event; round 1, 0 text chars + 0 reasoning chars received)
+# 2026-11-13T08:44:20.035 [warn] [v=0.1.212] [trunc-t3] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:20.037 [warn] [v=0.1.212] [trunc-t4] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# 2026-11-13T08:44:20.039 [warn] [v=0.1.212] [trunc-t5] [acp-loop] upstream success without usage report — keeping lastInputTokens=0 (source=none); nudge decisions ride local estimates until a usage-grade sample lands (\#1595)
+# Subtest: \#413 T1: 0-event EOF → retried once; failed retry → well-formed error stream, single log line
+ok 108 - \#413 T1: 0-event EOF → retried once; failed retry → well-formed error stream, single log line
+  ---
+  duration_ms: 18.858781
+  type: 'test'
+  ...
+# Subtest: \#413 T2: 0-event EOF → retry succeeds → one clean stream, no error surfaced
+ok 109 - \#413 T2: 0-event EOF → retry succeeds → one clean stream, no error surfaced
+  ---
+  duration_ms: 7.090484
+  type: 'test'
+  ...
+# Subtest: \#413 T3: truncation with open thinking block → block closed, no retry (content already forwarded)
+ok 110 - \#413 T3: truncation with open thinking block → block closed, no retry (content already forwarded)
+  ---
+  duration_ms: 1.105042
+  type: 'test'
+  ...
+# Subtest: \#413 T4: truncation with open text block → block closed before error block
+ok 111 - \#413 T4: truncation with open text block → block closed before error block
+  ---
+  duration_ms: 1.939175
+  type: 'test'
+  ...
+# Subtest: \#413 T5: retry itself truncated → no second retry (one per request)
+ok 112 - \#413 T5: retry itself truncated → no second retry (one per request)
+  ---
+  duration_ms: 1.423711
+  type: 'test'
+  ...
+# Subtest: \#413 T6: round-2 truncation (after proxy tool) retries with the round-2 body
+ok 113 - \#413 T6: round-2 truncation (after proxy tool) retries with the round-2 body
+  ---
+  duration_ms: 9.199423
+  type: 'test'
+  ...
+# Subtest: wire-contract goldens: no orphaned snapshot files
+ok 114 - wire-contract goldens: no orphaned snapshot files
+  ---
+  duration_ms: 1.148873
+  type: 'test'
+  ...
+# Subtest: wire-contract goldens: kernel.json (acp-kernel exports (pinned)) matches committed snapshot
+ok 115 - wire-contract goldens: kernel.json (acp-kernel exports (pinned)) matches committed snapshot
+  ---
+  duration_ms: 0.896326
+  type: 'test'
+  ...
+# Subtest: wire-contract goldens: bili.json (bili-built surfaces (compress-tool.ts)) matches committed snapshot
+ok 116 - wire-contract goldens: bili.json (bili-built surfaces (compress-tool.ts)) matches committed snapshot
+  ---
+  duration_ms: 0.446373
+  type: 'test'
+  ...
+# Subtest: wire-contract goldens: manifest-default.json (plugin manifest, default config) matches committed snapshot
+ok 117 - wire-contract goldens: manifest-default.json (plugin manifest, default config) matches committed snapshot
+  ---
+  duration_ms: 0.883116
+  type: 'test'
+  ...
+# Subtest: wire-contract goldens: manifest-optin.json (plugin manifest, absorb+rules+ccr enabled) matches committed snapshot
+ok 118 - wire-contract goldens: manifest-optin.json (plugin manifest, absorb+rules+ccr enabled) matches committed snapshot
+  ---
+  duration_ms: 0.658478
+  type: 'test'
+  ...
+# Subtest: WC-013: WebSocket transport envelopes omit HTTP-only fields
+ok 119 - WC-013: WebSocket transport envelopes omit HTTP-only fields
+  ---
+  duration_ms: 1.294647
+  type: 'test'
+  ...
+# Subtest: WC-012 validates compaction IDs without changing function-call ID rules
+ok 120 - WC-012 validates compaction IDs without changing function-call ID rules
+  ---
+  duration_ms: 0.322189
+  type: 'test'
+  ...
+# Subtest: WC-015 validates message-item IDs without constraining provider namespaces
+ok 121 - WC-015 validates message-item IDs without constraining provider namespaces
+  ---
+  duration_ms: 0.154274
+  type: 'test'
+  ...
+# Subtest: WC-022 tool_addition/tool_removal blocks are only valid inside role:system messages
+ok 122 - WC-022 tool_addition/tool_removal blocks are only valid inside role:system messages
+  ---
+  duration_ms: 0.402312
+  type: 'test'
+  ...
+# Subtest: WC-023 mid-conversation system messages satisfy the two-sided positional contract
+ok 123 - WC-023 mid-conversation system messages satisfy the two-sided positional contract
+  ---
+  duration_ms: 0.470294
+  type: 'test'
+  ...
+# Subtest: WC-016 validates global-scope breakpoint ordering (render order: tools → system → messages)
+ok 124 - WC-016 validates global-scope breakpoint ordering (render order: tools → system → messages)
+  ---
+  duration_ms: 0.297638
+  type: 'test'
+  ...
+# Subtest: WC-018 validates user-side part order on the Google wire (plain text before functionResponse)
+ok 125 - WC-018 validates user-side part order on the Google wire (plain text before functionResponse)
+  ---
+  duration_ms: 0.229526
+  type: 'test'
+  ...
+# Subtest: wire-contract ledger: every rule has a live enforcement clause
+ok 126 - wire-contract ledger: every rule has a live enforcement clause
+  ---
+  duration_ms: 1.0817
+  type: 'test'
+  ...
+# Subtest: wire-contract ledger: every lane-scoped rule has a live enforcement clause
+ok 127 - wire-contract ledger: every lane-scoped rule has a live enforcement clause
+  ---
+  duration_ms: 0.490844
+  type: 'test'
+  ...
+# Subtest: wire-contract ledger: every header rule has a live enforcement clause
+ok 128 - wire-contract ledger: every header rule has a live enforcement clause
+  ---
+  duration_ms: 0.330939
+  type: 'test'
+  ...
+# Subtest: wire-contract A: every kernel-exported tool passes its wire validator
+ok 129 - wire-contract A: every kernel-exported tool passes its wire validator
+  ---
+  duration_ms: 0.514875
+  type: 'test'
+  ...
+# Subtest: wire-contract B: every bili-built tool surface passes its wire validator
+ok 130 - wire-contract B: every bili-built tool surface passes its wire validator
+  ---
+  duration_ms: 0.225918
+  type: 'test'
+  ...
+# Subtest: wire-contract B: compress keeps every advertised call-form property
+ok 131 - wire-contract B: compress keeps every advertised call-form property
+  ---
+  duration_ms: 0.111794
+  type: 'test'
+  ...
+# Subtest: wire-contract C: default manifest serves only legal base tools
+ok 132 - wire-contract C: default manifest serves only legal base tools
+  ---
+  duration_ms: 1.105782
+  type: 'test'
+  ...
+# Subtest: wire-contract C: opt-in manifest advertises absorb/acp_rule/acp_retrieve legally
+ok 133 - wire-contract C: opt-in manifest advertises absorb/acp_rule/acp_retrieve legally
+  ---
+  duration_ms: 0.603117
+  type: 'test'
+  ...
+# 2026-11-13T08:44:21.042 [debug] [sess=wc-anthropic] [v=0.1.212] [wc-anthropic] [invariant-judge/main] clean growth verdict: matched 1/1, exempt carrier=0 reasoning=0 crush=0 ccr=0 truncate=0
+# Subtest: wire-contract D: proxied anthropic turn is accepted by the validation-parity fake
+ok 134 - wire-contract D: proxied anthropic turn is accepted by the validation-parity fake
+  ---
+  duration_ms: 3136.581134
+  type: 'test'
+  ...
+# Subtest: wire-contract D: proxied anthropic/vertex-anthropic turn is accepted by the validation-parity fake
+ok 135 - wire-contract D: proxied anthropic/vertex-anthropic turn is accepted by the validation-parity fake
+  ---
+  duration_ms: 3079.501866
+  type: 'test'
+  ...
+# Subtest: wire-contract D: proxied openai-chat turn is accepted by the validation-parity fake
+ok 136 - wire-contract D: proxied openai-chat turn is accepted by the validation-parity fake
+  ---
+  duration_ms: 3066.7126
+  type: 'test'
+  ...
+# Subtest: wire-contract D: proxied responses turn is accepted by the validation-parity fake
+ok 137 - wire-contract D: proxied responses turn is accepted by the validation-parity fake
+  ---
+  duration_ms: 3063.851777
+  type: 'test'
+  ...
+# Subtest: wire-contract D: proxied google turn is accepted by the validation-parity fake
+ok 138 - wire-contract D: proxied google turn is accepted by the validation-parity fake
+  ---
+  duration_ms: 3062.319793
+  type: 'test'
+  ...
+# Subtest: wire-contract D: opt-in lane (absorb+rules+ccr) forwards the extended surface legally
+ok 139 - wire-contract D: opt-in lane (absorb+rules+ccr) forwards the extended surface legally
+  ---
+  duration_ms: 3048.874906
+  type: 'test'
+  ...
+# Subtest: WC-013 negative control: unconfigured bili forwards reasoning.summary untouched; the strict upstream's 400 relays
+ok 140 - WC-013 negative control: unconfigured bili forwards reasoning.summary untouched; the strict upstream's 400 relays
+  ---
+  duration_ms: 3058.226804
+  type: 'test'
+  ...
+# Subtest: WC-013 configured: compat.dropFields strips reasoning.summary before forward; sibling keys survive
+ok 141 - WC-013 configured: compat.dropFields strips reasoning.summary before forward; sibling keys survive
+  ---
+  duration_ms: 3081.539463
+  type: 'test'
+  ...
+1..141
+# tests 141
+# suites 0
+# pass 141
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 54647.827516

@@ -1,0 +1,92 @@
+{
+  "batch": 1,
+  "batch_input_rows": 662,
+  "batch_operations": {
+    "COMMIT": {
+      "accepted": 54,
+      "attempted": 144,
+      "rejected": 90,
+      "reported_success": 139
+    },
+    "ROLLBACK": {
+      "accepted": 5,
+      "attempted": 15,
+      "rejected": 10,
+      "reported_success": 10
+    }
+  },
+  "batch_rejection_reasons": {
+    "commit_failed": 5,
+    "commit_mismatch": 21,
+    "commit_unverified": 25,
+    "commit_without_stage": 39,
+    "duplicate_conflict": 12,
+    "reset_failed": 5,
+    "rollback_failed": 5,
+    "rollback_unverified": 5,
+    "stage_failed": 5,
+    "verify_failed": 21,
+    "verify_mismatch": 4,
+    "verify_without_stage": 14
+  },
+  "batch_retained_events": 510,
+  "batch_totals": {
+    "accepted_rollbacks": 5,
+    "applied_commits": 54,
+    "board_count": 64,
+    "conflicted_ids": 12,
+    "duplicate_replays": 128,
+    "rejected_events": 161
+  },
+  "case_range": [
+    "INC-00001",
+    "INC-00064"
+  ],
+  "contract_revision": "R2",
+  "full_corpus_input_rows": 1990,
+  "full_corpus_totals": {
+    "accepted_rollbacks": 16,
+    "applied_commits": 163,
+    "board_count": 192,
+    "conflicted_ids": 38,
+    "duplicate_replays": 384,
+    "rejected_events": 489
+  },
+  "sha256": {
+    "PHASE_NOTES.md": "7c4a4a22b2a861a1224bd65343bf649a4a60d0d5ad96c8b1b3da3c70024ae5ff",
+    "README.md": "14219f2b66505b63aed3325152097dcdd854764a0d75fccf3ac8d3957b4b4d2b",
+    "audit/README.md": "a33d49fa4e560e5001e0b5fcf3540b1085d1aa9d39ce10b7e678ec8421b183d7",
+    "audit/batch-1-report.json": "fb4e1aa12bd9c004640ea9d6e51b5bcf3f3f43cb1236410805a7432bd0763354",
+    "audit/batch-1-trace.json": "7104f54bcb2e4e5a92428491bd5211d84137a8013317c7d6651e6614e0683327",
+    "audit/batch-2-report.json": "9e17167eb9ca83de4dfe7aac879d40c986cdd622288805cc1693e2642371d1a7",
+    "audit/batch-2-trace.json": "b6495bcbfa656a05398194ca451cc58e4cc6302c5c70af5fd929f4d94469bd28",
+    "audit/ingest-batch-2.md": "23a201160754280239b6d12b813be156a3454272d8dfd7dac36f716c22496846",
+    "audit/operations-batch-1.json": "bdce36fbacb47b14b52cdd2daed0083d6f8ddb2789bf6c7ef4093ca323c39b39",
+    "audit/operations-batch-2.json": "d69c6a9b541cc4c0412e6f013b0029953cef4e678a0b397754483afb0f12c4db",
+    "audit/report-batch-2.md": "3e863df3ec40976f41df0ad23608f7fccc30950cea06436809d76256d43f44ab",
+    "audit/state-batch-2.md": "19b10deba6ad0869404b79b113fe50523d5c2cf0ff0649fcb1be8b046a4cc94c",
+    "audit/visible-r2-report.json": "6cef8713e8e9232723f998c11e5b90bd295170832ee29150df9b5dd09424ef87",
+    "audit/visible-r2-trace.json": "39e7350c66630518460fef56f78ed05afc33ad70559b145ab9007d5ad3909bc4",
+    "data/visible.jsonl": "403dc5ae6a3ad6da05ab37dffdc0fc0f76b36027e62ba8591a4c439f7d8bf87a",
+    "ingest.py": "543b164dafc3f32fb50e5976c968d18452203bcf075808078b73795e67d6c45c",
+    "reconcile.py": "8e9f19cf4cff8134ffc78664026903e1c7bd1ee92749aee5f54db19a95f0e362",
+    "report.py": "48a77e93cc6ce6b105300504b44de0208433ea30b0edc3e82022f691316e8f33",
+    "state_machine.py": "5d00a227f0c62d13237f50164d73d4792ccc6012b27ed6b9ea307756805f2824",
+    "tests/test_ingest.py": "bf52b4960f4e8d72e1a68e8aff275ba5bbaf4b40397f387050829cc98bb772a5",
+    "tests/test_public.py": "69bd1d7de0636e948d8d7189296f7b1d03c9d1bd43d1dfd35744a3cab1545731",
+    "tests/test_reconcile.py": "0965da0198cbd799b1ea3d4fc0e8a825574fb56bbd2debb91afdcf8615333346",
+    "tests/test_report.py": "764a39af36766618e0cc74327c1f74aa3070aee526e621ae93c09b1bd39e48f5",
+    "tests/test_state_machine.py": "b9a6cbdcd7e3d2413a71dd4d73e395a840b7d376f532740f55e7c499d7afadfe"
+  },
+  "validation": {
+    "all_timestamps_rewritten_without_report_or_trace_change": true,
+    "batch_matches_global_reconciliation_projection": true,
+    "command": "python3 -m unittest discover -s tests -v",
+    "full_corpus_shuffle_seeds": [
+      17,
+      20261106
+    ],
+    "tests_passed": 50,
+    "timestamp_rewrite_seed": 20261106
+  }
+}

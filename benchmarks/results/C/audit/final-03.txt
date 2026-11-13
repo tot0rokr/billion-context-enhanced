@@ -1,0 +1,5 @@
+Batch 2 complete; all 35 tests pass. Results: 54 accepted commits, 5 accepted rollbacks, 165 incidents. Regenerated reports for all batches and preserved all 32 exact operational notes in the [full audit](/task/reports/visible-r2-audit.json).
+
+R2 now governs every batch: order by `(board, epoch, sequence, event_id)`; failed VERIFY clears the existing transaction’s verified flag. Other rules, including epoch retention, remain unchanged.
+
+Unresolved contract gaps: malformed-input and missing-baseline handling. No outstanding R2 implementation issues.

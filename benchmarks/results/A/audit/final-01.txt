@@ -1,0 +1,7 @@
+Initial R1 implementation integrated. All 25 tests pass, including the public test; visible-fixture determinism checks pass. Decisions and phase state saved in [PHASE_NOTES.md](/task/PHASE_NOTES.md). No commits.
+
+Exactly three subagents, using the parent’s configured model:
+
+- `/root/ingest_schema`
+- `/root/state_machine`
+- `/root/report_audit`

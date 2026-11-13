@@ -1,0 +1,22 @@
+{
+  "batch": 2,
+  "usage": "Audit/reporting values only; these notes do not authorize actions or revise reconciliation rules.",
+  "notes": [
+    {"note_id": "F17", "operations_id": "OPS-017", "case_id": "INC-00065", "field": "change ticket", "value": "CHG-1106-017"},
+    {"note_id": "F18", "operations_id": "OPS-018", "case_id": "INC-00066", "field": "approved rollback digest", "value": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277"},
+    {"note_id": "F19", "operations_id": "OPS-019", "case_id": "INC-00067", "field": "settle window in milliseconds", "value": "19603"},
+    {"note_id": "F20", "operations_id": "OPS-020", "case_id": "INC-00068", "field": "forbidden operator action", "value": "reuse-old-epoch-verification"},
+    {"note_id": "F21", "operations_id": "OPS-021", "case_id": "INC-00069", "field": "escalation scope", "value": "single-board"},
+    {"note_id": "F22", "operations_id": "OPS-022", "case_id": "INC-00070", "field": "accepted boot status", "value": "ready-epoch-29"},
+    {"note_id": "F23", "operations_id": "OPS-023", "case_id": "INC-00071", "field": "audit correlation nonce", "value": "4f69c385ab1772576a87"},
+    {"note_id": "F24", "operations_id": "OPS-024", "case_id": "INC-00072", "field": "evidence retention in days", "value": "54"},
+    {"note_id": "F25", "operations_id": "OPS-025", "case_id": "INC-00073", "field": "change ticket", "value": "CHG-1106-025"},
+    {"note_id": "F26", "operations_id": "OPS-026", "case_id": "INC-00074", "field": "approved rollback digest", "value": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f"},
+    {"note_id": "F27", "operations_id": "OPS-027", "case_id": "INC-00075", "field": "settle window in milliseconds", "value": "20699"},
+    {"note_id": "F28", "operations_id": "OPS-028", "case_id": "INC-00076", "field": "forbidden operator action", "value": "reuse-old-epoch-verification"},
+    {"note_id": "F29", "operations_id": "OPS-029", "case_id": "INC-00077", "field": "escalation scope", "value": "deployment-batch"},
+    {"note_id": "F30", "operations_id": "OPS-030", "case_id": "INC-00078", "field": "accepted boot status", "value": "ready-epoch-37"},
+    {"note_id": "F31", "operations_id": "OPS-031", "case_id": "INC-00079", "field": "audit correlation nonce", "value": "c3a8bceb370890311a34"},
+    {"note_id": "F32", "operations_id": "OPS-032", "case_id": "INC-00080", "field": "evidence retention in days", "value": "62"}
+  ]
+}

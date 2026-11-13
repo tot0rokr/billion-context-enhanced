@@ -1,0 +1,79 @@
+{
+  "scope": "Command failures are root-only; tool counts cover all measured threads. These are not bug counts.",
+  "arms": {
+    "A": {
+      "initial_integrated_tests": 25,
+      "initial_integrated_exit_code": 0,
+      "final_self_tests": 68,
+      "final_self_test_exit_code": 0,
+      "root_shell_commands": 60,
+      "root_shell_failures": 7,
+      "root_failure_categories": {
+        "environment_or_command": 4,
+        "premature_file_read": 3
+      },
+      "all_threads_exec_command_calls": 143,
+      "all_threads_apply_patch_calls": 42,
+      "all_threads_send_message_calls": 40,
+      "production_python_files": 4,
+      "production_python_lines": 546,
+      "initial_test_evidence": {
+        "file": "events-01.jsonl",
+        "line": 38
+      },
+      "final_test_evidence": {
+        "file": "events-05.jsonl",
+        "line": 14
+      }
+    },
+    "B": {
+      "initial_integrated_tests": 26,
+      "initial_integrated_exit_code": 0,
+      "final_self_tests": 57,
+      "final_self_test_exit_code": 0,
+      "root_shell_commands": 62,
+      "root_shell_failures": 6,
+      "root_failure_categories": {
+        "environment_or_command": 5,
+        "premature_file_read": 1
+      },
+      "all_threads_exec_command_calls": 132,
+      "all_threads_apply_patch_calls": 29,
+      "all_threads_send_message_calls": 41,
+      "production_python_files": 4,
+      "production_python_lines": 479,
+      "initial_test_evidence": {
+        "file": "events-01.jsonl",
+        "line": 39
+      },
+      "final_test_evidence": {
+        "file": "events-05.jsonl",
+        "line": 20
+      }
+    },
+    "C": {
+      "initial_integrated_tests": 20,
+      "initial_integrated_exit_code": 0,
+      "final_self_tests": 39,
+      "final_self_test_exit_code": 0,
+      "root_shell_commands": 51,
+      "root_shell_failures": 3,
+      "root_failure_categories": {
+        "environment_or_command": 3
+      },
+      "all_threads_exec_command_calls": 136,
+      "all_threads_apply_patch_calls": 27,
+      "all_threads_send_message_calls": 30,
+      "production_python_files": 4,
+      "production_python_lines": 434,
+      "initial_test_evidence": {
+        "file": "events-01.jsonl",
+        "line": 39
+      },
+      "final_test_evidence": {
+        "file": "events-05.jsonl",
+        "line": 16
+      }
+    }
+  }
+}

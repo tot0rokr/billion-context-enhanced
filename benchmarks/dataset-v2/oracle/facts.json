@@ -1,0 +1,346 @@
+{
+  "F01": {
+    "id": "F01",
+    "incident": "OPS-001",
+    "label": "change ticket",
+    "answer": "revised-CHG-1106-001",
+    "question": "For OPS-001, what is the FINAL change ticket? Return its exact value as a string.",
+    "superseded": "CHG-1106-001"
+  },
+  "F02": {
+    "id": "F02",
+    "incident": "OPS-002",
+    "label": "approved rollback digest",
+    "answer": "a2cf9430662e6ca5754d20895242bd2d53075964c1fa40b527700fe2541dd02e",
+    "question": "For OPS-002, what is the FINAL approved rollback digest? Return its exact value as a string.",
+    "superseded": "db7b802fead1fd7c5ec12451e8329b5ac82509f404b6d2cd5bc3a9b139e5f48e"
+  },
+  "F03": {
+    "id": "F03",
+    "incident": "OPS-003",
+    "label": "settle window in milliseconds",
+    "answer": "17524",
+    "question": "For OPS-003, what is the FINAL settle window in milliseconds? Return its exact value as a string.",
+    "superseded": "17411"
+  },
+  "F04": {
+    "id": "F04",
+    "incident": "OPS-004",
+    "label": "forbidden operator action",
+    "answer": "revised-reuse-old-epoch-verification",
+    "question": "For OPS-004, what is the FINAL forbidden operator action? Return its exact value as a string.",
+    "superseded": "reuse-old-epoch-verification"
+  },
+  "F05": {
+    "id": "F05",
+    "incident": "OPS-005",
+    "label": "escalation scope",
+    "answer": "revised-deployment-batch",
+    "question": "For OPS-005, what is the FINAL escalation scope? Return its exact value as a string.",
+    "superseded": "deployment-batch"
+  },
+  "F06": {
+    "id": "F06",
+    "incident": "OPS-006",
+    "label": "accepted boot status",
+    "answer": "revised-ready-epoch-13",
+    "question": "For OPS-006, what is the FINAL accepted boot status? Return its exact value as a string.",
+    "superseded": "ready-epoch-13"
+  },
+  "F07": {
+    "id": "F07",
+    "incident": "OPS-007",
+    "label": "audit correlation nonce",
+    "answer": "revised-118a27ca65904294cb9e",
+    "question": "For OPS-007, what is the FINAL audit correlation nonce? Return its exact value as a string.",
+    "superseded": "118a27ca65904294cb9e"
+  },
+  "F08": {
+    "id": "F08",
+    "incident": "OPS-008",
+    "label": "evidence retention in days",
+    "answer": "151",
+    "question": "For OPS-008, what is the FINAL evidence retention in days? Return its exact value as a string.",
+    "superseded": "38"
+  },
+  "F09": {
+    "id": "F09",
+    "incident": "OPS-009",
+    "label": "change ticket",
+    "answer": "CHG-1106-009",
+    "question": "For OPS-009, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  "F10": {
+    "id": "F10",
+    "incident": "OPS-010",
+    "label": "approved rollback digest",
+    "answer": "15badb0ea0073ed85e764b678efaf57c144c3874e4ade5da228aee360d52bcc8",
+    "question": "For OPS-010, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  "F11": {
+    "id": "F11",
+    "incident": "OPS-011",
+    "label": "settle window in milliseconds",
+    "answer": "18507",
+    "question": "For OPS-011, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  "F12": {
+    "id": "F12",
+    "incident": "OPS-012",
+    "label": "forbidden operator action",
+    "answer": "reuse-old-epoch-verification",
+    "question": "For OPS-012, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  "F13": {
+    "id": "F13",
+    "incident": "OPS-013",
+    "label": "escalation scope",
+    "answer": "rack",
+    "question": "For OPS-013, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  "F14": {
+    "id": "F14",
+    "incident": "OPS-014",
+    "label": "accepted boot status",
+    "answer": "ready-epoch-21",
+    "question": "For OPS-014, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  "F15": {
+    "id": "F15",
+    "incident": "OPS-015",
+    "label": "audit correlation nonce",
+    "answer": "726907cf0954db14e4ea",
+    "question": "For OPS-015, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  "F16": {
+    "id": "F16",
+    "incident": "OPS-016",
+    "label": "evidence retention in days",
+    "answer": "46",
+    "question": "For OPS-016, what is the FINAL evidence retention in days? Return its exact value as a string."
+  },
+  "F17": {
+    "id": "F17",
+    "incident": "OPS-017",
+    "label": "change ticket",
+    "answer": "CHG-1106-017",
+    "question": "For OPS-017, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  "F18": {
+    "id": "F18",
+    "incident": "OPS-018",
+    "label": "approved rollback digest",
+    "answer": "23139fbf491de2f1e9ca759d4c114e07865ec257b89a0d099364781c8ff43277",
+    "question": "For OPS-018, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  "F19": {
+    "id": "F19",
+    "incident": "OPS-019",
+    "label": "settle window in milliseconds",
+    "answer": "19603",
+    "question": "For OPS-019, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  "F20": {
+    "id": "F20",
+    "incident": "OPS-020",
+    "label": "forbidden operator action",
+    "answer": "reuse-old-epoch-verification",
+    "question": "For OPS-020, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  "F21": {
+    "id": "F21",
+    "incident": "OPS-021",
+    "label": "escalation scope",
+    "answer": "single-board",
+    "question": "For OPS-021, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  "F22": {
+    "id": "F22",
+    "incident": "OPS-022",
+    "label": "accepted boot status",
+    "answer": "ready-epoch-29",
+    "question": "For OPS-022, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  "F23": {
+    "id": "F23",
+    "incident": "OPS-023",
+    "label": "audit correlation nonce",
+    "answer": "4f69c385ab1772576a87",
+    "question": "For OPS-023, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  "F24": {
+    "id": "F24",
+    "incident": "OPS-024",
+    "label": "evidence retention in days",
+    "answer": "54",
+    "question": "For OPS-024, what is the FINAL evidence retention in days? Return its exact value as a string."
+  },
+  "F25": {
+    "id": "F25",
+    "incident": "OPS-025",
+    "label": "change ticket",
+    "answer": "CHG-1106-025",
+    "question": "For OPS-025, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  "F26": {
+    "id": "F26",
+    "incident": "OPS-026",
+    "label": "approved rollback digest",
+    "answer": "fb5d8083ced8cce6722d586553d79b311687a5d17cde952304a1abca4bfc713f",
+    "question": "For OPS-026, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  "F27": {
+    "id": "F27",
+    "incident": "OPS-027",
+    "label": "settle window in milliseconds",
+    "answer": "20699",
+    "question": "For OPS-027, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  "F28": {
+    "id": "F28",
+    "incident": "OPS-028",
+    "label": "forbidden operator action",
+    "answer": "reuse-old-epoch-verification",
+    "question": "For OPS-028, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  "F29": {
+    "id": "F29",
+    "incident": "OPS-029",
+    "label": "escalation scope",
+    "answer": "deployment-batch",
+    "question": "For OPS-029, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  "F30": {
+    "id": "F30",
+    "incident": "OPS-030",
+    "label": "accepted boot status",
+    "answer": "ready-epoch-37",
+    "question": "For OPS-030, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  "F31": {
+    "id": "F31",
+    "incident": "OPS-031",
+    "label": "audit correlation nonce",
+    "answer": "c3a8bceb370890311a34",
+    "question": "For OPS-031, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  "F32": {
+    "id": "F32",
+    "incident": "OPS-032",
+    "label": "evidence retention in days",
+    "answer": "62",
+    "question": "For OPS-032, what is the FINAL evidence retention in days? Return its exact value as a string."
+  },
+  "F33": {
+    "id": "F33",
+    "incident": "OPS-033",
+    "label": "change ticket",
+    "answer": "CHG-1106-033",
+    "question": "For OPS-033, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  "F34": {
+    "id": "F34",
+    "incident": "OPS-034",
+    "label": "approved rollback digest",
+    "answer": "0de61026d961f4719491da66d8c746c0698dcabb20d33379b66284e370b17a79",
+    "question": "For OPS-034, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  "F35": {
+    "id": "F35",
+    "incident": "OPS-035",
+    "label": "settle window in milliseconds",
+    "answer": "21795",
+    "question": "For OPS-035, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  "F36": {
+    "id": "F36",
+    "incident": "OPS-036",
+    "label": "forbidden operator action",
+    "answer": "reuse-old-epoch-verification",
+    "question": "For OPS-036, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  "F37": {
+    "id": "F37",
+    "incident": "OPS-037",
+    "label": "escalation scope",
+    "answer": "rack",
+    "question": "For OPS-037, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  "F38": {
+    "id": "F38",
+    "incident": "OPS-038",
+    "label": "accepted boot status",
+    "answer": "ready-epoch-45",
+    "question": "For OPS-038, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  "F39": {
+    "id": "F39",
+    "incident": "OPS-039",
+    "label": "audit correlation nonce",
+    "answer": "f88754d0b542d90447a5",
+    "question": "For OPS-039, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  "F40": {
+    "id": "F40",
+    "incident": "OPS-040",
+    "label": "evidence retention in days",
+    "answer": "70",
+    "question": "For OPS-040, what is the FINAL evidence retention in days? Return its exact value as a string."
+  },
+  "F41": {
+    "id": "F41",
+    "incident": "OPS-041",
+    "label": "change ticket",
+    "answer": "CHG-1106-041",
+    "question": "For OPS-041, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  "F42": {
+    "id": "F42",
+    "incident": "OPS-042",
+    "label": "approved rollback digest",
+    "answer": "12a71789f81882694a6c56866042a33ed147438ec27adcfde8583a6afcabda09",
+    "question": "For OPS-042, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  "F43": {
+    "id": "F43",
+    "incident": "OPS-043",
+    "label": "settle window in milliseconds",
+    "answer": "22891",
+    "question": "For OPS-043, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  "F44": {
+    "id": "F44",
+    "incident": "OPS-044",
+    "label": "forbidden operator action",
+    "answer": "reuse-old-epoch-verification",
+    "question": "For OPS-044, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  "F45": {
+    "id": "F45",
+    "incident": "OPS-045",
+    "label": "escalation scope",
+    "answer": "single-board",
+    "question": "For OPS-045, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  "F46": {
+    "id": "F46",
+    "incident": "OPS-046",
+    "label": "accepted boot status",
+    "answer": "ready-epoch-53",
+    "question": "For OPS-046, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  "F47": {
+    "id": "F47",
+    "incident": "OPS-047",
+    "label": "audit correlation nonce",
+    "answer": "8e22fa7c84b9d3a89b8d",
+    "question": "For OPS-047, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  "F48": {
+    "id": "F48",
+    "incident": "OPS-048",
+    "label": "evidence retention in days",
+    "answer": "78",
+    "question": "For OPS-048, what is the FINAL evidence retention in days? Return its exact value as a string."
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "seed": 20261106,
+  "phases": [
+    {
+      "phase": 2,
+      "cases": 64,
+      "characters": 175553,
+      "rough_tokens_chars_div_4": 43889
+    },
+    {
+      "phase": 3,
+      "cases": 64,
+      "characters": 176374,
+      "rough_tokens_chars_div_4": 44094
+    },
+    {
+      "phase": 4,
+      "cases": 64,
+      "characters": 177818,
+      "rough_tokens_chars_div_4": 44455
+    }
+  ],
+  "visible_cases": 192,
+  "visible_events": 1990,
+  "hidden_events": 746,
+  "fact_count": 48,
+  "semantic_cases": [
+    "semantic-00",
+    "semantic-01",
+    "semantic-02",
+    "semantic-03",
+    "semantic-04",
+    "semantic-05",
+    "semantic-06",
+    "semantic-07",
+    "semantic-08",
+    "semantic-09",
+    "semantic-10",
+    "semantic-11"
+  ],
+  "prompt_tokens_are_estimates": true,
+  "recovery_stages": {
+    "06": "closed-context; no tools",
+    "07": "available context engine and existing notes; no original evidence files",
+    "08": "original files released under candidate/evidence"
+  },
+  "rules": "Final R3; staged corrections R2/R3 are intentional",
+  "hashes": {
+    "oracle/expected.json": "84ef0ac71f460abd5ca60080f80cad7f4172e5de305c442be7d31ba64ca8e3d0",
+    "oracle/facts.json": "be60ed9feddb07508b9c497d0da4b03595c0671bfca11af4dce0042e902aa84e",
+    "oracle/final-contract.txt": "20b1451bd63bafae0f2df98e2c82e48e9d24f6aa80b88c30a52840a73dc1c913",
+    "oracle/hidden-input.jsonl": "1cec008a4eaabae1a65ae12df1cc9b2ee35c25a0fd80bf1d1c83526782881281",
+    "oracle/semantic-00.expected.json": "f63120b4d6d093356f860372cfe63320111f1a5fbf69d4d722aa307314814eda",
+    "oracle/semantic-00.jsonl": "bd103c3347a8472c06f8d545df9d8659fff2056606a378e3fa1001fedbab1ffc",
+    "oracle/semantic-01.expected.json": "04dd1e670ba76c50ed035f3ed1f99f82c0be83710c91b48d966053aeae6335db",
+    "oracle/semantic-01.jsonl": "d0f90d529ee9af40d2b36a3c5be4e2d7225cda3c1e25f22789a3951f0db61539",
+    "oracle/semantic-02.expected.json": "21ee97064c564f6ec5670089aabb0a634476bc46fe394854703e2458a9e08e97",
+    "oracle/semantic-02.jsonl": "4e50a5780bfbc9710c6f72213d7f1aa196c79bd488b06863e0b454fc1d1bab5e",
+    "oracle/semantic-03.expected.json": "4b03ab26f3d630deaf8a808dd6541fdd2bb93ec0885925e84888d567b227124e",
+    "oracle/semantic-03.jsonl": "17f10a49048131521dc454c0e1eb76ffe7031d63c0ea544eaac3072356d76079",
+    "oracle/semantic-04.expected.json": "fcef874a42b95f2752388e1ebaa443e85873ce32129b073b7dd6fbaecc612909",
+    "oracle/semantic-04.jsonl": "968cb49ee9bdaabb891e58c3e9e50038d930c523f103c8f5876a6531ce27c7d5",
+    "oracle/semantic-05.expected.json": "48aba563ca0d9bf726c86b877a9fb3187a3125c44bf67030d006e9a18d1d33e4",
+    "oracle/semantic-05.jsonl": "2b51cbe74ab124098b1adcc0352eae5ff984971fb3c506900e88a63a1665cdcf",
+    "oracle/semantic-06.expected.json": "f9961d49c2c156a28e362bcc171dc583834de7d67d2cc3be916be20015e27ae2",
+    "oracle/semantic-06.jsonl": "483b77d8be9e9648becd0cfce9668568fea3d1b967e13e4da7ca35be7dc0e8b0",
+    "oracle/semantic-07.expected.json": "4078c2541e177a15d54666c2d75dd488685284dfe287e5100b34d66396249af8",
+    "oracle/semantic-07.jsonl": "9ec0a0964e02eaa748346c2e6a01ff417fa0d143fe0513e5154cc3fa6f9b6db4",
+    "oracle/semantic-08.expected.json": "2f9349a3218f36eaa37af7672e9d0339af39f000855dc8a75e60add98e4913b3",
+    "oracle/semantic-08.jsonl": "91dd193ac234407860983a1b4ca54ab2e8f613c2d337b3cd6c60f12d1c5c1be9",
+    "oracle/semantic-09.expected.json": "d39edfaf6ff60ec6ae38cffba943c1ea3e0a35f481689328f4f92c78b03b2c7b",
+    "oracle/semantic-09.jsonl": "033c69a58a9cc6ba7258165da0ea6f08c182c9311bc7e2cad8ebd241bf835f07",
+    "oracle/semantic-10.expected.json": "6fd7b60ad45577e885960975eca38d0df1acccf76d0a5fbe16ba2038ae1da0ec",
+    "oracle/semantic-10.jsonl": "e8dff1aa48cefd8c574bdee5cb0318906358d86d3b021aa23b1f08f446fa2ea6",
+    "oracle/semantic-11.expected.json": "bd52a476f7400508e93c23b6f444c437c0698201e61565c020ef930a2d606250",
+    "oracle/semantic-11.jsonl": "672132cf5d71551e159ff6c27d3007b4445a35cb59022d4d0cfff32c10fa4083",
+    "oracle/visible-expected.json": "8ddefc512f002dfc7d0789f48e5284cb34dc75e56de46da4ebd84b6af7dd0b90",
+    "prompts/01.txt": "dd7f47683f5108909fec6b372987a52f3468b9e5d40595f26389cdf08505e525",
+    "prompts/02.txt": "2605302ed0f269a051554d02a308df0170a9bd1a437cae2a0b5529dcad0c28b6",
+    "prompts/03.txt": "fbc1dae8428a96a218a28884fd83f07566ba2a3b12447dd8896e460aa1e7b5d5",
+    "prompts/04.txt": "9db2a083d91d3f45c99638bf516a371848da447116c697b545b4aaad4b52c2ef",
+    "prompts/05.txt": "d6282c99631914ac406bd67e8ea4c785036c8c51e208a2b9775ffb9abee30476",
+    "prompts/06.txt": "8b04cf7ca2fb28302c460c975dd9e7ccacb654b9c1fe31362ecb08f022266c5d",
+    "prompts/07.txt": "3ae3f1a959b97f7ef681c170093658023c9c1ee18a4c078640b3ed92e1f18d44",
+    "prompts/08.txt": "b12d1a294366f76de5415013924e46f1a83de559d2139be76735bc14903bcab3",
+    "visible/README.md": "0a4d269dc5c1ea36930055f577fc0d9dbb8bbbe1ffbebaa705f0d8e9a45ca621",
+    "visible/data/public-expected.json": "e4df4710a67ccfc105297f4ba01334df1c8c8aafb7721ded0d42d22896f57823",
+    "visible/data/public.jsonl": "f845128f1f15f96bc923c7565c039aa12093145144961f429400225e8b9a3973",
+    "visible/data/visible.jsonl": "403dc5ae6a3ad6da05ab37dffdc0fc0f76b36027e62ba8591a4c439f7d8bf87a",
+    "visible/reconcile.py": "7a61e5eee075e7021ead4e85f8e2e1ea105a5b7f05c5cb4e29f6e040f12e2beb",
+    "visible/tests/test_public.py": "69bd1d7de0636e948d8d7189296f7b1d03c9d1bd43d1dfd35744a3cab1545731"
+  }
+}

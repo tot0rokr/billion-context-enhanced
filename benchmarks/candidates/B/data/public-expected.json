@@ -1,0 +1,19 @@
+{
+  "boards": [
+    {
+      "board": "public-board",
+      "epoch": 0,
+      "active_slot": "B",
+      "active_digest": "new"
+    }
+  ],
+  "incidents": [],
+  "totals": {
+    "board_count": 1,
+    "applied_commits": 1,
+    "accepted_rollbacks": 0,
+    "duplicate_replays": 1,
+    "conflicted_ids": 0,
+    "rejected_events": 0
+  }
+}

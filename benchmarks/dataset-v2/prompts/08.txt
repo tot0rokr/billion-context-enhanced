@@ -1,0 +1,195 @@
+Original-file recovery check. You may now inspect evidence/02.txt, evidence/03.txt and evidence/04.txt, which have just been released and contain the original evidence batches. Use these original files to recover or correct the same 48 operational answers, honoring explicit corrections. Return only one JSON object mapping F01 through F48 to string answers, or null when unknown. No prose or code fences.
+[
+  {
+    "id": "F01",
+    "question": "For OPS-001, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  {
+    "id": "F02",
+    "question": "For OPS-002, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  {
+    "id": "F03",
+    "question": "For OPS-003, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  {
+    "id": "F04",
+    "question": "For OPS-004, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  {
+    "id": "F05",
+    "question": "For OPS-005, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  {
+    "id": "F06",
+    "question": "For OPS-006, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  {
+    "id": "F07",
+    "question": "For OPS-007, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  {
+    "id": "F08",
+    "question": "For OPS-008, what is the FINAL evidence retention in days? Return its exact value as a string."
+  },
+  {
+    "id": "F09",
+    "question": "For OPS-009, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  {
+    "id": "F10",
+    "question": "For OPS-010, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  {
+    "id": "F11",
+    "question": "For OPS-011, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  {
+    "id": "F12",
+    "question": "For OPS-012, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  {
+    "id": "F13",
+    "question": "For OPS-013, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  {
+    "id": "F14",
+    "question": "For OPS-014, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  {
+    "id": "F15",
+    "question": "For OPS-015, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  {
+    "id": "F16",
+    "question": "For OPS-016, what is the FINAL evidence retention in days? Return its exact value as a string."
+  },
+  {
+    "id": "F17",
+    "question": "For OPS-017, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  {
+    "id": "F18",
+    "question": "For OPS-018, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  {
+    "id": "F19",
+    "question": "For OPS-019, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  {
+    "id": "F20",
+    "question": "For OPS-020, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  {
+    "id": "F21",
+    "question": "For OPS-021, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  {
+    "id": "F22",
+    "question": "For OPS-022, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  {
+    "id": "F23",
+    "question": "For OPS-023, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  {
+    "id": "F24",
+    "question": "For OPS-024, what is the FINAL evidence retention in days? Return its exact value as a string."
+  },
+  {
+    "id": "F25",
+    "question": "For OPS-025, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  {
+    "id": "F26",
+    "question": "For OPS-026, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  {
+    "id": "F27",
+    "question": "For OPS-027, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  {
+    "id": "F28",
+    "question": "For OPS-028, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  {
+    "id": "F29",
+    "question": "For OPS-029, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  {
+    "id": "F30",
+    "question": "For OPS-030, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  {
+    "id": "F31",
+    "question": "For OPS-031, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  {
+    "id": "F32",
+    "question": "For OPS-032, what is the FINAL evidence retention in days? Return its exact value as a string."
+  },
+  {
+    "id": "F33",
+    "question": "For OPS-033, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  {
+    "id": "F34",
+    "question": "For OPS-034, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  {
+    "id": "F35",
+    "question": "For OPS-035, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  {
+    "id": "F36",
+    "question": "For OPS-036, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  {
+    "id": "F37",
+    "question": "For OPS-037, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  {
+    "id": "F38",
+    "question": "For OPS-038, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  {
+    "id": "F39",
+    "question": "For OPS-039, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  {
+    "id": "F40",
+    "question": "For OPS-040, what is the FINAL evidence retention in days? Return its exact value as a string."
+  },
+  {
+    "id": "F41",
+    "question": "For OPS-041, what is the FINAL change ticket? Return its exact value as a string."
+  },
+  {
+    "id": "F42",
+    "question": "For OPS-042, what is the FINAL approved rollback digest? Return its exact value as a string."
+  },
+  {
+    "id": "F43",
+    "question": "For OPS-043, what is the FINAL settle window in milliseconds? Return its exact value as a string."
+  },
+  {
+    "id": "F44",
+    "question": "For OPS-044, what is the FINAL forbidden operator action? Return its exact value as a string."
+  },
+  {
+    "id": "F45",
+    "question": "For OPS-045, what is the FINAL escalation scope? Return its exact value as a string."
+  },
+  {
+    "id": "F46",
+    "question": "For OPS-046, what is the FINAL accepted boot status? Return its exact value as a string."
+  },
+  {
+    "id": "F47",
+    "question": "For OPS-047, what is the FINAL audit correlation nonce? Return its exact value as a string."
+  },
+  {
+    "id": "F48",
+    "question": "For OPS-048, what is the FINAL evidence retention in days? Return its exact value as a string."
+  }
+]

@@ -1,0 +1,3 @@
+Integrated under R3; all 39 tests pass, including public tests and fresh mixed-schema CLI regressions. Runtime logic contains no corpus-specific hardcoding, and CLI/JSON contracts are preserved.
+
+Generated [analysis.json](/task/analysis.json). The requested command ran using a shell-local `python` wrapper for the available `python3`.

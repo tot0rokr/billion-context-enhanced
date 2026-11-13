@@ -1,0 +1,5 @@
+Batch 1 complete: 28 tests pass. Audited 64 cases: 13 accepted commits, 5 accepted rollbacks, 258 incidents. Added audit output and reduced replay memory usage.
+
+Saved the [report](/task/reports/batch1-r1-report.json), [audit with exact operations notes](/task/reports/batch1-r1-audit.json), and [phase notes](/task/PHASE_NOTES.md).
+
+R1 remains unchanged: timestamp ordering, pending-state retention across epochs, and failed-VERIFY flag retention. Unresolved contract questions remain timestamp ties/replay selection and missing-baseline/malformed-input handling.

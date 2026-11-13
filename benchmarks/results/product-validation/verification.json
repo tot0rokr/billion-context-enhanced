@@ -1,0 +1,32 @@
+{
+  "base_commit": "be611a8566c22ee0a65fb5765365671d47e810d5",
+  "worktree": "/tmp/billion-context-noop-20261113",
+  "branch": "local/noop-guidance-20261113",
+  "committed": false,
+  "installed": false,
+  "kernel_version": "0.0.183",
+  "changes": [
+    "Show the existing foldability diagnostics in the per-message status view",
+    "Retain typed compression outcomes and skip fold refresh for exact no-ops",
+    "Use client-visible receipts for marker-enabled Responses no-op-only loop rounds"
+  ],
+  "validation": {
+    "build": "passed",
+    "typecheck": "passed",
+    "diff_check": "passed",
+    "kernel_tests": {"passed": 1596, "failed": 0, "skipped": 0},
+    "targeted_integration_tests": {"passed": 141, "failed": 0, "skipped": 0},
+    "codex_fake_upstream_tests": {"passed": 11, "failed": 0, "skipped": 1}
+  },
+  "negative_controls": {
+    "status_before_change": {"passed": 1, "failed": 3},
+    "noop_loop_before_change": {"passed": 0, "failed": 2},
+    "anthropic_intermediate_candidate": {"passed": 1, "failed": 1}
+  },
+  "limits": [
+    "No hard cap on repeated model calls or cross-request/plugin cooldown was added",
+    "Receipt replacement is limited to streaming Responses; other wires retain native tool results",
+    "Cross-client-request cache preservation was not established",
+    "Live model latency and token savings have not been remeasured"
+  ]
+}

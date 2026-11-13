@@ -1,0 +1,3 @@
+Final R3 integration verified. All 68 tests pass, including public tests and fresh unseen-event regressions. CLI and JSON output shape are preserved without fixture hardcoding.
+
+Generated [analysis.json](/task/analysis.json): 150 commits, 16 rollbacks, 502 incidents. The requested command used a temporary `python` function backed by `python3`.

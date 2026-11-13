@@ -1,0 +1,7 @@
+Batch 3 complete; **56 tests pass**. Results: 51 accepted commits, 6 accepted rollbacks, 167 incidents.
+
+R3 applies to all batches: epoch advancement clears pending transactions while preserving active image/history; rollback requires exact `(slot,digest)`. R2 ordering and failed-VERIFY invalidation remain effective.
+
+[Audit records](/task/audit/README.md) include regenerated reports, corrected F01–F08, and exact F33–F48.
+
+Unresolved: malformed inputs and missing/conflicted baselines remain outside contract guarantees.
